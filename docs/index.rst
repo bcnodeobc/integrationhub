@@ -18,17 +18,13 @@ Contents:
    callbacks-promises-events
    glossary
 
-
-   *
-
-.. toctree::
-    :maxdepth: 2
-    :caption: API Reference
+:caption: API Reference
 
     web3
     web3-eth
     web3-eth-subscribe
-    *
+
+   *
 
 Indices and tables
 ==================
