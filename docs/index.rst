@@ -6,7 +6,7 @@
 Welcome to Read the Docs Template's documentation!
 ==================================================
 
-Contents:
+USER DOCUMENTATION Contents:
 
 .. toctree::
    :maxdepth: 2
@@ -18,12 +18,14 @@ Contents:
    callbacks-promises-events
    glossary
 
-:caption: API Reference
+   *
 
-    web3
-    web3-eth
-    web3-eth-subscribe
+.. toctree::
+   :maxdepth: 2
+   :caption: API Reference
 
+   web3
+   
    *
 
 Indices and tables
