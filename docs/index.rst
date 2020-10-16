@@ -20,25 +20,12 @@ USER DOCUMENTATION:
 
    *
 
-
 Indices and tables
 ==================
 
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-
-USER DOCUMENTATION:
-
-.. toctree::
-   :maxdepth: 2
-   :glob:
-
-   get-what
-   callbacks-events
-   glory
-
-   *
 
 API Reference
 ==================
