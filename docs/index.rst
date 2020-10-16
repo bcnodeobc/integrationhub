@@ -6,7 +6,7 @@
 Welcome to Read the Docs Template's documentation!
 ==================================================
 
-USER DOCUMENTATION Contents:
+USER DOCUMENTATION:
 
 .. toctree::
    :maxdepth: 2
@@ -20,13 +20,6 @@ USER DOCUMENTATION Contents:
 
    *
 
-.. toctree::
-   :maxdepth: 2
-   :caption: API Reference
-
-   web3
-   
-   *
 
 Indices and tables
 ==================
