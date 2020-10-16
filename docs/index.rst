@@ -28,3 +28,21 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
+USER DOCUMENTATION:
+
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
+   get-what
+   callbacks-events
+   glory
+
+   *
+
+API Reference
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
