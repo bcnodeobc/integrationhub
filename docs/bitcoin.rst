@@ -2,8 +2,9 @@
 BITCOIN
 ========
 
-$project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+This project using javascript to testing the rpc.
+
+User can test the rpc by using Postman nodejs - request.
 
 - Be awesome
 - Make things faster
