@@ -502,7 +502,7 @@ Returns the current block number::
 uptime
 ========
 
-bitcoin rpc for uptime .
+bitcoin rpc for uptime.
 
 Returns the best block hash::
 
@@ -537,3 +537,697 @@ Returns the current block number::
     "status": 200,
     "values": 423824
     }  
+
+getconnectioncount
+========
+
+bitcoin rpc for getconnectioncount.
+
+Returns the best block hash::
+
+    http://integrationhub.okwave.asia/api/v2/btcmainnet/getconnectioncount
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    bitcoin address for account 
+
+Example
+--------
+example::
+
+    {
+    }
+
+Response
+--------
+Returns the current block number::
+
+    {
+    "status": 200,
+    "values": 10
+    }  
+
+getnettotals
+========
+
+bitcoin rpc for getnettotals.
+
+Returns the best block hash::
+
+    http://integrationhub.okwave.asia/api/v2/btcmainnet/getnettotals
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    bitcoin address for account 
+
+Example
+--------
+example::
+
+    {
+    }
+
+Response
+--------
+Returns the current block number::
+
+    {
+    "status": 200,
+    "values": {
+        "totalbytesrecv": 3299246288,
+        "totalbytessent": 40608233565,
+        "timemillis": 1603167889678,
+        "uploadtarget": {
+            "timeframe": 86400,
+            "target": 0,
+            "target_reached": false,
+            "serve_historical_blocks": true,
+            "bytes_left_in_cycle": 0,
+            "time_left_in_cycle": 0
+            }
+        }
+    } 
+
+getnetworkinfo
+========
+
+bitcoin rpc for getnetworkinfo.
+
+Returns the best block hash::
+
+    http://integrationhub.okwave.asia/api/v2/btcmainnet/getnetworkinfo
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    bitcoin address for account 
+
+Example
+--------
+example::
+
+    {
+    }
+
+Response
+--------
+Returns the current block number::
+
+    {
+    "status": 200,
+    "values": {
+        "version": 190001,
+        "subversion": "/Satoshi:0.19.0.1/",
+        "protocolversion": 70015,
+        "localservices": "0000000000000409",
+        "localservicesnames": [
+            "NETWORK",
+            "WITNESS",
+            "NETWORK_LIMITED"
+        ],
+        "localrelay": true,
+        "timeoffset": 0,
+        "networkactive": true,
+        "connections": 10,
+        "networks": [
+            {
+                "name": "ipv4",
+                "limited": false,
+                "reachable": true,
+                "proxy": "",
+                "proxy_randomize_credentials": false
+            },
+            {
+                "name": "ipv6",
+                "limited": false,
+                "reachable": true,
+                "proxy": "",
+                "proxy_randomize_credentials": false
+            },
+            {
+                "name": "onion",
+                "limited": true,
+                "reachable": false,
+                "proxy": "",
+                "proxy_randomize_credentials": false
+            }
+        ],
+        "relayfee": 0.00001,
+        "incrementalfee": 0.00001,
+        "localaddresses": [
+            {
+                "address": "20.8.1.103",
+                "port": 8333,
+                "score": 1
+            }
+        ],
+        "warnings": ""
+        }
+    }  
+
+getpeerinfo
+========
+
+bitcoin rpc for getpeerinfo.
+
+Returns the best block hash::
+
+    http://integrationhub.okwave.asia/api/v2/btcmainnet/getpeerinfo
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    bitcoin address for account 
+
+Example
+--------
+example::
+
+    {
+    }
+
+Response
+--------
+Returns the current block number::
+
+    {
+    "status": 200,
+    "values": [
+        {
+            "id": 0,
+            "addr": "51.154.60.34:8333",
+            "addrlocal": "13.250.189.186:10157",
+            "addrbind": "20.8.1.33:51984",
+            "services": "000000000000040d",
+            "servicesnames": [
+                "NETWORK",
+                "BLOOM",
+                "WITNESS",
+                "NETWORK_LIMITED"
+            ],
+            "relaytxes": true,
+            "lastsend": 1603168028,
+            "lastrecv": 1603168031,
+            "bytessent": 124958917,
+            "bytesrecv": 458812896,
+            "conntime": 1602037402,
+            "timeoffset": 7,
+            "pingtime": 0.234671,
+            "minping": 0.148192,
+            "version": 70015,
+            "subver": "/Satoshi:0.18.0/",
+            "inbound": false,
+            "addnode": false,
+            "startingheight": 651584,
+            "banscore": 0,
+            "synced_headers": 653523,
+            "synced_blocks": 653523,
+            "inflight": [],
+            "whitelisted": false,
+            "permissions": [],
+            "minfeefilter": 0.00001,
+            "bytessent_per_msg": {
+                "addr": 236115,
+                "feefilter": 32,
+                "getaddr": 24,
+                "getblocktxn": 725,
+                "getdata": 28047333,
+                "getheaders": 1053,
+                "headers": 50456,
+                "inv": 91387979,
+                "notfound": 111767,
+                "ping": 301408,
+                "pong": 301376,
+                "sendcmpct": 99,
+                "sendheaders": 24,
+                "tx": 4520374,
+                "verack": 24,
+                "version": 128
+            },
+            "bytesrecv_per_msg": {
+                "addr": 209662,
+                "blocktxn": 816959,
+                "cmpctblock": 17018070,
+                "feefilter": 32,
+                "getdata": 431988,
+                "getheaders": 1053,
+                "headers": 45280,
+                "inv": 70147264,
+                "notfound": 56327,
+                "ping": 301376,
+                "pong": 301408,
+                "reject": 15625,
+                "sendcmpct": 66,
+                "sendheaders": 24,
+                "tx": 369467612,
+                "verack": 24,
+                "version": 126
+            }
+        },
+        {
+            "id": 1,
+            "addr": "93.88.75.75:8333",
+            "addrlocal": "13.250.189.186:27409",
+            "addrbind": "20.8.1.33:55542",
+            "services": "000000000000040d",
+            "servicesnames": [
+                "NETWORK",
+                "BLOOM",
+                "WITNESS",
+                "NETWORK_LIMITED"
+            ],
+            "relaytxes": true,
+            "lastsend": 1603168030,
+            "lastrecv": 1603168030,
+            "bytessent": 123770795,
+            "bytesrecv": 596513702,
+            "conntime": 1602037407,
+            "timeoffset": 5,
+            "pingtime": 0.181661,
+            "minping": 0.155844,
+            "version": 70015,
+            "subver": "/Satoshi:0.16.0/",
+            "inbound": false,
+            "addnode": false,
+            "startingheight": 651582,
+            "banscore": 0,
+            "synced_headers": 653523,
+            "synced_blocks": 653523,
+            "inflight": [],
+            "whitelisted": false,
+            "permissions": [],
+            "minfeefilter": 0.00001,
+            "bytessent_per_msg": {
+                "addr": 239220,
+                "block": 1079340,
+                "cmpctblock": 192895,
+                "feefilter": 32,
+                "getaddr": 24,
+                "getblocktxn": 4360,
+                "getdata": 34222609,
+                "getheaders": 1053,
+                "headers": 153594,
+                "inv": 86655890,
+                "notfound": 35328,
+                "ping": 301408,
+                "pong": 301472,
+                "sendcmpct": 198,
+                "sendheaders": 24,
+                "tx": 583196,
+                "verack": 24,
+                "version": 128
+            },
+            "bytesrecv_per_msg": {
+                "addr": 188662,
+                "blocktxn": 2360809,
+                "cmpctblock": 9289483,
+                "feefilter": 32,
+                "getdata": 78575,
+                "getheaders": 1053,
+                "headers": 115982,
+                "inv": 75128871,
+                "notfound": 64996,
+                "ping": 301472,
+                "pong": 301408,
+                "reject": 13508,
+                "sendcmpct": 132,
+                "sendheaders": 24,
+                "tx": 508668545,
+                "verack": 24,
+                "version": 126
+            }
+        },
+        ]
+    } 
+
+listbanned
+========
+
+bitcoin rpc for listbanned.
+
+Returns the best block hash::
+
+    http://integrationhub.okwave.asia/api/v2/btcmainnet/listbanned
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    bitcoin address for account 
+
+Example
+--------
+example::
+
+    {
+    }
+
+Response
+--------
+Returns the current block number::
+
+    {
+    "status": 200,
+    "values": []
+    }
+
+ping
+========
+
+bitcoin rpc for ping.
+
+Returns the best block hash::
+
+    http://integrationhub.okwave.asia/api/v2/btcmainnet/ping
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    bitcoin address for account 
+
+Example
+--------
+example::
+
+    {
+    }
+
+Response
+--------
+Returns the current block number::
+
+    {
+    "status": 200,
+    "values": "Operation completed succcessfully"
+    }
+
+getutxobyaddress
+========
+
+bitcoin rpc for getutxobyaddress.
+
+Returns the best block hash::
+
+    http://integrationhub.okwave.asia/api/v2/btcmainnet/getutxobyaddress
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    bitcoin address for account 
+
+Example
+--------
+example::
+
+    {
+    "address": "n4rZHAPGXCu8bYchjzJhK3V7VVreascJxe"
+    }
+
+Response
+--------
+Returns the current block number::
+
+    {
+    "status": 200,
+    "values": []
+    }
+
+getbalancebyaddress
+========
+
+bitcoin rpc for getbalancebyaddress.
+
+Returns the best block hash::
+
+    http://integrationhub.okwave.asia/api/v2/btcmainnet/getbalancebyaddress
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    bitcoin address for account 
+
+Example
+--------
+example::
+
+    {
+    "address": "n4rZHAPGXCu8bYchjzJhK3V7VVreascJxe"
+    }  
+
+Response
+--------
+Returns the current block number::
+
+    {
+    "status": 200,
+    "values": {
+        "confirmed": 0,
+        "unconfirmed": 0,
+        "balance": 0
+        }
+    }
+
+gettransactionbytxid
+========
+
+bitcoin rpc for gettransactionbytxid.
+
+Returns the best block hash::
+
+    http://integrationhub.okwave.asia/api/v2/btcmainnet/gettransactionbytxid
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    bitcoin address for account 
+
+Example
+--------
+example::
+
+    {
+    "txid": "3df7b98a822746a93b44beec8a7be6aa585da47e763549d48ecc4a666e1ad314"
+    }
+
+Response
+--------
+Returns the current block number::
+
+    {
+    "status": ,
+    "values": 
+    }
+
+gettransactionbyaddress
+========
+
+bitcoin rpc for gettransactionbyaddress.
+
+Returns the best block hash::
+
+    http://integrationhub.okwave.asia/api/v2/btcmainnet/gettransactionbyaddress
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    bitcoin address for account 
+
+Example
+--------
+example::
+
+    {
+    "address": "n4rZHAPGXCu8bYchjzJhK3V7VVreascJxe"
+    }
+
+Response
+--------
+Returns the current block number::
+
+    {
+    "status": 200,
+    "values": []
+    }
+
+createrawtransaction
+========
+
+bitcoin rpc for createrawtransaction.
+
+Returns the best block hash::
+
+    http://integrationhub.okwave.asia/api/v2/btcmainnet/createrawtransaction
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    bitcoin address for account 
+
+Example
+--------
+example::
+
+    {
+        "txin": [
+                        {
+                            "txid": "",
+                            "vout": 0
+                        }
+                    ],
+        "txout": [
+                        {
+                            "address": "",
+                            "amount": 0
+                        }
+                    ]
+    }
+
+Response
+--------
+Returns the current block number::
+
+    {
+    "status": ,
+    "values": 
+    }
+
+signrawtransactionwithkey
+========
+
+bitcoin rpc for signrawtransactionwithkey.
+
+Returns the best block hash::
+
+    http://integrationhub.okwave.asia/api/v2/btcmainnet/signrawtransactionwithkey
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    bitcoin address for account 
+
+Example
+--------
+example::
+
+    {
+    "hexstring": "0200000001669576892eb617435059fb6c5976e8bf526149c0f09ce7dcdc4af0ed995b10390000000000ffffffff0150c300000000000017a914f0a454d03ca355e47b13fbdd497d258a0b365b0a8700000000",
+    "privkeys": [""]
+    }
+
+Response
+--------
+Returns the current block number::
+
+    {
+    "status": ,
+    "values": 
+    }
