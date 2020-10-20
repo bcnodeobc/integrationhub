@@ -81,3 +81,95 @@ Response
 Returns the current block number::
 
     $ pip install read-the-docs-template
+
+getblockchaininfo
+========
+
+project will solve your problem of where to start with documentation,
+by providing a basic explanation of how to do it easily.
+
+Returns the current block number::
+
+    $ pip install read-the-docs-template
+
+Parameters
+--------
+
+- Be awesome
+- Make things faster
+
+Response
+--------
+
+Returns the current block number::
+
+    $ pip install read-the-docs-template
+
+getblockhash
+========
+
+project will solve your problem of where to start with documentation,
+by providing a basic explanation of how to do it easily.
+
+Returns the current block number::
+
+    $ pip install read-the-docs-template
+
+Parameters
+--------
+
+- Be awesome
+- Make things faster
+
+Response
+--------
+
+Returns the current block number::
+
+    $ pip install read-the-docs-template
+
+getblockheader
+========
+
+project will solve your problem of where to start with documentation,
+by providing a basic explanation of how to do it easily.
+
+Returns the current block number::
+
+    $ pip install read-the-docs-template
+
+Parameters
+--------
+
+- Be awesome
+- Make things faster
+
+Response
+--------
+
+Returns the current block number::
+
+    $ pip install read-the-docs-template
+
+getblockstats
+========
+
+project will solve your problem of where to start with documentation,
+by providing a basic explanation of how to do it easily.
+
+Returns the current block number::
+
+    $ pip install read-the-docs-template
+
+Parameters
+--------
+
+- Be awesome
+- Make things faster
+
+Response
+--------
+
+Returns the current block number::
+
+    $ pip install read-the-docs-template
