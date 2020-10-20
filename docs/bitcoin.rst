@@ -82,6 +82,11 @@ Returns the current block number::
 
     $ pip install read-the-docs-template
 
+    {
+        "success": true,
+        "values": "string"
+    }
+
 getblockchaininfo
 ========
 
@@ -104,6 +109,11 @@ Response
 Returns the current block number::
 
     $ pip install read-the-docs-template
+
+    {
+        "success": true,
+        "values": "string"
+    }
 
 getblockhash
 ========
@@ -128,6 +138,11 @@ Returns the current block number::
 
     $ pip install read-the-docs-template
 
+    {
+        "success": true,
+        "values": "string"
+    }
+
 getblockheader
 ========
 
@@ -151,6 +166,11 @@ Returns the current block number::
 
     $ pip install read-the-docs-template
 
+    {
+        "success": true,
+        "values": "string"
+    }
+
 getblockstats
 ========
 
@@ -173,3 +193,8 @@ Response
 Returns the current block number::
 
     $ pip install read-the-docs-template
+
+    {
+        "success": true,
+        "values": "string"
+    }
