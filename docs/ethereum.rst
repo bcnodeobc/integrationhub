@@ -166,3 +166,124 @@ Returns the current block timeout::
     "status": 200,
     "values": "20000001459"
     }
+
+getBlockNumber
+========
+
+project will solve your problem of where to start with documentation,
+by providing a basic explanation of how to do it easily.
+
+Returns the current block number::
+
+    http://integrationhub.okwave.asia/api/v2/ethmainnet/web3.eth/getBlockNumber
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    ethereum address for account 
+
+Example
+--------
+example::
+
+    {
+    }
+
+Response
+--------
+Returns the current block timeout::
+
+    {
+    "status": 200,
+    "values": 11090988
+    }
+
+getStorageAt
+========
+
+project will solve your problem of where to start with documentation,
+by providing a basic explanation of how to do it easily.
+
+Returns the current block number::
+
+    http://integrationhub.okwave.asia/api/v2/ethmainnet/web3.eth/getStorageAt
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    ethereum address for account 
+
+Example
+--------
+example::
+
+    {
+    }
+
+Response
+--------
+Returns the current block timeout::
+
+    {
+    "status": ,
+    "values": ""
+    }
+
+getCode
+========
+
+project will solve your problem of where to start with documentation,
+by providing a basic explanation of how to do it easily.
+
+Returns the ::
+
+    http://integrationhub.okwave.asia/api/v2/ethmainnet/web3.eth/getCode
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    ethereum address for account 
+
+Example
+--------
+example::
+
+    {
+    "address":"0xceb21b8ce14e287a106bd01f5c92dac970c1efd3"
+    }
+
+Response
+--------
+Returns the code::
+
+    {
+    "status": 200,
+    "values": "0x"
+    }
