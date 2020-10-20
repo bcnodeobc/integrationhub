@@ -2,29 +2,82 @@
 BITCOIN
 ========
 
+$project will solve your problem of where to start with documentation,
+by providing a basic explanation of how to do it easily.
+
 getblockcount
+========
+
+project will solve your problem of where to start with documentation,
+by providing a basic explanation of how to do it easily.
+
+Returns the current block number::
+
+    $ pip install read-the-docs-template
+
+Parameters
+--------
+
+- Be awesome
+- Make things faster
+
+Response
+--------
+
+Returns the current block number::
+
+    $ pip install read-the-docs-template
+
+getbestblockhash
 ========
 
 $project will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
 
-Return
-========
-Look how easy it is to use:
+project will solve your problem of where to start with documentation,
+by providing a basic explanation of how to do it easily.
 
-    import project
-    # Get your stuff done
-    project.do_stuff()
-
-Response
-========
 Returns the current block number::
 
     $ pip install read-the-docs-template
 
-
-getbestblockhash
+Parameters
 --------
 
 - Be awesome
 - Make things faster
+
+Response
+--------
+
+Returns the current block number::
+
+    $ pip install read-the-docs-template
+
+    {
+        "success": true,
+        "values": "string"
+    }
+
+getblock
+========
+
+project will solve your problem of where to start with documentation,
+by providing a basic explanation of how to do it easily.
+
+Returns the current block number::
+
+    $ pip install read-the-docs-template
+
+Parameters
+--------
+
+- Be awesome
+- Make things faster
+
+Response
+--------
+
+Returns the current block number::
+
+    $ pip install read-the-docs-template
