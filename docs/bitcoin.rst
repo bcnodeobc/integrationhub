@@ -123,15 +123,14 @@ Response
 Returns the current block number::
 
     {
-        "success": ,
-        "values": ""
+    "success": ,
+    "values": ""
     }
 
 getblockchaininfo
 ========
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+bitcoin rpc get block chain info.
 
 Returns the best block hash::
 
@@ -210,8 +209,7 @@ Returns the current block number::
 getblockhash
 ========
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+bitcoin rpc for get block hash.
 
 Returns the best block hash::
 
@@ -251,8 +249,7 @@ Returns the current block number::
 getblockheader
 ========
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+bitcoin rpc for get block header.
 
 Returns the best block hash::
 
@@ -285,15 +282,14 @@ Response
 Returns the current block number::
 
     {
-        "success": ,
-        "values": ""
+    "success": ,
+    "values": ""
     }
 
 getblockstats
 ========
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+bitcoin rpc for get blockstats.
 
 Returns the best block hash::
 
@@ -318,7 +314,7 @@ Example
 example::
 
     { 
-        "height": "100" 
+    "height": "100" 
     }
 
 Response
@@ -326,15 +322,14 @@ Response
 Returns the current block number::
 
     {
-        "success": ,
-        "values": ""
+    "success": ,
+    "values": ""
     }
 
 getdifficulty
 ========
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+bitcoin rpc for getdifficulty .
 
 Returns the best block hash::
 
@@ -368,4 +363,177 @@ Returns the current block number::
     {
     "status": 200,
     "values": 19997335994446.11
-}   
+    }   
+
+getmemoryinfo
+========
+
+bitcoin rpc for get memory info.
+
+Returns the best block hash::
+
+    http://integrationhub.okwave.asia/api/v2/btcmainnet/getmemoryinfo
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    bitcoin address for account 
+
+Example
+--------
+example::
+
+    {
+    }
+
+Response
+--------
+Returns the current block number::
+
+   {
+    "status": 200,
+    "values": {
+        "locked": {
+            "used": 117056,
+            "free": 145088,
+            "total": 262144,
+            "locked": 262144,
+            "chunks_used": 3656,
+            "chunks_free": 2
+            }
+        }
+    }   
+
+getrpcinfo
+========
+
+bitcoin rpc for getrpcinfo .
+
+Returns the best block hash::
+
+    http://integrationhub.okwave.asia/api/v2/btcmainnet/getrpcinfo
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    bitcoin address for account 
+
+Example
+--------
+example::
+
+    {
+    }
+
+Response
+--------
+Returns the current block number::
+
+    {
+    "status": 200,
+    "values": {
+        "active_commands": [
+            {
+                "method": "getrpcinfo",
+                "duration": 1037
+            }
+        ],
+        "logpath": "/var/lib/bitcoind/debug.log"
+        }
+    }   
+
+help
+========
+
+bitcoin rpc for help .
+
+Returns the best block hash::
+
+    http://integrationhub.okwave.asia/api/v2/btcmainnet/help
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    bitcoin address for account 
+
+Example
+--------
+example::
+
+    {
+    }
+
+Response
+--------
+Returns the current block number::
+
+    {
+    "status": 200,
+    "values": "== Blockchain ==\ngetbestblockhash\ngetblock \"blockhash\" ( verbosity )\ngetblockchaininfo\ngetblockcount\ngetblockfilter \"blockhash\" ( \"filtertype\" )\ngetblockhash height\ngetblockheader \"blockhash\" ( verbose )\ngetblockstats hash_or_height ( stats )\ngetchaintips\ngetchaintxstats ( nblocks \"blockhash\" )\ngetdifficulty\ngetmempoolancestors \"txid\" ( verbose )\ngetmempooldescendants \"txid\" ( verbose )\ngetmempoolentry \"txid\"\ngetmempoolinfo\ngetrawmempool ( verbose )\ngettxout \"txid\" n ( include_mempool )\ngettxoutproof [\"txid\",...] ( \"blockhash\" )\ngettxoutsetinfo\npreciousblock \"blockhash\"\npruneblockchain height\nsavemempool\nscantxoutset \"action\" [scanobjects,...]\nverifychain ( checklevel nblocks )\nverifytxoutproof \"proof\"\n\n== Control ==\ngetmemoryinfo ( \"mode\" )\ngetrpcinfo\nhelp ( \"command\" )\nlogging ( [\"include_category\",...] [\"exclude_category\",...] )\nstop\nuptime\n\n== Generating ==\ngeneratetoaddress nblocks \"address\" ( maxtries )\n\n== Mining ==\ngetblocktemplate ( \"template_request\" )\ngetmininginfo\ngetnetworkhashps ( nblocks height )\nprioritisetransaction \"txid\" ( dummy ) fee_delta\nsubmitblock \"hexdata\" ( \"dummy\" )\nsubmitheader \"hexdata\"\n\n== Network ==\naddnode \"node\" \"command\"\nclearbanned\ndisconnectnode ( \"address\" nodeid )\ngetaddednodeinfo ( \"node\" )\ngetconnectioncount\ngetnettotals\ngetnetworkinfo\ngetnodeaddresses ( count )\ngetpeerinfo\nlistbanned\nping\nsetban \"subnet\" \"command\" ( bantime absolute )\nsetnetworkactive state\n\n== Rawtransactions ==\nanalyzepsbt \"psbt\"\ncombinepsbt [\"psbt\",...]\ncombinerawtransaction [\"hexstring\",...]\nconverttopsbt \"hexstring\" ( permitsigdata iswitness )\ncreatepsbt [{\"txid\":\"hex\",\"vout\":n,\"sequence\":n},...] [{\"address\":amount},{\"data\":\"hex\"},...] ( locktime replaceable )\ncreaterawtransaction [{\"txid\":\"hex\",\"vout\":n,\"sequence\":n},...] [{\"address\":amount},{\"data\":\"hex\"},...] ( locktime replaceable )\ndecodepsbt \"psbt\"\ndecoderawtransaction \"hexstring\" ( iswitness )\ndecodescript \"hexstring\"\nfinalizepsbt \"psbt\" ( extract )\nfundrawtransaction \"hexstring\" ( options iswitness )\ngetrawtransaction \"txid\" ( verbose \"blockhash\" )\njoinpsbts [\"psbt\",...]\nsendrawtransaction \"hexstring\" ( maxfeerate )\nsignrawtransactionwithkey \"hexstring\" [\"privatekey\",...] ( [{\"txid\":\"hex\",\"vout\":n,\"scriptPubKey\":\"hex\",\"redeemScript\":\"hex\",\"witnessScript\":\"hex\",\"amount\":amount},...] \"sighashtype\" )\ntestmempoolaccept [\"rawtx\",...] ( maxfeerate )\nutxoupdatepsbt \"psbt\" ( [\"\",{\"desc\":\"str\",\"range\":n or [n,n]},...] )\n\n== Util ==\ncreatemultisig nrequired [\"key\",...] ( \"address_type\" )\nderiveaddresses \"descriptor\" ( range )\nestimatesmartfee conf_target ( \"estimate_mode\" )\ngetdescriptorinfo \"descriptor\"\nsignmessagewithprivkey \"privkey\" \"message\"\nvalidateaddress \"address\"\nverifymessage \"address\" \"signature\" \"message\"\n\n== Wallet ==\nabandontransaction \"txid\"\nabortrescan\naddmultisigaddress nrequired [\"key\",...] ( \"label\" \"address_type\" )\nbackupwallet \"destination\"\nbumpfee \"txid\" ( options )\ncreatewallet \"wallet_name\" ( disable_private_keys blank \"passphrase\" avoid_reuse )\ndumpprivkey \"address\"\ndumpwallet \"filename\"\nencryptwallet \"passphrase\"\ngetaddressesbylabel \"label\"\ngetaddressinfo \"address\"\ngetbalance ( \"dummy\" minconf include_watchonly avoid_reuse )\ngetbalances\ngetnewaddress ( \"label\" \"address_type\" )\ngetrawchangeaddress ( \"address_type\" )\ngetreceivedbyaddress \"address\" ( minconf )\ngetreceivedbylabel \"label\" ( minconf )\ngettransaction \"txid\" ( include_watchonly verbose )\ngetunconfirmedbalance\ngetwalletinfo\nimportaddress \"address\" ( \"label\" rescan p2sh )\nimportmulti \"requests\" ( \"options\" )\nimportprivkey \"privkey\" ( \"label\" rescan )\nimportprunedfunds \"rawtransaction\" \"txoutproof\"\nimportpubkey \"pubkey\" ( \"label\" rescan )\nimportwallet \"filename\"\nkeypoolrefill ( newsize )\nlistaddressgroupings\nlistlabels ( \"purpose\" )\nlistlockunspent\nlistreceivedbyaddress ( minconf include_empty include_watchonly \"address_filter\" )\nlistreceivedbylabel ( minconf include_empty include_watchonly )\nlistsinceblock ( \"blockhash\" target_confirmations include_watchonly include_removed )\nlisttransactions ( \"label\" count skip include_watchonly )\nlistunspent ( minconf maxconf [\"address\",...] include_unsafe query_options )\nlistwalletdir\nlistwallets\nloadwallet \"filename\"\nlockunspent unlock ( [{\"txid\":\"hex\",\"vout\":n},...] )\nremoveprunedfunds \"txid\"\nrescanblockchain ( start_height stop_height )\nsendmany \"\" {\"address\":amount} ( minconf \"comment\" [\"address\",...] replaceable conf_target \"estimate_mode\" )\nsendtoaddress \"address\" amount ( \"comment\" \"comment_to\" subtractfeefromamount replaceable conf_target \"estimate_mode\" avoid_reuse )\nsethdseed ( newkeypool \"seed\" )\nsetlabel \"address\" \"label\"\nsettxfee amount\nsetwalletflag \"flag\" ( value )\nsignmessage \"address\" \"message\"\nsignrawtransactionwithwallet \"hexstring\" ( [{\"txid\":\"hex\",\"vout\":n,\"scriptPubKey\":\"hex\",\"redeemScript\":\"hex\",\"witnessScript\":\"hex\",\"amount\":amount},...] \"sighashtype\" )\nunloadwallet ( \"wallet_name\" )\nwalletcreatefundedpsbt [{\"txid\":\"hex\",\"vout\":n,\"sequence\":n},...] [{\"address\":amount},{\"data\":\"hex\"},...] ( locktime options bip32derivs )\nwalletlock\nwalletpassphrase \"passphrase\" timeout\nwalletpassphrasechange \"oldpassphrase\" \"newpassphrase\"\nwalletprocesspsbt \"psbt\" ( sign \"sighashtype\" bip32derivs )\n\n== Zmq ==\ngetzmqnotifications"
+    }  
+
+uptime
+========
+
+bitcoin rpc for uptime .
+
+Returns the best block hash::
+
+    http://integrationhub.okwave.asia/api/v2/btcmainnet/uptime
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    bitcoin address for account 
+
+Example
+--------
+example::
+
+    {
+    }
+
+Response
+--------
+Returns the current block number::
+
+    {
+    "status": 200,
+    "values": 423824
+    }  
