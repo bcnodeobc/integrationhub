@@ -31,14 +31,28 @@ Parameters
 --------
 No need parameters::
 
-    bitcoin address for account 
+     {
+
+     }
 
 Example
 --------
 example::
 
-    {
-    }
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/getblockcount',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
 
 Response
 --------
@@ -70,14 +84,28 @@ Parameters
 --------
 No need parameters::
 
-    bitcoin address for account 
+    {
+
+    } 
 
 Example
 --------
 example::
 
-    {
-    }
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/getbestblockhash',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
 
 Response
 --------
@@ -110,14 +138,28 @@ Parameters
 Need parameters::
 
     blockhash   hash of the block
+                {
+                "blockhash": "0000000000000293c83a20b0e537c52fb7903c3b5d6e358400d5574ea0ec33ba"
+                }
 
 Example
 --------
 example::
-
-    {
-    "blockhash": "0000000000000293c83a20b0e537c52fb7903c3b5d6e358400d5574ea0ec33ba"
-    }
+    
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/getblock',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({"blockhash":"0000000000000293c83a20b0e537c52fb7903c3b5d6e358400d5574ea0ec33ba"})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
 
 Response
 --------
@@ -149,14 +191,28 @@ Parameters
 --------
 No need parameters::
 
-    bitcoin address for account 
+    {
+
+    } 
 
 Example
 --------
 example::
 
-    {
-    }
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/getblockchaininfo',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
 
 Response
 --------
@@ -228,15 +284,29 @@ Parameters
 --------
 Need parameters::
 
-    set value height block
+    height  value height block
+            {
+            "height": 1457
+            }
 
 Example
 --------
 example::
-
-    {
-    "height": 1457
-    }
+    
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/getblockhash',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({"height":1457})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
 
 Response
 --------
@@ -266,17 +336,31 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Need parameters::
 
-    bitcoin address for account 
+    blockhash   blockhash of the block
+                {
+                "blockhash": "00000000438e70988896a0e26183820bf06a693b69062532432ea5034e8afd19"
+                }
 
 Example
 --------
 example::
 
-    {
-    "blockhash": "00000000438e70988896a0e26183820bf06a693b69062532432ea5034e8afd19"
-    }
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/getblockheader',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({"blockhash":"0000000000000293c83a20b0e537c52fb7903c3b5d6e358400d5574ea0ec33ba"})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
 
 Response
 --------
@@ -306,17 +390,31 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Need parameters::
 
-    bitcoin address for account 
+    hash_or_height  set height or hash of the block
+                    {
+                    "hash_or_height": "10000"
+                    } 
 
 Example
 --------
 example::
 
-    { 
-    "height": "100" 
-    }
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/getblockstats',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({"hash_or_height":"10000"})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
 
 Response
 --------
@@ -348,14 +446,28 @@ Parameters
 --------
 No need parameters::
 
-    bitcoin address for account 
+    {
+        
+    } 
 
 Example
 --------
 example::
 
-    {
-    }
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/getdifficulty',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
 
 Response
 --------
@@ -387,14 +499,28 @@ Parameters
 --------
 No need parameters::
 
-    bitcoin address for account 
+    {
+
+    } 
 
 Example
 --------
 example::
 
-    {
-    }
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/getmemoryinfo',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
 
 Response
 --------
@@ -435,14 +561,28 @@ Parameters
 --------
 No need parameters::
 
-    bitcoin address for account 
+    {
+        
+    } 
 
 Example
 --------
 example::
 
-    {
-    }
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/getrpcinfo',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
 
 Response
 --------
@@ -482,14 +622,28 @@ Parameters
 --------
 No need parameters::
 
-    bitcoin address for account 
+    {
+        
+    } 
 
 Example
 --------
 example::
 
-    {
-    }
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/help',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
 
 Response
 --------
@@ -521,14 +675,28 @@ Parameters
 --------
 No need parameters::
 
-    bitcoin address for account 
+    {
+        
+    } 
 
 Example
 --------
 example::
 
-    {
-    }
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/uptime',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
 
 Response
 --------
@@ -560,14 +728,28 @@ Parameters
 --------
 No need parameters::
 
-    bitcoin address for account 
+    {
+        
+    } 
 
 Example
 --------
 example::
 
-    {
-    }
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/getconnectioncount',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
 
 Response
 --------
@@ -599,14 +781,28 @@ Parameters
 --------
 No need parameters::
 
-    bitcoin address for account 
+    {
+        
+    } 
 
 Example
 --------
 example::
 
-    {
-    }
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/getnettotals',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
 
 Response
 --------
@@ -650,14 +846,28 @@ Parameters
 --------
 No need parameters::
 
-    bitcoin address for account 
+    {
+        
+    } 
 
 Example
 --------
 example::
 
-    {
-    }
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/getnetworkinfo',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
 
 Response
 --------
@@ -736,14 +946,28 @@ Parameters
 --------
 No need parameters::
 
-    bitcoin address for account 
+    {
+        
+    } 
 
 Example
 --------
 example::
 
-    {
-    }
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/getpeerinfo',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
 
 Response
 --------
@@ -920,14 +1144,28 @@ Parameters
 --------
 No need parameters::
 
-    bitcoin address for account 
+    {
+        
+    } 
 
 Example
 --------
 example::
 
-    {
-    }
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/listbanned',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
 
 Response
 --------
@@ -959,14 +1197,28 @@ Parameters
 --------
 No need parameters::
 
-    bitcoin address for account 
+    {
+        
+    }
 
 Example
 --------
 example::
 
-    {
-    }
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/ping',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
 
 Response
 --------
@@ -998,15 +1250,30 @@ Parameters
 --------
 No need parameters::
 
-    bitcoin address for account 
+    address     address for account
+                {
+                "address": "n4rZHAPGXCu8bYchjzJhK3V7VVreascJxe"
+                }
 
 Example
 --------
 example::
 
-    {
-    "address": "n4rZHAPGXCu8bYchjzJhK3V7VVreascJxe"
-    }
+    
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/getutxobyaddress',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({"address":"n3Z4FToecPHbjPyVDVsPgoFjcvYvq6SiFR"})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
 
 Response
 --------
@@ -1038,16 +1305,30 @@ Parameters
 --------
 No need parameters::
 
-    bitcoin address for account 
+    address     address for account
+                {
+                "address": "n4rZHAPGXCu8bYchjzJhK3V7VVreascJxe"
+                } 
 
 Example
 --------
 example::
 
-    {
-    "address": "n4rZHAPGXCu8bYchjzJhK3V7VVreascJxe"
-    }  
-
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/getbalancebyaddress',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({"address":"n3Z4FToecPHbjPyVDVsPgoFjcvYvq6SiFR"})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+  
 Response
 --------
 Returns the current block number::
@@ -1082,15 +1363,29 @@ Parameters
 --------
 No need parameters::
 
-    bitcoin address for account 
+    txid        transaction id of block
+                {
+                "txid": "3df7b98a822746a93b44beec8a7be6aa585da47e763549d48ecc4a666e1ad314"
+                } 
 
 Example
 --------
 example::
-
-    {
-    "txid": "3df7b98a822746a93b44beec8a7be6aa585da47e763549d48ecc4a666e1ad314"
-    }
+    
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/gettransactionbytxid',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({"txid":"7a4284ed47e0d68eac8c0cf62a697a2f9411a53975b146444f8b17640cfca891"})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
 
 Response
 --------
@@ -1122,15 +1417,29 @@ Parameters
 --------
 No need parameters::
 
-    bitcoin address for account 
+    address     block address
+                {
+                "address": "n4rZHAPGXCu8bYchjzJhK3V7VVreascJxe"
+                }
 
 Example
 --------
 example::
 
-    {
-    "address": "n4rZHAPGXCu8bYchjzJhK3V7VVreascJxe"
-    }
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/gettransactionbyaddress',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({"address":"n4rZHAPGXCu8bYchjzJhK3V7VVreascJxe"})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
 
 Response
 --------
@@ -1162,26 +1471,40 @@ Parameters
 --------
 No need parameters::
 
-    bitcoin address for account 
+    bitcoin     txid and txout
+                {
+                "txin": [
+                                {
+                                    "txid": "",
+                                    "vout": 0
+                                }
+                            ],
+                "txout": [
+                                {
+                                    "address": "",
+                                    "amount": 0
+                                }
+                            ]
+                } 
 
 Example
 --------
 example::
 
-    {
-        "txin": [
-                        {
-                            "txid": "",
-                            "vout": 0
-                        }
-                    ],
-        "txout": [
-                        {
-                            "address": "",
-                            "amount": 0
-                        }
-                    ]
-    }
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/createrawtransaction',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({"txin":[{"txid":"","vout":0}],"txout":[{"address":"","amount":0}]})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
 
 Response
 --------
@@ -1213,16 +1536,30 @@ Parameters
 --------
 No need parameters::
 
-    bitcoin address for account 
+    hexstring     hexstring and privatekey
+    and           {
+    privatekey      "hexstring": "0200000001669576892eb617435059fb6c5976e8bf526149c0f09ce7dcdc4af0ed995b10390000000000ffffffff0150c300000000000017a914f0a454d03ca355e47b13fbdd497d258a0b365b0a8700000000",
+                    "privkeys": [""]
+                    } 
 
 Example
 --------
 example::
 
-    {
-    "hexstring": "0200000001669576892eb617435059fb6c5976e8bf526149c0f09ce7dcdc4af0ed995b10390000000000ffffffff0150c300000000000017a914f0a454d03ca355e47b13fbdd497d258a0b365b0a8700000000",
-    "privkeys": [""]
-    }
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/signrawtransactionwithkey',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({"hexstring":"0200000001669576892eb617435059fb6c5976e8bf526149c0f09ce7dcdc4af0ed995b10390000000000ffffffff0150c300000000000017a914f0a454d03ca355e47b13fbdd497d258a0b365b0a8700000000","privkeys":[""]})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
 
 Response
 --------
