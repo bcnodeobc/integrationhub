@@ -25,8 +25,6 @@ this documentation is for user testing
 .. toctree::
    :maxdepth: 2
 
-   :caption: User Documentation
-
    getting-started
    callbacks-promises-events
    glossary
