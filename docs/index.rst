@@ -22,14 +22,8 @@ USER DOCUMENTATION:
 
 this documentation is for user testing
 
-.. toctree::
-   :maxdepth: 2
-
-   getting-started
-   callbacks-promises-events
-   glossary
-
-   *
+fandf::
+   what is this
 
 API Reference
 ==================
