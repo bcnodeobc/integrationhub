@@ -15,6 +15,9 @@ Contents:
 USER DOCUMENTATION:
 ==================
 
+* :ref:`wauu`
+* :ref:`hello`
+* :ref:`test`
 
 API Reference
 ==================
