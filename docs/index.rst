@@ -22,9 +22,11 @@ USER DOCUMENTATION:
 
 this documentation is for user testing
 
-* :ref:`wauu`
-* :ref:`hello`
-* :ref:`test`
+:caption: User Documentation
+
+   getting-started
+   callbacks-promises-events
+   glossary
 
 API Reference
 ==================

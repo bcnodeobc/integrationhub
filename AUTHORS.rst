@@ -9,4 +9,10 @@ Integration Hub (IH) is a platform developed by OK Blockchain Centre to ease and
 * Eric (New contributor)
 * Anthony 
 
+INSTALLATION
+============
+
+Install the package with pip::
+
+    $ pip install read-the-docs-template
 
