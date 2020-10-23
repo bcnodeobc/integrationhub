@@ -22,11 +22,16 @@ USER DOCUMENTATION:
 
 this documentation is for user testing
 
-:caption: User Documentation
+.. toctree::
+   :maxdepth: 2
+
+   :caption: User Documentation
 
    getting-started
    callbacks-promises-events
    glossary
+
+   *
 
 API Reference
 ==================
