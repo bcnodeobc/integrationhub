@@ -12,8 +12,15 @@ The following documentation will guide you through installing and running web3.j
 
 Contents:
 
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
+
 USER DOCUMENTATION:
 ==================
+
+this documentation is for user testing
 
 * :ref:`wauu`
 * :ref:`hello`

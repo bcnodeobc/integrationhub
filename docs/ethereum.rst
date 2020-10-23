@@ -670,3 +670,592 @@ Returns the current block number::
     "status": 200,
     "values": null
     }
+
+getTransactionFromBlock
+========
+
+this ethereum rpc for getTransactionFromBlock.
+
+Api for this rpc::
+
+    http://integrationhub.okwave.asia/api/v2/btcmainnet/getTransactionFromBlock
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+Need parameters::
+
+    hashString      get the latest block
+    indexNumber     {
+                    "hashString": "latest",
+                    "indexNumber": "3"
+                    }
+
+Example
+--------
+example::
+    
+    var request = require('request');
+    var options = {
+    'method': 'POST',
+    'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getTransactionFromBlock',
+    'headers': {
+        'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({"hashString":"latest","indexNumber":"0"})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Returns the current block number::
+
+    {
+    "status": 200,
+    "values": null
+    }
+
+getTransactionReceipt
+========
+
+this ethereum rpc for getTransactionReceipt.
+
+Api for this rpc::
+
+    http://integrationhub.okwave.asia/api/v2/btcmainnet/getTransactionReceipt
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+Need parameters::
+
+    hash    get the latest block
+            {
+            "hash": "0xc919e0b9dec70ae9fac16af491928806210581a82eca8e25e490ebacee324b68"
+            }
+
+Example
+--------
+example::
+    
+    var request = require('request');
+    var options = {
+    'method': 'POST',
+    'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getTransactionReceipt',
+    'headers': {
+        'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({"hash":"0xc919e0b9dec70ae9fac16af491928806210581a82eca8e25e490ebacee324b68"})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Returns the current block number::
+
+    {
+    "status": 200,
+    "values": null
+    }
+
+getTransactionCount
+========
+
+this ethereum rpc for getTransactionCount.
+
+Api for this rpc::
+
+    http://integrationhub.okwave.asia/api/v2/btcmainnet/getTransactionCount
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+Need parameters::
+
+    address     get the latest block
+                {
+                "address": "0xceb21b8ce14e287a106bd01f5c92dac970c1efd3"
+                }
+
+Example
+--------
+example::
+    
+    var request = require('request');
+    var options = {
+    'method': 'POST',
+    'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getTransactionCount',
+    'headers': {
+        'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({"address":"0xceb21b8ce14e287a106bd01f5c92dac970c1efd3"})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Returns the current block number::
+
+    {
+    "status": 200,
+    "values": 0
+    }
+
+sendSignedTransaction
+========
+
+this ethereum rpc for sendSignedTransaction.
+
+Api for this rpc::
+
+    http://integrationhub.okwave.asia/api/v2/btcmainnet/sendSignedTransaction
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+Need parameters::
+
+    serial tx    get the latest block
+                {
+                "serializedTx": "0xf86c04853e660b780082520894b43f7f7af34c4b214456bd98d468d533865fbb458806f05b59d3b20000801ca00de040fe31ea5a8a275fc704e7fc8f7cdbaa6a44a770027c421773bfa7fd6099a07b0452c6a223b50fe8c4a1280f7782470b1ea277eda4ab18ac2ce20e9f08f342"
+                }
+
+Example
+--------
+example::
+    
+    var request = require('request');
+    var options = {
+    'method': 'POST',
+    'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/sendSignedTransaction',
+    'headers': {
+        'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({"serializedTx":"0xf86c04853e660b780082520894b43f7f7af34c4b214456bd98d468d533865fbb458806f05b59d3b20000801ca00de040fe31ea5a8a275fc704e7fc8f7cdbaa6a44a770027c421773bfa7fd6099a07b0452c6a223b50fe8c4a1280f7782470b1ea277eda4ab18ac2ce20e9f08f342"})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Returns the current block number::
+
+    {
+    "status": 200,
+    "values": 
+    }
+
+getNodeInfo
+========
+
+this ethereum rpc for getNodeInfo.
+
+Api for this rpc::
+
+    http://integrationhub.okwave.asia/api/v2/btcmainnet/getNodeInfo
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+        {
+            
+        }
+
+Example
+--------
+example::
+    
+    var request = require('request');
+    var options = {
+    'method': 'POST',
+    'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getNodeInfo',
+    'headers': {
+        'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+    if (error) throw new Error(error);
+    console.log(response.body);
+    });
+
+Response
+--------
+Returns the current block number::
+
+    {
+    "status": 200,
+    "values": "Geth/v1.9.10-stable-58cf5686/linux-amd64/go1.13.6"
+    }
+
+getProtocolVersion
+========
+
+this ethereum rpc for getProtocolVersion.
+
+Api for this rpc::
+
+    http://integrationhub.okwave.asia/api/v2/btcmainnet/getProtocolVersion
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    {
+
+    }
+
+Example
+--------
+example::
+    
+    var request = require('request');
+    var options = {
+    'method': 'POST',
+    'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getProtocolVersion',
+    'headers': {
+        'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Returns the current block number::
+
+    {
+    "status": 200,
+    "values": "0x40"
+    }
+
+isSyncing
+========
+
+this ethereum rpc for isSyncing.
+
+Api for this rpc::
+
+    http://integrationhub.okwave.asia/api/v2/btcmainnet/isSyncing
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+Need parameters::
+
+    {
+
+    }
+
+Example
+--------
+example::
+    
+    var request = require('request');
+    var options = {
+    'method': 'POST',
+    'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/isSyncing',
+    'headers': {
+        'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Returns the current block number::
+
+    {
+    "status": 200,
+    "values": false
+    }
+
+getPastLogs
+========
+
+this ethereum rpc for getPastLogs.
+
+Api for this rpc::
+
+    http://integrationhub.okwave.asia/api/v2/btcmainnet/getPastLogs
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    {
+
+    }
+
+Example
+--------
+example::
+    
+    var request = require('request');
+    var options = {
+    'method': 'POST',
+    'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getPastLogs',
+    'headers': {
+        'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Returns the current block number::
+
+    {
+    "status": 200,
+    "values": 
+    }
+
+getPeerCount
+========
+
+this ethereum rpc for getPeerCount.
+
+Api for this rpc::
+
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.*.net/getPeerCount
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+Need parameters::
+
+    {
+
+    }
+
+Example
+--------
+example::
+    
+    var request = require('request');
+    var options = {
+    'method': 'POST',
+    'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.*.net/getPeerCount',
+    'headers': {
+        'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Returns the current block number::
+
+    {
+    "status": 200,
+    "values": 14
+    }
+
+getId
+========
+
+this ethereum rpc for getId.
+
+Api for this rpc::
+
+    http://integrationhub.okwave.asia/api/v2/btcmainnet/getId
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+Need parameters::
+
+    {
+
+    }
+
+Example
+--------
+example::
+    
+    var request = require('request');
+    var options = {
+    'method': 'POST',
+    'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.*.net/getId',
+    'headers': {
+        'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Returns the current block number::
+
+    {
+    "status": 200,
+    "values": 1
+    }
+
+isListening
+========
+
+this ethereum rpc for isListening.
+
+Api for this rpc::
+
+    http://integrationhub.okwave.asia/api/v2/btcmainnet/isListening
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+Need parameters::
+
+    {
+
+    }
+
+Example
+--------
+example::
+    
+    var request = require('request');
+    var options = {
+    'method': 'POST',
+    'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.*.net/isListening',
+    'headers': {
+        'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+
+Response
+--------
+Returns the current block number::
+
+    {
+    "status": 200,
+    "values": true
+    }
