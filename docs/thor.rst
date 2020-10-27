@@ -682,3 +682,546 @@ Returns the status::
     "status": 200,
     "values": null
     }
+
+getId
+========
+
+project will solve your problem of where to start with documentation,
+by providing a basic explanation of how to do it easily.
+
+Api for this rpc::
+
+    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.*.net/getId
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    {
+        
+    }
+
+Example
+--------
+example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.*.net/getId',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzNzYyNjY5LCJleHAiOjE2MDQzNjc0Njl9.L9MEaOdEgKPk-eVHdldaMw5I_XmKgUJwHg3aV4HVvsU',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Returns the status::
+
+    {
+    "status": 200,
+    "values": 5234
+    }
+
+isListening
+========
+
+project will solve your problem of where to start with documentation,
+by providing a basic explanation of how to do it easily.
+
+Api for this rpc::
+
+    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.*.net/isListening
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    {
+
+    }
+
+Example
+--------
+example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.*.net/isListening',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzNzYyNjY5LCJleHAiOjE2MDQzNjc0Njl9.L9MEaOdEgKPk-eVHdldaMw5I_XmKgUJwHg3aV4HVvsU',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Returns the status::
+
+    {
+    "status": 200,
+    "values": true
+    }
+
+getProtocolVersion
+========
+
+project will solve your problem of where to start with documentation,
+by providing a basic explanation of how to do it easily.
+
+Api for this rpc::
+
+    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getProtocolVersion
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    {
+
+    }
+
+Example
+--------
+example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getProtocolVersion',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzNzYyNjY5LCJleHAiOjE2MDQzNjc0Njl9.L9MEaOdEgKPk-eVHdldaMw5I_XmKgUJwHg3aV4HVvsU',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Returns the status::
+
+    {
+    "status": 200,
+    "values": "0x3f"
+    }
+
+isSyncing
+========
+
+project will solve your problem of where to start with documentation,
+by providing a basic explanation of how to do it easily.
+
+Api for this rpc::
+
+    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/isSyncing
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    {
+
+    }
+
+Example
+--------
+example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/isSyncing',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzNzYyNjY5LCJleHAiOjE2MDQzNjc0Njl9.L9MEaOdEgKPk-eVHdldaMw5I_XmKgUJwHg3aV4HVvsU',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Returns the status::
+
+    {
+    "status": 200,
+    "values": false
+    }
+
+isMining
+========
+
+project will solve your problem of where to start with documentation,
+by providing a basic explanation of how to do it easily.
+
+Api for this rpc::
+
+    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/isMining
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    {
+
+    }
+
+Example
+--------
+example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/isMining',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzNzYyNjY5LCJleHAiOjE2MDQzNjc0Njl9.L9MEaOdEgKPk-eVHdldaMw5I_XmKgUJwHg3aV4HVvsU',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Returns the status::
+
+    {
+    "status": 200,
+    "values": false
+    }
+
+getStorageAt
+========
+
+project will solve your problem of where to start with documentation,
+by providing a basic explanation of how to do it easily.
+
+Api for this rpc::
+
+    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getStorageAt
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    {
+
+    }
+
+Example
+--------
+example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getStorageAt',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzNzYyNjY5LCJleHAiOjE2MDQzNjc0Njl9.L9MEaOdEgKPk-eVHdldaMw5I_XmKgUJwHg3aV4HVvsU',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Returns the status::
+
+    {
+    "status": 200,
+    "values": 0
+    }
+
+getPastLogs
+========
+
+project will solve your problem of where to start with documentation,
+by providing a basic explanation of how to do it easily.
+
+Api for this rpc::
+
+    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getPastLogs
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    address
+                    {
+                    "address": "0xceb21b8ce14e287a106bd01f5c92dac970c1efd3"
+                    }
+
+Example
+--------
+example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getPastLogs',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzNzYyNjY5LCJleHAiOjE2MDQzNjc0Njl9.L9MEaOdEgKPk-eVHdldaMw5I_XmKgUJwHg3aV4HVvsU',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({"address":"0xceb21b8ce14e287a106bd01f5c92dac970c1efd3"})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Returns the status::
+
+    {
+    "status": 200,
+    "values": 
+    }
+
+getChainId
+========
+
+project will solve your problem of where to start with documentation,
+by providing a basic explanation of how to do it easily.
+
+Api for this rpc::
+
+    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getChainId
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    {
+
+    }
+
+Example
+--------
+example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getChainId',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzNzYyNjY5LCJleHAiOjE2MDQzNjc0Njl9.L9MEaOdEgKPk-eVHdldaMw5I_XmKgUJwHg3aV4HVvsU',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Returns the status::
+
+    {
+    "status": 200,
+    "values": 5234
+    }
+
+getNodeInfo
+========
+
+project will solve your problem of where to start with documentation,
+by providing a basic explanation of how to do it easily.
+
+Api for this rpc::
+
+    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getNodeInfo
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    {
+
+    }
+
+Example
+--------
+example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getNodeInfo',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzNzYyNjY5LCJleHAiOjE2MDQzNjc0Njl9.L9MEaOdEgKPk-eVHdldaMw5I_XmKgUJwHg3aV4HVvsU',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Returns the status::
+
+    {
+    "status": 200,
+    "values": "Geth/v1.9.6-stable-057d336e/linux-amd64/go1.10.4"
+    }
+
+getAccounts
+========
+
+project will solve your problem of where to start with documentation,
+by providing a basic explanation of how to do it easily.
+
+Api for this rpc::
+
+    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getAccounts
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    {
+
+    }
+
+Example
+--------
+example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getAccounts',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzNzYyNjY5LCJleHAiOjE2MDQzNjc0Njl9.L9MEaOdEgKPk-eVHdldaMw5I_XmKgUJwHg3aV4HVvsU',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Returns the status::
+
+    {
+    "status": 200,
+    "values": [
+        "0x8062ec81cedD539A7Ba0Ba87B9a2D1aF14AA2D46"
+        ]
+    }
