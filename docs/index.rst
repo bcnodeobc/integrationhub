@@ -21,6 +21,7 @@ USER DOCUMENTATION:
 ==================
 
 this documentation is for user testing
+We have a mailing list located at: project@google-groups.com
 
 fandf::
    what is this
