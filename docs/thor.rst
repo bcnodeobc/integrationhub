@@ -1225,3 +1225,388 @@ Returns the status::
         "0x8062ec81cedD539A7Ba0Ba87B9a2D1aF14AA2D46"
         ]
     }
+
+sendTransaction
+========
+
+project will solve your problem of where to start with documentation,
+by providing a basic explanation of how to do it easily.
+
+Api for this rpc::
+
+    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/sendTransaction
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    {
+
+    }
+
+Example
+--------
+example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/sendTransaction',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzNzYyNjY5LCJleHAiOjE2MDQzNjc0Njl9.L9MEaOdEgKPk-eVHdldaMw5I_XmKgUJwHg3aV4HVvsU',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Returns the status::
+
+    {
+    "status": 200,
+    "values": ""
+    }
+
+sendSignedTransaction
+========
+
+project will solve your problem of where to start with documentation,
+by providing a basic explanation of how to do it easily.
+
+Api for this rpc::
+
+    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/sendSignedTransaction
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    serialized transaction      
+                                    {
+                                    "serializedTx":"0xf86c04853e660b780082520894b43f7f7af34c4b214456bd98d468d533865fbb458806f05b59d3b20000801ca00de040fe31ea5a8a275fc704e7fc8f7cdbaa6a44a770027c421773bfa7fd6099a07b0452c6a223b50fe8c4a1280f7782470b1ea277eda4ab18ac2ce20e9f08f342"
+                                    }
+
+Example
+--------
+example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/sendSignedTransaction',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzNzYyNjY5LCJleHAiOjE2MDQzNjc0Njl9.L9MEaOdEgKPk-eVHdldaMw5I_XmKgUJwHg3aV4HVvsU',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({"serializedTx":"0xf86c04853e660b780082520894b43f7f7af34c4b214456bd98d468d533865fbb458806f05b59d3b20000801ca00de040fe31ea5a8a275fc704e7fc8f7cdbaa6a44a770027c421773bfa7fd6099a07b0452c6a223b50fe8c4a1280f7782470b1ea277eda4ab18ac2ce20e9f08f342"})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Returns the status::
+
+    {
+    "status": 200,
+    "values": ""
+    }
+
+getBlockTransactionCount
+========
+
+project will solve your problem of where to start with documentation,
+by providing a basic explanation of how to do it easily.
+
+Api for this rpc::
+
+    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getBlockTransactionCount
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    block Number
+                        {
+                        "blockNumber":"latest"
+                        }
+
+Example
+--------
+example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getBlockTransactionCount',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzNzYyNjY5LCJleHAiOjE2MDQzNjc0Njl9.L9MEaOdEgKPk-eVHdldaMw5I_XmKgUJwHg3aV4HVvsU',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({"blockNumber":"latest"})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Returns the status::
+
+    {
+    "status": 200,
+    "values": 0
+    }
+
+getTransaction
+========
+
+project will solve your problem of where to start with documentation,
+by providing a basic explanation of how to do it easily.
+
+Api for this rpc::
+
+    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getTransaction
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    transaction hash
+                            {
+                            "transactionHash":"0xc919e0b9dec70ae9fac16af491928806210581a82eca8e25e490ebacee324b68"
+                            }
+
+Example
+--------
+example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getTransaction',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzNzYyNjY5LCJleHAiOjE2MDQzNjc0Njl9.L9MEaOdEgKPk-eVHdldaMw5I_XmKgUJwHg3aV4HVvsU',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({"transactionHash":"0xc919e0b9dec70ae9fac16af491928806210581a82eca8e25e490ebacee324b68"})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Returns the status::
+
+    {
+    "status": 200,
+    "values": null
+    }
+
+getTransactionFromBlock
+========
+
+project will solve your problem of where to start with documentation,
+by providing a basic explanation of how to do it easily.
+
+Api for this rpc::
+
+    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getTransactionFromBlock
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    hash string
+    index number        {
+                        "hashString": "latest",
+                        "indexNumber": "3"
+                        }
+
+Example
+--------
+example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getTransactionFromBlock',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzNzYyNjY5LCJleHAiOjE2MDQzNjc0Njl9.L9MEaOdEgKPk-eVHdldaMw5I_XmKgUJwHg3aV4HVvsU',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({"hashString":"latest","indexNumber":"3"})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Returns the status::
+
+    {
+    "status": 200,
+    "values": null
+    }
+
+getTransactionReceipt
+========
+
+project will solve your problem of where to start with documentation,
+by providing a basic explanation of how to do it easily.
+
+Api for this rpc::
+
+    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getTransactionReceipt
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    hash
+                {
+                "hash": "0xc919e0b9dec70ae9fac16af491928806210581a82eca8e25e490ebacee324b68"
+                }
+
+Example
+--------
+example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getTransactionReceipt',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzNzYyNjY5LCJleHAiOjE2MDQzNjc0Njl9.L9MEaOdEgKPk-eVHdldaMw5I_XmKgUJwHg3aV4HVvsU',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({"hash":"0xc919e0b9dec70ae9fac16af491928806210581a82eca8e25e490ebacee324b68"})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Returns the status::
+
+    {
+    "status": 200,
+    "values": null
+    }
+
+getTransactionCount
+========
+
+project will solve your problem of where to start with documentation,
+by providing a basic explanation of how to do it easily.
+
+Api for this rpc::
+
+    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getTransactionCount
+
+Headers
+--------
+Need to set headers::
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+    address
+                    {
+                    "address": "0xceb21b8ce14e287a106bd01f5c92dac970c1efd3"
+                    }
+
+Example
+--------
+example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getTransactionCount',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzNzYyNjY5LCJleHAiOjE2MDQzNjc0Njl9.L9MEaOdEgKPk-eVHdldaMw5I_XmKgUJwHg3aV4HVvsU',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({"address":"0xceb21b8ce14e287a106bd01f5c92dac970c1efd3"})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Returns the status::
+
+    {
+    "status": 200,
+    "values": 0
+    }
