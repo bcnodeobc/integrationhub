@@ -8,7 +8,7 @@ User can test the rpc by using Postman nodejs - request.
 
 
 getPeerCount
-========
+============
 
 project will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
@@ -26,7 +26,7 @@ Need to set headers::
     Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
 
 Parameters
---------
+----------
 No need parameters::
 
     {
@@ -62,7 +62,7 @@ Returns the status::
     }
 
 transactionBlockTimeout
-========
+=======================
 
 project will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
@@ -72,7 +72,7 @@ Api for this rpc::
     http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.*.net/transactionBlockTimeout
 
 Headers
---------
+-------
 Need to set headers::
 
     Content-Type    application/json
@@ -116,7 +116,7 @@ Returns the status::
     }
 
 transactionPollingTimeout
-========
+=========================
 
 project will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
@@ -170,7 +170,7 @@ Returns the status::
     }
 
 getGasPrice
-========
+===========
 
 project will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
@@ -224,7 +224,7 @@ Returns the status::
     }
 
 getHashrate
-========
+===========
 
 project will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
@@ -278,7 +278,7 @@ Returns the status::
     }
 
 getBlockNumber
-========
+==============
 
 project will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
@@ -332,7 +332,7 @@ Returns the status::
     }
 
 getBalance
-========
+==========
 
 project will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
@@ -518,7 +518,7 @@ Returns the status::
     }
 
 getBlockTransactionCount
-========
+========================
 
 project will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
@@ -573,7 +573,7 @@ Returns the status::
     }
 
 getBlockUncleCount
-========
+==================
 
 project will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
@@ -738,7 +738,7 @@ Returns the status::
     }
 
 isListening
-========
+===========
 
 project will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
@@ -792,7 +792,7 @@ Returns the status::
     }
 
 getProtocolVersion
-========
+==================
 
 project will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
@@ -954,7 +954,7 @@ Returns the status::
     }
 
 getStorageAt
-========
+============
 
 project will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
@@ -1008,7 +1008,7 @@ Returns the status::
     }
 
 getPastLogs
-========
+===========
 
 project will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
@@ -1063,7 +1063,7 @@ Returns the status::
     }
 
 getChainId
-========
+==========
 
 project will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
@@ -1117,7 +1117,7 @@ Returns the status::
     }
 
 getNodeInfo
-========
+===========
 
 project will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
@@ -1171,7 +1171,7 @@ Returns the status::
     }
 
 getAccounts
-========
+===========
 
 project will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
@@ -1227,7 +1227,7 @@ Returns the status::
     }
 
 sendTransaction
-========
+===============
 
 project will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
@@ -1281,7 +1281,7 @@ Returns the status::
     }
 
 sendSignedTransaction
-========
+=====================
 
 project will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
@@ -1336,7 +1336,7 @@ Returns the status::
     }
 
 getBlockTransactionCount
-========
+========================
 
 project will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
@@ -1391,7 +1391,7 @@ Returns the status::
     }
 
 getTransaction
-========
+==============
 
 project will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
@@ -1446,7 +1446,7 @@ Returns the status::
     }
 
 getTransactionFromBlock
-========
+=======================
 
 project will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
@@ -1502,7 +1502,7 @@ Returns the status::
     }
 
 getTransactionReceipt
-========
+=====================
 
 project will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
@@ -1557,7 +1557,7 @@ Returns the status::
     }
 
 getTransactionCount
-========
+===================
 
 project will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
@@ -1667,7 +1667,7 @@ Returns the status::
     }
 
 deploySCHex
-========
+===========
 
 project will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.

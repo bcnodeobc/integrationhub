@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 Welcome to Read the Docs Intergration Hub's documentation!
-==================================================
+==========================================================
 
 web3.js is a collection of libraries that allow you to interact with a local or remote ethereum node using HTTP, IPC or WebSocket.
 
@@ -18,7 +18,7 @@ Contents:
 
 
 USER DOCUMENTATION:
-==================
+===================
 
 this documentation is for user testing
 We have a mailing list located at: project@google-groups.com

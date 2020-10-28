@@ -10,7 +10,7 @@ User can test the rpc by using Postman nodejs - request.
 - Make things faster
 
 transactionBlockTimeout
-========
+=======================
 
 project will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
@@ -62,7 +62,7 @@ Returns the current block timeout::
     }
 
 transactionPollingTimeout
-========
+=========================
 
 ethereum rpc transactionPollingTimeout.
 
@@ -113,7 +113,7 @@ Returns the transaction Polling Timeout::
     }
 
 getHashrate
-========
+===========
 
 project will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
@@ -165,7 +165,7 @@ Returns the current block timeout::
     }
 
 getGasPrice
-========
+===========
 
 project will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
@@ -217,7 +217,7 @@ Returns the current block timeout::
     }
 
 getBlockNumber
-========
+==============
 
 project will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
@@ -269,7 +269,7 @@ Returns the current block timeout::
     }
 
 getStorageAt
-========
+============
 
 project will solve your problem of where to start with documentation,
 by providing a basic explanation of how to do it easily.
@@ -455,7 +455,7 @@ Returns the code::
 }
 
 getBlockTransactionCount
-========
+========================
 
 this ethereum rpc for getBlockTransactionCount.
 
@@ -509,7 +509,7 @@ Returns the current block number::
     }
 
 getBlockUncleCount
-========
+==================
 
 this ethereum rpc for getBlockUncleCount.
 
@@ -618,7 +618,7 @@ Returns the current block number::
     }
 
 getTransaction
-========
+==============
 
 this ethereum rpc for getTransaction.
 
@@ -672,7 +672,7 @@ Returns the current block number::
     }
 
 getTransactionFromBlock
-========
+=======================
 
 this ethereum rpc for getTransactionFromBlock.
 
@@ -727,7 +727,7 @@ Returns the current block number::
     }
 
 getTransactionReceipt
-========
+=====================
 
 this ethereum rpc for getTransactionReceipt.
 
@@ -781,7 +781,7 @@ Returns the current block number::
     }
 
 getTransactionCount
-========
+===================
 
 this ethereum rpc for getTransactionCount.
 
@@ -835,7 +835,7 @@ Returns the current block number::
     }
 
 sendSignedTransaction
-========
+=====================
 
 this ethereum rpc for sendSignedTransaction.
 
@@ -889,7 +889,7 @@ Returns the current block number::
     }
 
 getNodeInfo
-========
+===========
 
 this ethereum rpc for getNodeInfo.
 
@@ -942,7 +942,7 @@ Returns the current block number::
     }
 
 getProtocolVersion
-========
+==================
 
 this ethereum rpc for getProtocolVersion.
 
@@ -995,7 +995,7 @@ Returns the current block number::
     }
 
 isSyncing
-========
+=========
 
 this ethereum rpc for isSyncing.
 
@@ -1048,7 +1048,7 @@ Returns the current block number::
     }
 
 getPastLogs
-========
+===========
 
 this ethereum rpc for getPastLogs.
 
@@ -1101,7 +1101,7 @@ Returns the current block number::
     }
 
 getPeerCount
-========
+============
 
 this ethereum rpc for getPeerCount.
 
@@ -1207,7 +1207,7 @@ Returns the current block number::
     }
 
 isListening
-========
+===========
 
 this ethereum rpc for isListening.
 
