@@ -2,22 +2,18 @@
 ETHEREUM
 ========
 
-This project using javascript to testing the rpc.
+All RPC included are based on web3. 
 
-User can test the rpc by using Postman nodejs - request.
-
-- Be awesome
-- Make things faster
+.. note::  Make sure to registerToken first before requesting rpc and replace the token in Authoraization headers.
 
 transactionBlockTimeout
 =======================
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+The amount of new blocks it should wait until the first confirmation happens.
 
-Returns the current block number::
+Example::
 
-    http://integrationhub.okwave.asia/api/v2/ethmainnet/web3.eth/transactionBlockTimeout
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/transactionBlockTimeout
 
 Headers
 --------
@@ -31,11 +27,13 @@ Parameters
 --------
 No need parameters::
 
-    ethereum address for account 
+    {
+        
+    }
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -54,7 +52,7 @@ example::
 
 Response
 --------
-Returns the current block timeout::
+Results::
 
     {
     "status": 200,
@@ -64,11 +62,11 @@ Returns the current block timeout::
 transactionPollingTimeout
 =========================
 
-ethereum rpc transactionPollingTimeout.
+This rpc is used over HTTP connections. It defines the number of seconds Web3 will wait for a receipt which confirms that a transaction was mined by the network.
 
-Returns the best block hash::
+Example::
 
-    http://integrationhub.okwave.asia/api/v2/ethmainnet/web3.eth/transactionPollingTimeout
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/transactionPollingTimeout
 
 Headers
 --------
@@ -82,11 +80,13 @@ Parameters
 --------
 No need parameters::
 
-    ethereum address for account 
+    {
+        
+    } 
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -105,7 +105,7 @@ example::
 
 Response
 --------
-Returns the transaction Polling Timeout::
+Results::
 
     {
     "status": 200,
@@ -115,12 +115,11 @@ Returns the transaction Polling Timeout::
 getHashrate
 ===========
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+The number of hashes per second that the node is mining with.
 
-Returns the current block number::
+Example::
 
-    http://integrationhub.okwave.asia/api/v2/ethmainnet/web3.eth/getHashrate
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getHashrate
 
 Headers
 --------
@@ -134,11 +133,13 @@ Parameters
 --------
 No need parameters::
 
-    ethereum address for account 
+    {
+        
+    } 
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -157,7 +158,7 @@ example::
 
 Response
 --------
-Returns the current block timeout::
+Results::
 
     {
     "status": 200,
@@ -167,12 +168,11 @@ Returns the current block timeout::
 getGasPrice
 ===========
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+The current gas price oracle. The gas price is determined by the last few blocks median gas price.
 
-Returns the current block number::
+Example::
 
-    http://integrationhub.okwave.asia/api/v2/ethmainnet/web3.eth/getGasPrice
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getGasPrice
 
 Headers
 --------
@@ -186,11 +186,13 @@ Parameters
 --------
 No need parameters::
 
-    ethereum address for account 
+    {
+        
+    } 
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -209,7 +211,7 @@ example::
 
 Response
 --------
-Returns the current block timeout::
+Results::
 
     {
     "status": 200,
@@ -219,12 +221,11 @@ Returns the current block timeout::
 getBlockNumber
 ==============
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+The number of the most recent block.
 
-Returns the current block number::
+Example::
 
-    http://integrationhub.okwave.asia/api/v2/ethmainnet/web3.eth/getBlockNumber
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getBlockNumber
 
 Headers
 --------
@@ -238,11 +239,13 @@ Parameters
 --------
 No need parameters::
 
-    ethereum address for account 
+    {
+        
+    }
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -261,7 +264,7 @@ example::
 
 Response
 --------
-Returns the current block timeout::
+Results::
 
     {
     "status": 200,
@@ -271,12 +274,11 @@ Returns the current block timeout::
 getStorageAt
 ============
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+Get the storage at a specific position of an address.
 
-Returns the current block number::
+Example::
 
-    http://integrationhub.okwave.asia/api/v2/ethmainnet/web3.eth/getStorageAt
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getStorageAt
 
 Headers
 --------
@@ -288,23 +290,27 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Need parameters::
 
-    ethereum address for account 
+    address         The address to get storage and the index position of the storage
+    position        {
+                    "address": "0x407d73d8a49eeb85d32cf465507dd71d507100c1",
+                    "position": 0
+                    } 
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
         'method': 'POST',
         'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getStorageAt',
         'headers': {
-            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA0ODkyMjE5LCJleHAiOjE2MDU0OTcwMTl9.fcLs3o7UlljwCh6NnHI-7mW3gVdGPR2X2WACW3iUxKo',
             'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+        },
+    body: JSON.stringify({"address":"0x407d73d8a49eeb85d32cf465507dd71d507100c1","position":0})
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -313,22 +319,21 @@ example::
 
 Response
 --------
-Returns the current block timeout::
+Results::
 
     {
-    "status": ,
-    "values": ""
+    "status": 200,
+    "values": "0x0000000000000000000000000000000000000000000000000000000000000000"
     }
 
 getCode
 ========
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+Get the code at a specific address.
 
-Returns the ::
+Example::
 
-    http://integrationhub.okwave.asia/api/v2/ethmainnet/web3.eth/getCode
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getCode
 
 Headers
 --------
@@ -340,33 +345,35 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Need parameters::
 
-    ethereum address for account 
+    address     The address to get the code from
+                {
+                "address": "0x407d73d8a49eeb85d32cf465507dd71d507100c1"
+                }
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
         'method': 'POST',
         'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getCode',
         'headers': {
-            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA0ODkyMjE5LCJleHAiOjE2MDU0OTcwMTl9.fcLs3o7UlljwCh6NnHI-7mW3gVdGPR2X2WACW3iUxKo',
             'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+        },
+    body: JSON.stringify({"address":"0x407d73d8a49eeb85d32cf465507dd71d507100c1"})
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
         console.log(response.body);
     });
 
-
 Response
 --------
-Returns the code::
+Results::
 
     {
     "status": 200,
@@ -376,12 +383,11 @@ Returns the code::
 getBlock
 ========
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+The block matching the block number or block hash.
 
-Returns the ::
+Example::
 
-    http://integrationhub.okwave.asia/api/v2/ethmainnet/web3.eth/getBlock
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getBlock
 
 Headers
 --------
@@ -393,17 +399,16 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Need parameters::
 
-    blockNumber     address for account
+    blockNumber     The block number or block hash
                     {
                     "blockNumber":"latest" 
                     }
-                        
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -422,7 +427,7 @@ example::
 
 Response
 --------
-Returns the code::
+Results::
 
     {
     "status": 200,
@@ -457,11 +462,11 @@ Returns the code::
 getBlockTransactionCount
 ========================
 
-this ethereum rpc for getBlockTransactionCount.
+The number of transaction in a given block.
 
-Api for this rpc::
+Example::
 
-    http://integrationhub.okwave.asia/api/v2/btcmainnet/getBlockTransactionCount
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getBlockTransactionCount
 
 Headers
 --------
@@ -475,14 +480,14 @@ Parameters
 --------
 Need parameters::
 
-    blockNumber     get the latest block
+    blockNumber     Get the latest block
                     {
                     "blockNumber":"latest"
                     }
 
 Example
 --------
-example::
+Example::
     
     var request = require('request');
     var options = {
@@ -501,7 +506,7 @@ example::
 
 Response
 --------
-Returns the current block number::
+Results::
 
     {
     "status": 200,
@@ -511,11 +516,11 @@ Returns the current block number::
 getBlockUncleCount
 ==================
 
-this ethereum rpc for getBlockUncleCount.
+The number of uncles in a block from a block matching the given block hash.
 
-Api for this rpc::
+Example::
 
-    http://integrationhub.okwave.asia/api/v2/btcmainnet/getBlockUncleCount
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getBlockUncleCount
 
 Headers
 --------
@@ -529,14 +534,14 @@ Parameters
 --------
 Need parameters::
 
-    blockNumber     get the latest block
+    blockNumber     The block number or hash
                     {
                     "blockNumber":"latest"
                     }
 
 Example
 --------
-example::
+Example::
     
     var request = require('request');
     var options = {
@@ -555,21 +560,21 @@ example::
 
 Response
 --------
-Returns the current block number::
+Results::
 
     {
     "status": 200,
-    "values": 0
+    "values": 1
     }
 
 getUncle
 ========
 
-this ethereum rpc for getUncle.
+The blocks uncle by a given uncle index position.
 
-Api for this rpc::
+Example::
 
-    http://integrationhub.okwave.asia/api/v2/btcmainnet/getUncle
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getUncle
 
 Headers
 --------
@@ -583,7 +588,7 @@ Parameters
 --------
 Need parameters::
 
-    blockNumber     get the latest block
+    blockNumber     The block number or hash and the index position of the uncle
     uncleIndex      {
                     "blockNumber": "latest",
                     "uncleIndex": "0"
@@ -591,7 +596,7 @@ Need parameters::
 
 Example
 --------
-example::
+Example::
     
     var request = require('request');
     var options = {
@@ -610,7 +615,7 @@ example::
 
 Response
 --------
-Returns the current block number::
+Results::
 
     {
     "status": 200,
@@ -620,11 +625,11 @@ Returns the current block number::
 getTransaction
 ==============
 
-this ethereum rpc for getTransaction.
+The transaction matching that given transaction hash.
 
-Api for this rpc::
+Example::
 
-    http://integrationhub.okwave.asia/api/v2/btcmainnet/getTransaction
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getTransaction
 
 Headers
 --------
@@ -638,14 +643,14 @@ Parameters
 --------
 Need parameters::
 
-    transactionHash     get the latest block
+    transactionHash     The transaction hash.
                         {
                         "transactionHash": "0xc919e0b9dec70ae9fac16af491928806210581a82eca8e25e490ebacee324b68"
                         }
 
 Example
 --------
-example::
+Example::
     
     var request = require('request');
     var options = {
@@ -664,7 +669,7 @@ example::
 
 Response
 --------
-Returns the current block number::
+Results::
 
     {
     "status": 200,
@@ -674,11 +679,11 @@ Returns the current block number::
 getTransactionFromBlock
 =======================
 
-this ethereum rpc for getTransactionFromBlock.
+The transaction based on a block hash or number and the transaction’s index position.
 
-Api for this rpc::
+Example::
 
-    http://integrationhub.okwave.asia/api/v2/btcmainnet/getTransactionFromBlock
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getTransactionFromBlock
 
 Headers
 --------
@@ -692,7 +697,7 @@ Parameters
 --------
 Need parameters::
 
-    hashString      get the latest block
+    hashString      A block number or hash and the transaction’s index position
     indexNumber     {
                     "hashString": "latest",
                     "indexNumber": "3"
@@ -700,7 +705,7 @@ Need parameters::
 
 Example
 --------
-example::
+Example::
     
     var request = require('request');
     var options = {
@@ -719,7 +724,7 @@ example::
 
 Response
 --------
-Returns the current block number::
+Results::
 
     {
     "status": 200,
@@ -729,11 +734,11 @@ Returns the current block number::
 getTransactionReceipt
 =====================
 
-this ethereum rpc for getTransactionReceipt.
+The receipt of a transaction by transaction hash.
 
-Api for this rpc::
+Example::
 
-    http://integrationhub.okwave.asia/api/v2/btcmainnet/getTransactionReceipt
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getTransactionReceipt
 
 Headers
 --------
@@ -747,14 +752,14 @@ Parameters
 --------
 Need parameters::
 
-    hash    get the latest block
+    hash    The transaction hash.
             {
             "hash": "0xc919e0b9dec70ae9fac16af491928806210581a82eca8e25e490ebacee324b68"
             }
 
 Example
 --------
-example::
+Example::
     
     var request = require('request');
     var options = {
@@ -773,7 +778,7 @@ example::
 
 Response
 --------
-Returns the current block number::
+Results::
 
     {
     "status": 200,
@@ -783,11 +788,11 @@ Returns the current block number::
 getTransactionCount
 ===================
 
-this ethereum rpc for getTransactionCount.
+The number of transactions sent from this address.
 
-Api for this rpc::
+Example::
 
-    http://integrationhub.okwave.asia/api/v2/btcmainnet/getTransactionCount
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getTransactionCount
 
 Headers
 --------
@@ -801,14 +806,14 @@ Parameters
 --------
 Need parameters::
 
-    address     get the latest block
+    address     The address to get the numbers of transactions from
                 {
                 "address": "0xceb21b8ce14e287a106bd01f5c92dac970c1efd3"
                 }
 
 Example
 --------
-example::
+Example::
     
     var request = require('request');
     var options = {
@@ -827,7 +832,7 @@ example::
 
 Response
 --------
-Returns the current block number::
+Results::
 
     {
     "status": 200,
@@ -837,11 +842,11 @@ Returns the current block number::
 sendSignedTransaction
 =====================
 
-this ethereum rpc for sendSignedTransaction.
+Sends an already signed transaction.
 
-Api for this rpc::
+Example::
 
-    http://integrationhub.okwave.asia/api/v2/btcmainnet/sendSignedTransaction
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/sendSignedTransaction
 
 Headers
 --------
@@ -855,14 +860,14 @@ Parameters
 --------
 Need parameters::
 
-    serial tx    get the latest block
+    serial tx    Signed transaction data in HEX format
                 {
                 "serializedTx": "0xf86c04853e660b780082520894b43f7f7af34c4b214456bd98d468d533865fbb458806f05b59d3b20000801ca00de040fe31ea5a8a275fc704e7fc8f7cdbaa6a44a770027c421773bfa7fd6099a07b0452c6a223b50fe8c4a1280f7782470b1ea277eda4ab18ac2ce20e9f08f342"
                 }
 
 Example
 --------
-example::
+Example::
     
     var request = require('request');
     var options = {
@@ -881,7 +886,7 @@ example::
 
 Response
 --------
-Returns the current block number::
+Results::
 
     {
     "status": 200,
@@ -891,11 +896,11 @@ Returns the current block number::
 getNodeInfo
 ===========
 
-this ethereum rpc for getNodeInfo.
+The current client version.
 
-Api for this rpc::
+Example::
 
-    http://integrationhub.okwave.asia/api/v2/btcmainnet/getNodeInfo
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getNodeInfo
 
 Headers
 --------
@@ -915,7 +920,7 @@ No need parameters::
 
 Example
 --------
-example::
+Example::
     
     var request = require('request');
     var options = {
@@ -934,7 +939,7 @@ example::
 
 Response
 --------
-Returns the current block number::
+Results::
 
     {
     "status": 200,
@@ -944,11 +949,11 @@ Returns the current block number::
 getProtocolVersion
 ==================
 
-this ethereum rpc for getProtocolVersion.
+The ethereum protocol version of the node.
 
-Api for this rpc::
+Example::
 
-    http://integrationhub.okwave.asia/api/v2/btcmainnet/getProtocolVersion
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getProtocolVersion
 
 Headers
 --------
@@ -968,7 +973,7 @@ No need parameters::
 
 Example
 --------
-example::
+Example::
     
     var request = require('request');
     var options = {
@@ -987,7 +992,7 @@ example::
 
 Response
 --------
-Returns the current block number::
+Results::
 
     {
     "status": 200,
@@ -997,11 +1002,11 @@ Returns the current block number::
 isSyncing
 =========
 
-this ethereum rpc for isSyncing.
+Checks if the node is currently syncing and returns either a syncing object.
 
-Api for this rpc::
+Example::
 
-    http://integrationhub.okwave.asia/api/v2/btcmainnet/isSyncing
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/isSyncing
 
 Headers
 --------
@@ -1021,7 +1026,7 @@ Need parameters::
 
 Example
 --------
-example::
+Example::
     
     var request = require('request');
     var options = {
@@ -1040,7 +1045,7 @@ example::
 
 Response
 --------
-Returns the current block number::
+Results::
 
     {
     "status": 200,
@@ -1050,11 +1055,11 @@ Returns the current block number::
 getPastLogs
 ===========
 
-this ethereum rpc for getPastLogs.
+The past logs, matching the given options.
 
-Api for this rpc::
+Example::
 
-    http://integrationhub.okwave.asia/api/v2/btcmainnet/getPastLogs
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getPastLogs
 
 Headers
 --------
@@ -1066,25 +1071,29 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Need parameters::
 
-    {
-
-    }
+    address         An address or a list of addresses to only get logs from particular account(s) and an array of values which must each appear in the log entries
+    topics          {
+                    "address": "0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe",
+                    "topics": [
+                        "0x033456732123ffff2342342dd12342434324234234fd234fd23fd4f23d4234"
+                        ]
+                    }
 
 Example
 --------
-example::
+Example::
     
     var request = require('request');
     var options = {
-    'method': 'POST',
-    'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getPastLogs',
-    'headers': {
-        'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getPastLogs',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA0ODkyMjE5LCJleHAiOjE2MDU0OTcwMTl9.fcLs3o7UlljwCh6NnHI-7mW3gVdGPR2X2WACW3iUxKo',
+            'Content-Type': 'application/json'
+        },
+    body: JSON.stringify({"address":"0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe","topics":["0x033456732123ffff2342342dd12342434324234234fd234fd23fd4f23d4234"]})
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -1093,19 +1102,53 @@ example::
 
 Response
 --------
-Returns the current block number::
+Results::
 
     {
     "status": 200,
-    "values": 
-    }
+    "values": [
+        {
+            "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+            "topics": [
+                "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+                "0x0000000000000000000000005bcbdfb6cc624b959c39a2d16110d1f2d9204f72",
+                "0x000000000000000000000000c604e69082c6c0a4c705691141ec37f0ef094d27"
+            ],
+            "data": "0x000000000000000000000000000000000000000000000000000000001dcd6500",
+            "blockNumber": 11221072,
+            "transactionHash": "0x6c65db22f3ec848476cfc13bf5af650a4e7fb35c27c8f7e0bbbed19b18d7d30d",
+            "transactionIndex": 12,
+            "blockHash": "0x31348861b687857328d24bafcf6b3a1371d783fe9997c424c6a85415fa970cf2",
+            "logIndex": 0,
+            "removed": false,
+            "id": "log_d41609af"
+        },
+        .....
+        {
+            "address": "0x2F8fF07E607c6E489cdEa3D107AbeCC9b8024531",
+            "topics": [
+                "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+                "0x000000000000000000000000a2b26fdcf2f328d01bf4cc29c7c16b039dc6f772",
+                "0x0000000000000000000000007a250d5630b4cf539739df2c5dacb4c659f2488d"
+            ],
+            "data": "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+            "blockNumber": 11221072,
+            "transactionHash": "0x96237a7bd08d93fc0100a3731381ebd450007215586bb0c6129c504fe5201c84",
+            "transactionIndex": 245,
+            "blockHash": "0x31348861b687857328d24bafcf6b3a1371d783fe9997c424c6a85415fa970cf2",
+            "logIndex": 309,
+            "removed": false,
+            "id": "log_d51187a6"
+        }
+    ]
+}
 
 getPeerCount
 ============
 
-this ethereum rpc for getPeerCount.
+The number of peers connected to.
 
-Api for this rpc::
+Example::
 
     http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.*.net/getPeerCount
 
@@ -1127,7 +1170,7 @@ Need parameters::
 
 Example
 --------
-example::
+Example::
     
     var request = require('request');
     var options = {
@@ -1146,7 +1189,7 @@ example::
 
 Response
 --------
-Returns the current block number::
+Results::
 
     {
     "status": 200,
@@ -1156,11 +1199,11 @@ Returns the current block number::
 getId
 ========
 
-this ethereum rpc for getId.
+The current network ID.
 
-Api for this rpc::
+Example::
 
-    http://integrationhub.okwave.asia/api/v2/btcmainnet/getId
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.*.net/getId
 
 Headers
 --------
@@ -1180,7 +1223,7 @@ Need parameters::
 
 Example
 --------
-example::
+Example::
     
     var request = require('request');
     var options = {
@@ -1199,7 +1242,7 @@ example::
 
 Response
 --------
-Returns the current block number::
+Results::
 
     {
     "status": 200,
@@ -1209,11 +1252,11 @@ Returns the current block number::
 isListening
 ===========
 
-this ethereum rpc for isListening.
+Checks if the node is listening for peers.
 
-Api for this rpc::
+Example::
 
-    http://integrationhub.okwave.asia/api/v2/btcmainnet/isListening
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.*.net/isListening
 
 Headers
 --------
@@ -1233,7 +1276,7 @@ Need parameters::
 
 Example
 --------
-example::
+Example::
     
     var request = require('request');
     var options = {
@@ -1253,7 +1296,7 @@ example::
 
 Response
 --------
-Returns the current block number::
+Results::
 
     {
     "status": 200,
