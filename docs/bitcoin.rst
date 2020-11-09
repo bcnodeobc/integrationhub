@@ -2,20 +2,16 @@
 BITCOIN
 ========
 
-This project using javascript to testing the rpc.
+All RPC included are based on bitcoin-cli. 
 
-User can test the rpc by using Postman nodejs - request.
-
-- Be awesome
-- Make things faster
+.. note::  Make sure to registerToken first before requesting rpc and replace the token in Authoraization headers.
 
 getblockcount
 =============
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+Returns the number of blocks in the longest blockchain
 
-Returns the current block number::
+Example ::
 
     http://integrationhub.okwave.asia/api/v2/btcmainnet/getblockcount
 
@@ -37,7 +33,7 @@ No need parameters::
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -64,16 +60,16 @@ Returns the current block number::
     }
 
 getbestblockhash
-========
+================
 
-bitcoin rpc getbestblockhash.
+Returns the hash of the best (tip) block in the longest blockchain
 
-Returns the best block hash::
+Example ::
 
     http://integrationhub.okwave.asia/api/v2/btcmainnet/getbestblockhash
 
 Headers
---------
+-------
 Need to set headers::
 
     Content-Type    application/json
@@ -81,7 +77,7 @@ Need to set headers::
     Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
 
 Parameters
---------
+----------
 No need parameters::
 
     {
@@ -89,8 +85,8 @@ No need parameters::
     } 
 
 Example
---------
-example::
+-------
+Example::
 
     var request = require('request');
     var options = {
@@ -109,7 +105,7 @@ example::
 
 Response
 --------
-Returns the current block number::
+Results::
 
     {
     "status": 200,
@@ -119,14 +115,14 @@ Returns the current block number::
 getblock
 ========
 
-this bitcoin rpc for getblock.
+Returns a string that is serialized, hex-encoded data for block ‘hash’.
 
-Returns the best block hash::
+Example ::
 
     http://integrationhub.okwave.asia/api/v2/btcmainnet/getblock
 
 Headers
---------
+-------
 Need to set headers::
 
     Content-Type    application/json
@@ -134,7 +130,7 @@ Need to set headers::
     Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
 
 Parameters
---------
+----------
 Need parameters::
 
     blockhash   hash of the block
@@ -143,8 +139,8 @@ Need parameters::
                 }
 
 Example
---------
-example::
+-------
+Example::
     
     var request = require('request');
     var options = {
@@ -163,24 +159,46 @@ example::
 
 Response
 --------
-Returns the current block number::
+Results::
 
     {
-    "success": ,
-    "values": ""
+    "status": 200,
+    "values": {
+        "hash": "00000000c937983704a73af28acdec37b049d214adbda81d7e2a3dd146f6ed09",
+        "confirmations": 654601,
+        "strippedsize": 216,
+        "size": 216,
+        "weight": 864,
+        "height": 1000,
+        "version": 1,
+        "versionHex": "00000001",
+        "merkleroot": "fe28050b93faea61fa88c4c630f0e1f0a1c24d0082dd0e10d369e13212128f33",
+        "tx": [
+            "fe28050b93faea61fa88c4c630f0e1f0a1c24d0082dd0e10d369e13212128f33"
+        ],
+        "time": 1232346882,
+        "mediantime": 1232344831,
+        "nonce": 2595206198,
+        "bits": "1d00ffff",
+        "difficulty": 1,
+        "chainwork": "000000000000000000000000000000000000000000000000000003e903e903e9",
+        "nTx": 1,
+        "previousblockhash": "0000000008e647742775a230787d66fdf92c46a48c896bfbc85cdc8acc67e87d",
+        "nextblockhash": "00000000a2887344f8db859e372e7e4bc26b23b9de340f725afbf2edb265b4c6"
     }
+}
 
 getblockchaininfo
-========
+=================
 
-bitcoin rpc get block chain info.
+Returns an object containing various state info regarding blockchain processing.
 
-Returns the best block hash::
+Example ::
 
     http://integrationhub.okwave.asia/api/v2/btcmainnet/getblockchaininfo
 
 Headers
---------
+-------
 Need to set headers::
 
     Content-Type    application/json
@@ -188,7 +206,7 @@ Need to set headers::
     Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
 
 Parameters
---------
+----------
 No need parameters::
 
     {
@@ -197,7 +215,7 @@ No need parameters::
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -216,7 +234,7 @@ example::
 
 Response
 --------
-Returns the current block number::
+Results::
 
     {
     "status": 200,
@@ -264,11 +282,11 @@ Returns the current block number::
     }
 
 getblockhash
-========
+============
 
-bitcoin rpc for get block hash.
+Returns hash of block in best-block-chain at height provided.
 
-Returns the best block hash::
+Example ::
 
     http://integrationhub.okwave.asia/api/v2/btcmainnet/getblockhash
 
@@ -291,7 +309,7 @@ Need parameters::
 
 Example
 --------
-example::
+Example ::
     
     var request = require('request');
     var options = {
@@ -310,7 +328,7 @@ example::
 
 Response
 --------
-Returns the current block number::
+Results::
 
     {
     "status": 200,
@@ -340,12 +358,12 @@ Need parameters::
 
     blockhash   blockhash of the block
                 {
-                "blockhash": "00000000438e70988896a0e26183820bf06a693b69062532432ea5034e8afd19"
+                "hash": "00000000c937983704a73af28acdec37b049d214adbda81d7e2a3dd146f6ed09"
                 }
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -355,7 +373,7 @@ example::
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
     },
-    body: JSON.stringify({"blockhash":"0000000000000293c83a20b0e537c52fb7903c3b5d6e358400d5574ea0ec33ba"})
+    body: JSON.stringify({"hash":"0000000000000293c83a20b0e537c52fb7903c3b5d6e358400d5574ea0ec33ba"})
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -364,19 +382,39 @@ example::
 
 Response
 --------
-Returns the current block number::
+Results::
 
     {
-    "success": ,
-    "values": ""
+    "status": 200,
+    "values": {
+        "hash": "00000000c937983704a73af28acdec37b049d214adbda81d7e2a3dd146f6ed09",
+        "confirmations": 654601,
+        "height": 1000,
+        "version": 1,
+        "versionHex": "00000001",
+        "merkleroot": "fe28050b93faea61fa88c4c630f0e1f0a1c24d0082dd0e10d369e13212128f33",
+        "time": 1232346882,
+        "mediantime": 1232344831,
+        "nonce": 2595206198,
+        "bits": "1d00ffff",
+        "difficulty": 1,
+        "chainwork": "000000000000000000000000000000000000000000000000000003e903e903e9",
+        "nTx": 1,
+        "previousblockhash": "0000000008e647742775a230787d66fdf92c46a48c896bfbc85cdc8acc67e87d",
+        "nextblockhash": "00000000a2887344f8db859e372e7e4bc26b23b9de340f725afbf2edb265b4c6"
     }
+}
 
 getblockstats
 ========
 
-bitcoin rpc for get blockstats.
+Compute per block statistics for a given window. All amounts are in satoshis.
 
-Returns the best block hash::
+It won’t work for some heights with pruning.
+
+It won’t work without -txindex for utxo_size_inc, *fee or *feerate stats.
+
+Example ::
 
     http://integrationhub.okwave.asia/api/v2/btcmainnet/getblockstats
 
@@ -399,7 +437,7 @@ Need parameters::
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -421,16 +459,52 @@ Response
 Returns the current block number::
 
     {
-    "success": ,
-    "values": ""
+    "status": 200,
+    "values": {
+        "avgfee": 0,
+        "avgfeerate": 0,
+        "avgtxsize": 0,
+        "blockhash": "0000000099c744455f58e6c6e98b671e1bf7f37346bfd4cf5d0274ad8ee660cb",
+        "feerate_percentiles": [
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "height": 10000,
+        "ins": 0,
+        "maxfee": 0,
+        "maxfeerate": 0,
+        "maxtxsize": 0,
+        "medianfee": 0,
+        "mediantime": 1238985062,
+        "mediantxsize": 0,
+        "minfee": 0,
+        "minfeerate": 0,
+        "mintxsize": 0,
+        "outs": 1,
+        "subsidy": 5000000000,
+        "swtotal_size": 0,
+        "swtotal_weight": 0,
+        "swtxs": 0,
+        "time": 1238988213,
+        "total_out": 0,
+        "total_size": 0,
+        "total_weight": 0,
+        "totalfee": 0,
+        "txs": 1,
+        "utxo_increase": 1,
+        "utxo_size_inc": 117
     }
+}
 
 getdifficulty
 ========
 
-bitcoin rpc for getdifficulty .
+Returns the proof-of-work difficulty as a multiple of the minimum difficulty.
 
-Returns the best block hash::
+Example ::
 
     http://integrationhub.okwave.asia/api/v2/btcmainnet/getdifficulty
 
@@ -452,7 +526,7 @@ No need parameters::
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -481,9 +555,9 @@ Returns the current block number::
 getmemoryinfo
 ========
 
-bitcoin rpc for get memory info.
+Returns an object containing information about memory usage.
 
-Returns the best block hash::
+Example::
 
     http://integrationhub.okwave.asia/api/v2/btcmainnet/getmemoryinfo
 
@@ -505,7 +579,7 @@ No need parameters::
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -524,7 +598,7 @@ example::
 
 Response
 --------
-Returns the current block number::
+Results::
 
    {
     "status": 200,
@@ -543,9 +617,9 @@ Returns the current block number::
 getrpcinfo
 ========
 
-bitcoin rpc for getrpcinfo .
+Returns details of the RPC server.
 
-Returns the best block hash::
+Example ::
 
     http://integrationhub.okwave.asia/api/v2/btcmainnet/getrpcinfo
 
@@ -567,7 +641,7 @@ No need parameters::
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -586,7 +660,7 @@ example::
 
 Response
 --------
-Returns the current block number::
+Results::
 
     {
     "status": 200,
@@ -604,9 +678,9 @@ Returns the current block number::
 help
 ========
 
-bitcoin rpc for help .
+List all commands, or get help for a specified command.
 
-Returns the best block hash::
+Example::
 
     http://integrationhub.okwave.asia/api/v2/btcmainnet/help
 
@@ -628,7 +702,7 @@ No need parameters::
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -647,7 +721,7 @@ example::
 
 Response
 --------
-Returns the current block number::
+Results::
 
     {
     "status": 200,
@@ -657,9 +731,9 @@ Returns the current block number::
 uptime
 ========
 
-bitcoin rpc for uptime.
+Returns the total uptime of the server.
 
-Returns the best block hash::
+Example::
 
     http://integrationhub.okwave.asia/api/v2/btcmainnet/uptime
 
@@ -681,7 +755,7 @@ No need parameters::
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -700,7 +774,7 @@ example::
 
 Response
 --------
-Returns the current block number::
+Results::
 
     {
     "status": 200,
@@ -710,9 +784,9 @@ Returns the current block number::
 getconnectioncount
 ========
 
-bitcoin rpc for getconnectioncount.
+Returns the number of connections to other nodes.
 
-Returns the best block hash::
+Example::
 
     http://integrationhub.okwave.asia/api/v2/btcmainnet/getconnectioncount
 
@@ -734,7 +808,7 @@ No need parameters::
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -753,7 +827,7 @@ example::
 
 Response
 --------
-Returns the current block number::
+Results::
 
     {
     "status": 200,
@@ -763,9 +837,9 @@ Returns the current block number::
 getnettotals
 ========
 
-bitcoin rpc for getnettotals.
+Returns information about network traffic, including bytes in, bytes out, and current time.
 
-Returns the best block hash::
+Example::
 
     http://integrationhub.okwave.asia/api/v2/btcmainnet/getnettotals
 
@@ -787,7 +861,7 @@ No need parameters::
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -806,7 +880,7 @@ example::
 
 Response
 --------
-Returns the current block number::
+Results::
 
     {
     "status": 200,
@@ -828,9 +902,9 @@ Returns the current block number::
 getnetworkinfo
 ========
 
-bitcoin rpc for getnetworkinfo.
+Returns an object containing various state info regarding P2P networking.
 
-Returns the best block hash::
+Example::
 
     http://integrationhub.okwave.asia/api/v2/btcmainnet/getnetworkinfo
 
@@ -852,7 +926,7 @@ No need parameters::
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -871,7 +945,7 @@ example::
 
 Response
 --------
-Returns the current block number::
+Results::
 
     {
     "status": 200,
@@ -928,9 +1002,9 @@ Returns the current block number::
 getpeerinfo
 ========
 
-bitcoin rpc for getpeerinfo.
+Returns data about each connected network node as a json array of objects.
 
-Returns the best block hash::
+Example::
 
     http://integrationhub.okwave.asia/api/v2/btcmainnet/getpeerinfo
 
@@ -952,7 +1026,7 @@ No need parameters::
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -971,7 +1045,7 @@ example::
 
 Response
 --------
-Returns the current block number::
+Results::
 
     {
     "status": 200,
@@ -1126,9 +1200,9 @@ Returns the current block number::
 listbanned
 ========
 
-bitcoin rpc for listbanned.
+List all banned IPs/Subnets.
 
-Returns the best block hash::
+Example::
 
     http://integrationhub.okwave.asia/api/v2/btcmainnet/listbanned
 
@@ -1150,7 +1224,7 @@ No need parameters::
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -1169,7 +1243,7 @@ example::
 
 Response
 --------
-Returns the current block number::
+Results::
 
     {
     "status": 200,
@@ -1179,9 +1253,13 @@ Returns the current block number::
 ping
 ========
 
-bitcoin rpc for ping.
+Requests that a ping be sent to all other nodes, to measure ping time.
 
-Returns the best block hash::
+Results provided in getpeerinfo, pingtime and pingwait fields are decimal seconds.
+
+Ping command is handled in queue with all other commands, so it measures processing backlog, not just network ping.
+
+Example::
 
     http://integrationhub.okwave.asia/api/v2/btcmainnet/ping
 
@@ -1203,7 +1281,7 @@ No need parameters::
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -1248,7 +1326,7 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Parameters::
 
     address     address for account
                 {
@@ -1257,8 +1335,7 @@ No need parameters::
 
 Example
 --------
-example::
-
+Example::
     
     var request = require('request');
     var options = {
@@ -1287,9 +1364,9 @@ Returns the current block number::
 getbalancebyaddress
 ========
 
-bitcoin rpc for getbalancebyaddress.
+Returns the total available balance in specific address.
 
-Returns the best block hash::
+Example::
 
     http://integrationhub.okwave.asia/api/v2/btcmainnet/getbalancebyaddress
 
@@ -1307,12 +1384,12 @@ No need parameters::
 
     address     address for account
                 {
-                "address": "n4rZHAPGXCu8bYchjzJhK3V7VVreascJxe"
+                "address": "1HnRsoRMD4EhjryV6Pi91hj9gsSMbgXC3V"
                 } 
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -1331,7 +1408,7 @@ example::
   
 Response
 --------
-Returns the current block number::
+Results::
 
     {
     "status": 200,
@@ -1361,16 +1438,16 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Parameters::
 
     txid        transaction id of block
                 {
-                "txid": "3df7b98a822746a93b44beec8a7be6aa585da47e763549d48ecc4a666e1ad314"
+                "txid": "b70dff05c88115938588fb769a986b90574f7d0682b2209b9e26f947ca106220"
                 } 
 
 Example
 --------
-example::
+Example::
     
     var request = require('request');
     var options = {
@@ -1389,19 +1466,36 @@ example::
 
 Response
 --------
-Returns the current block number::
+Results::
 
     {
-    "status": ,
-    "values": 
+    "status": 200,
+    "values": {
+        "_id": "5fa4ae6128d40b5fd0f097e9",
+        "txid": "b70dff05c88115938588fb769a986b90574f7d0682b2209b9e26f947ca106220",
+        "network": "mainnet",
+        "chain": "BTC",
+        "blockHeight": -1,
+        "blockHash": "",
+        "blockTime": "2020-11-06T02:01:00.816Z",
+        "blockTimeNormalized": "2020-11-06T02:01:00.816Z",
+        "coinbase": false,
+        "locktime": -1,
+        "inputCount": 3,
+        "outputCount": 1,
+        "size": 483,
+        "fee": 241434,
+        "value": 1473130,
+        "confirmations": 0
     }
+}
 
 gettransactionbyaddress
 ========
 
-bitcoin rpc for gettransactionbyaddress.
+Get detailed information about in-wallet transaction <txid>.
 
-Returns the best block hash::
+Example::
 
     http://integrationhub.okwave.asia/api/v2/btcmainnet/gettransactionbyaddress
 
@@ -1415,16 +1509,16 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Parameters::
 
     address     block address
                 {
-                "address": "n4rZHAPGXCu8bYchjzJhK3V7VVreascJxe"
+                "address": "1HnRsoRMD4EhjryV6Pi91hj9gsSMbgXC3V"
                 }
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -1443,12 +1537,61 @@ example::
 
 Response
 --------
-Returns the current block number::
+Results::
 
     {
     "status": 200,
-    "values": []
-    }
+    "values": [
+        {
+            "_id": "5fa4ae1e28d40b5fd0f02e4a",
+            "chain": "BTC",
+            "network": "mainnet",
+            "coinbase": false,
+            "mintIndex": 2,
+            "spentTxid": "b70dff05c88115938588fb769a986b90574f7d0682b2209b9e26f947ca106220",
+            "mintTxid": "971ec10a9334b299a6d2fcf5464efbf0c7b009c1c1ae4b931127e78933d5c349",
+            "mintHeight": -1,
+            "spentHeight": -1,
+            "address": "1HnRsoRMD4EhjryV6Pi91hj9gsSMbgXC3V",
+            "script": "76a914b8197f03ac3f64b99d94ceacb7ef44dd7d08638688ac",
+            "value": 95369,
+            "confirmations": -1,
+            "sequenceNumber": 4294967295
+        },
+        {
+            "_id": "5fa4abc728d40b5fd0ec7073",
+            "chain": "BTC",
+            "network": "mainnet",
+            "coinbase": false,
+            "mintIndex": 0,
+            "spentTxid": "b70dff05c88115938588fb769a986b90574f7d0682b2209b9e26f947ca106220",
+            "mintTxid": "f0cc380a3f0bc2a1d030833bb45f683ac08ed26b07e72a747afbc911a0ca6157",
+            "mintHeight": -1,
+            "spentHeight": -1,
+            "address": "1HnRsoRMD4EhjryV6Pi91hj9gsSMbgXC3V",
+            "script": "76a914b8197f03ac3f64b99d94ceacb7ef44dd7d08638688ac",
+            "value": 94893,
+            "confirmations": -1,
+            "sequenceNumber": 4294967295
+        },
+        {
+            "_id": "5fa4aa9d28d40b5fd0eaf294",
+            "chain": "BTC",
+            "network": "mainnet",
+            "coinbase": false,
+            "mintIndex": 9,
+            "spentTxid": "b70dff05c88115938588fb769a986b90574f7d0682b2209b9e26f947ca106220",
+            "mintTxid": "5ca6008b02119848b3b44370c354108ddf34c0ce90f405cafd5d0e1fd903d35b",
+            "mintHeight": -1,
+            "spentHeight": -1,
+            "address": "1HnRsoRMD4EhjryV6Pi91hj9gsSMbgXC3V",
+            "script": "76a914b8197f03ac3f64b99d94ceacb7ef44dd7d08638688ac",
+            "value": 1524302,
+            "confirmations": -1,
+            "sequenceNumber": 4294967295
+        }
+    ]
+}
 
 createrawtransaction
 ========
@@ -1460,7 +1603,7 @@ Returns the best block hash::
     http://integrationhub.okwave.asia/api/v2/btcmainnet/createrawtransaction
 
 Headers
---------
+-------
 Need to set headers::
 
     Content-Type    application/json
@@ -1489,7 +1632,7 @@ No need parameters::
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -1544,7 +1687,7 @@ No need parameters::
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
