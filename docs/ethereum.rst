@@ -3,7 +3,6 @@ ETHEREUM
 ========
 
 All RPC included are based on web3. 
-test
 
 .. note::  Make sure to registerToken first before requesting rpc and replace the token in Authoraization headers.
 
