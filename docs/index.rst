@@ -31,6 +31,10 @@ API Reference
    callbacks-promises-events
    glossary
 
+.. toctree::
+   :maxdepth: 2
+   :glob:
+
 Indices and tables
 ==================
 
