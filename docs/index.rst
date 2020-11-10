@@ -8,24 +8,17 @@ Welcome to Read the Docs Intergration Hub's documentation!
 
 web3.js is a collection of libraries that allow you to interact with a local or remote ethereum node using HTTP, IPC or WebSocket.
 
-The following documentation will guide you through installing and running web3.js as well as providing an API reference documentation with examples.
+The following documentation will guide you through installing and running web3.js as well as providing an API reference documentation with examples. at: project@google-groups.com
 
 Contents:
 
 * :ref:`genindex`, :ref:`modindex`, :ref:`search`
-
-USER DOCUMENTATION:
-===================
-
-this documentation is for user testing
-We have a mailing list located at: project@google-groups.com
 
 .. toctree::
    :maxdepth: 2
    :caption: User Documentation
 
    getting-started
-   callbacks-promises-events
    glossary
 
 .. toctree::
