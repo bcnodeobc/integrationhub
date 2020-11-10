@@ -20,9 +20,6 @@ USER DOCUMENTATION:
 this documentation is for user testing
 We have a mailing list located at: project@google-groups.com
 
-API Reference
-==================
-
 .. toctree::
    :maxdepth: 2
    :caption: User Documentation
@@ -33,7 +30,10 @@ API Reference
 
 .. toctree::
    :maxdepth: 2
+   :caption: API Reference
    :glob:
+
+   *
 
 Indices and tables
 ==================
