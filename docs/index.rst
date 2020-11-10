@@ -12,7 +12,7 @@ The following documentation will guide you through installing and running web3.j
 
 Contents:
 
-* :ref:`genindex`, * :ref:`modindex`, * :ref:`search`
+* :ref:`genindex`, :ref:`modindex`, :ref:`search`
 
 USER DOCUMENTATION:
 ===================
@@ -30,11 +30,6 @@ API Reference
    getting-started
    callbacks-promises-events
    glossary
-
-.. toctree::
-   :maxdepth: 2
-   :caption: API Reference
-
 
 Indices and tables
 ==================
