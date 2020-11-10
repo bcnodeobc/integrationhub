@@ -9,3 +9,5 @@ Integration Hub (IH) is a platform developed by OK Blockchain Centre to ease and
 * Aizu Zuyyin
 * Mohamad Fazuan
 * Shahrizal
+
+.. note::  TEAM BLOCKCHAIN
