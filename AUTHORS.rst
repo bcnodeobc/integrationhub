@@ -1,4 +1,4 @@
-Authors
+Getting Started
 -------
 
 INTRODUCTION

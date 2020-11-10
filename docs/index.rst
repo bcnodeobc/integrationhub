@@ -12,19 +12,13 @@ The following documentation will guide you through installing and running web3.j
 
 Contents:
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
+* :ref:`genindex`, * :ref:`modindex`, * :ref:`search`
 
 USER DOCUMENTATION:
 ===================
 
 this documentation is for user testing
 We have a mailing list located at: project@google-groups.com
-
-fandf::
-   what is this
 
 API Reference
 ==================

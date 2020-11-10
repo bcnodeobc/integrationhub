@@ -2,20 +2,16 @@
 NEO
 ========
 
-This project using javascript to testing the rpc.
+All RPC included are based on web3. 
 
-User can test the rpc by using Postman nodejs - request.
-
-- Be awesome
-- Make things faster
+.. note::  Make sure to registerToken first before requesting rpc and replace the token in Authoraization headers.
 
 getblockcount
 =============
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+Gets the number of blocks in the main chain.
 
-Api for this rpc::
+Example::
 
     http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getblockcount
 
@@ -37,7 +33,7 @@ No need parameters::
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -56,7 +52,7 @@ example::
 
 Response
 --------
-Returns the status::
+Results::
 
     {
     "status": 200,
@@ -66,10 +62,9 @@ Returns the status::
 getaccountstate
 ===============
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+Queries global assets (NEO, GAS, and etc.) of the account, according to the account address.
 
-Api for this rpc::
+Example::
 
     http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getaccountstate
 
@@ -85,13 +80,14 @@ Parameters
 --------
 No need parameters::
 
-  address       {
+  address       A 34-characters length string beginning with A
+                {
                 "address": "AJBENSwajTzQtwyJFkiJSv7MAaaMc7DsRz"
                 }
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -110,7 +106,7 @@ example::
 
 Response
 --------
-Returns the status::
+Results::
 
     {
     "status": 200,
@@ -126,10 +122,9 @@ Returns the status::
 getassetstate
 =============
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+Queries the asset information, based on the specified asset number.
 
-Api for this rpc::
+Example::
 
     http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getassetstate
 
@@ -145,13 +140,14 @@ Parameters
 --------
 No need parameters::
 
-    asset id    {
+    asset id    Asset ID (asset identifier), which is the transaction ID of the RegistTransaction when the asset is registered.
+                {
                 "asset_id": "c56f33fc6ecfcd0c225c4ab356fee59390af8560be0e930faebe74a6daff7c9b"
                 } 
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -170,7 +166,7 @@ example::
 
 Response
 --------
-Returns the status::
+Results::
 
     {
     "status": 200,
@@ -202,10 +198,9 @@ Returns the status::
 getbestblockhash
 ================
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+Returns the hash of the tallest block in the main chain.
 
-Api for this rpc::
+Example::
 
     http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getbestblockhash
 
@@ -227,7 +222,7 @@ No need parameters::
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -246,7 +241,7 @@ example::
 
 Response
 --------
-Returns the status::
+Results::
 
     {
     "status": 200,
@@ -256,10 +251,9 @@ Returns the status::
 getblockbyhash
 ==============
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+The corresponding block information is returned according to the specified hash value.
 
-Api for this rpc::
+Example::
 
     http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getblockbyhash
 
@@ -275,14 +269,15 @@ Parameters
 --------
 No need parameters::
 
-    hash        {
-    verbose     "hash": "773dd2dae4a9c9275290f89b56e67d7363ea4826dfd4fc13cc01cf73a44b0d0e",
+    hash        Block hash value and the value of verbose which is 0 or 1
+    verbose     {
+                "hash": "773dd2dae4a9c9275290f89b56e67d7363ea4826dfd4fc13cc01cf73a44b0d0e",
                 "verbose": "1" 
                 } 
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -301,7 +296,7 @@ example::
 
 Response
 --------
-Returns the status::
+Results::
 
     {
     "status": 200,
@@ -311,10 +306,9 @@ Returns the status::
 getblockbyindex
 ===============
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+Returns the corresponding block information according to the specified index.
 
-Api for this rpc::
+Example::
 
     http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getblockbyindex
 
@@ -330,14 +324,15 @@ Parameters
 --------
 No need parameters::
 
-    index       {
-    verbose     "index": "10000",
+    index       Block index (block height) and the value of verbose which is 0 or 1
+    verbose     {
+                "index": "10000",
                 "verbose": "1",
                 } 
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -356,7 +351,7 @@ example::
 
 Response
 --------
-Returns the status::
+Results::
 
     {
     "status": 200,
@@ -366,10 +361,9 @@ Returns the status::
 getblockheader
 ==============
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+Returns the corresponding block header information according to the specified script hash.
 
-Api for this rpc::
+Example::
 
     http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getblockheader
 
@@ -385,14 +379,15 @@ Parameters
 --------
 No need parameters::
 
-    hash        {
-    verbose     "hash": "a5508c9b6ed0fc09a531a62bc0b3efcb6b8a9250abaf72ab8e9591294c1f6957",
+    hash        The block script hash and the value of verbose which is 0 or 1
+    verbose     {
+                "hash": "a5508c9b6ed0fc09a531a62bc0b3efcb6b8a9250abaf72ab8e9591294c1f6957",
                 "verbose": "1"
                 } 
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -411,7 +406,7 @@ example::
 
 Response
 --------
-Returns the status::
+Results::
 
     {
     "status": 200,
@@ -421,10 +416,9 @@ Returns the status::
 getblockhash
 ============
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+Returns the hash value of the corresponding block, based on the specified index.
 
-Api for this rpc::
+Example::
 
     http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getblockhash
 
@@ -438,15 +432,16 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Need parameters::
 
-    index       {
+    index       Block index (block height)
+                {
                 "index": "10000" 
                 } 
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -465,7 +460,7 @@ example::
 
 Response
 --------
-Returns the status::
+Results::
 
     {
     "status": 200,
@@ -475,10 +470,9 @@ Returns the status::
 getblocksysfee
 ==============
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+Returns the system fees of the block, based on the specified index.
 
-Api for this rpc::
+Example::
 
     http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getblocksysfee
 
@@ -494,13 +488,14 @@ Parameters
 --------
 No need parameters::
 
-    index       {
+    index       Block index
+                {
                 "index": "1005434" 
                 } 
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -519,7 +514,7 @@ example::
 
 Response
 --------
-Returns the status::
+Results::
 
     {
     "status": 200,
@@ -529,10 +524,9 @@ Returns the status::
 getclaimable
 ============
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+Returns claimable GAS information of the specified address.
 
-Api for this rpc::
+Example::
 
     http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getclaimable
 
@@ -546,15 +540,16 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Need parameters::
 
-    address     {
+    address     Specifiies the address you want to query
+                {
                 "address": "AGofsxAUDwt52KjaB664GYsqVAkULYvKNt" 
                 } 
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -573,7 +568,7 @@ example::
 
 Response
 --------
-Returns the status::
+Results::
 
     {
     "status": 200,
@@ -583,10 +578,9 @@ Returns the status::
 getconnectioncount
 ==================
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+Gets the current number of connections for the node.
 
-Api for this rpc::
+Example::
 
     http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getconnectioncount
 
@@ -608,7 +602,7 @@ No need parameters::
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -627,7 +621,7 @@ example::
 
 Response
 --------
-Returns the status::
+Results::
 
     {
     "status": 200,
@@ -637,10 +631,9 @@ Returns the status::
 getcontractstate
 ================
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+Queries contract information, according to the contract script hash.
 
-Api for call the rpc::
+Example::
 
     http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getcontractstate
 
@@ -654,16 +647,16 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Need parameters::
 
-    script hash          
+    script hash      Contract script hash   
                     {
                     "script_hash": "dc675afc61a7c0f7b3d2682bf6e1d8ed865a0e5f"
                     } 
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -682,7 +675,7 @@ example::
 
 Response
 --------
-Returns the status::
+Results::
 
     {
     "status": 200,
@@ -692,10 +685,9 @@ Returns the status::
 getmetricblocktimestamp
 =======================
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+Returns timestamps of the specified block and its previous n blocks.
 
-Api that been use for call rpc::
+Example::
 
     http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getmetricblocktimestamp
 
@@ -709,9 +701,9 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Need parameters::
 
-    blocks number       
+    blocks number       Set the number of blocks you want to query forward and the the block height your query ends
     end height          {
                         "blocksNumber": "10",
                         "endHeight": "460000" 
@@ -719,7 +711,7 @@ No need parameters::
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -738,7 +730,7 @@ example::
 
 Response
 --------
-Returns the status::
+Results::
 
     {
     "status": 200,
@@ -748,10 +740,9 @@ Returns the status::
 getnep5balances
 ===============
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+Returns the balance of all NEP-5 assets in the specified address.
 
-Api that been use for call rpc::
+Example::
 
     http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getnep5balances
 
@@ -765,16 +756,16 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Need parameters::
 
-    address     
+    address     The address that you want to query balance
                 {
                 "address": "1aada0032aba1ef6d1f07bbd8bec1d85f5380fb3" 
                 } 
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -793,7 +784,7 @@ example::
 
 Response
 --------
-Returns the status::
+Results::
 
     {
     "status": 200,
@@ -803,10 +794,9 @@ Returns the status::
 getnep5transfers
 ================
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+Returns all the NEP-5 transaction information occurred in the specified address.
 
-Api that been use for call rpc::
+Example::
 
     http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getnep5transfers
 
@@ -820,9 +810,9 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Need parameters::
 
-    address                 
+    address                 The address to query the transaction information and the start and end timestamps are specified
     timestamps Start        {
     timestamps End          "address": "AbHgdBaWEnHkCiLtDZXjhvhaAK2cwFh5pF",
                             "timestampsStart": "1553105830",
@@ -831,7 +821,7 @@ No need parameters::
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -850,7 +840,7 @@ example::
 
 Response
 --------
-Returns the status::
+Results::
 
     {
     "status": 200,
@@ -860,10 +850,9 @@ Returns the status::
 getstorage
 ==========
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+Returns the stored value, according to the contract script hash and the stored key.
 
-Api that been use for call rpc::
+Example::
 
     http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getstorage
 
@@ -877,9 +866,9 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Need parameters::
 
-    script hash       
+    script hash         Contract script hash and the key to look up in storage (in hex string)
     key                 {
                         "script_hash": "03febccf81ac85e3d795bc5cbd4e84e907812aa3",
                         "key": "5065746572" 
@@ -887,7 +876,7 @@ No need parameters::
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -906,7 +895,7 @@ example::
 
 Response
 --------
-Returns the status::
+Results::
 
     {
     "status": 200,
@@ -916,10 +905,9 @@ Returns the status::
 gettransactionheight
 ====================
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+Returns the block index in which the transaction is found.
 
-Api that been use for call rpc::
+Example::
 
     http://integrationhub.okwave.asia:3333/api/v2/neomainnet/gettransactionheight
 
@@ -933,16 +921,16 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Need parameters::
 
-    transaction id      
+    transaction id      Transaction ID
                         {
                         "txid": "9ae1fd32d525eff2a1bb1fc8d0cd2cfb4cc97a06a232bb87fc58e4fe3bc2a845"
                         } 
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -961,7 +949,7 @@ example::
 
 Response
 --------
-Returns the status::
+Results::
 
     {
     "status": 200,
@@ -971,10 +959,9 @@ Returns the status::
 gettxout
 ========
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+Returns the corresponding unspent transaction output information (returned change), based on the specified hash and index. If the transaction output is already spent, the result value will be null.
 
-Api that been use for call rpc::
+Example::
 
     http://integrationhub.okwave.asia:3333/api/v2/neomainnet/gettxout
 
@@ -988,16 +975,16 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Need parameters::
 
-    transaction id       
+    transaction id       Transaction ID
                         {
                         "txid": "9ae1fd32d525eff2a1bb1fc8d0cd2cfb4cc97a06a232bb87fc58e4fe3bc2a845"
                         } 
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -1016,7 +1003,7 @@ example::
 
 Response
 --------
-Returns the status::
+Results::
 
     {
     "status": 200,
@@ -1026,10 +1013,9 @@ Returns the status::
 getpeers
 ========
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+Gets the list of nodes that the node is currently connected/disconnected from.
 
-Api that been use for call rpc::
+Example::
 
     http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getpeers
 
@@ -1043,7 +1029,7 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Need parameters::
 
     {
 
@@ -1051,7 +1037,7 @@ No need parameters::
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -1068,10 +1054,9 @@ example::
         console.log(response.body);
     });
 
-
 Response
 --------
-Returns the status::
+Results::
 
     {
     "status": 200,
@@ -1115,10 +1100,9 @@ Returns the status::
 getunclaimed
 ============
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+Returns unclaimed GAS amount of the specified address.
 
-Api that been use for call rpc::
+Example::
 
     http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getunclaimed
 
@@ -1132,16 +1116,16 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Need parameters::
 
-    address      
+    address             Set the standard address you want to query
                         {
                         "address": "AGofsxAUDwt52KjaB664GYsqVAkULYvKNt"
                         } 
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -1160,7 +1144,7 @@ example::
 
 Response
 --------
-Returns the status::
+Results::
 
     {
     "status": 200,
@@ -1170,10 +1154,9 @@ Returns the status::
 getvalidators
 =============
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+Returns the current NEO consensus nodes information and voting status.
 
-Api that been use for call rpc::
+Example::
 
     http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getvalidators
 
@@ -1195,7 +1178,7 @@ No need parameters::
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -1214,7 +1197,7 @@ example::
 
 Response
 --------
-Returns the status::
+Results::
 
     {
     "status": 200,
@@ -1240,10 +1223,9 @@ Returns the status::
 getversion
 ==========
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+Returns the version information about the queried node.
 
-Api that been use for call rpc::
+Example::
 
     http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getversion
 
@@ -1265,7 +1247,7 @@ No need parameters::
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -1284,7 +1266,7 @@ example::
 
 Response
 --------
-Returns the status::
+Results::
 
     {
     "status": 200,
@@ -1298,10 +1280,9 @@ Returns the status::
 invokefunction
 ==============
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+Returns the result after calling a smart contract at scripthash with the given operation and parameters.
 
-Api that been use for call rpc::
+Example::
 
     http://integrationhub.okwave.asia:3333/api/v2/neomainnet/invokefunction
 
@@ -1315,9 +1296,9 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Need parameters::
 
-    script hash         
+    script hash         Smart contract scripthash and operation name(string) with parameters to be passed into the smart contract operation 
     operation           {
     params              "script_hash": "af7c7328eee5a275a3bcaee2bf0cf662b5e739be",
                         "operation": "balanceOf",
@@ -1326,7 +1307,7 @@ No need parameters::
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -1345,7 +1326,7 @@ example::
 
 Response
 --------
-Returns the status::
+Results::
 
     {
     "status": 200
@@ -1355,10 +1336,9 @@ Returns the status::
 invokescript
 ============
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+Returns the result after passing a script through the VM.
 
-Api that been use for call rpc::
+Example::
 
     http://integrationhub.okwave.asia:3333/api/v2/neomainnet/invokescript
 
@@ -1372,9 +1352,9 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Need parameters::
 
-    script  
+    script      A script runnable by the VM. This is the same script that is carried in InvocationTransaction
                 {
                 "script": "00046e616d656724058e5e1b6008847cd662728549088a9ee82191"
                 } 
@@ -1400,7 +1380,7 @@ example::
 
 Response
 --------
-Returns the status::
+Results::
 
     {
     "status": 200,
@@ -1414,10 +1394,9 @@ Returns the status::
 sendrawtransaction
 ========
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+Broadcasts a transaction over the NEO network.
 
-Api that been use for call rpc::
+Example::
 
     http://integrationhub.okwave.asia:3333/api/v2/neomainnet/sendrawtransaction
 
@@ -1431,16 +1410,16 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Need parameters::
 
-    hex 
+    hex         A hexadecimal string that has been serialized, after the signed transaction in the program
                 {
                 "hex": "80000001195876cb34364dc38b730077156c6bc3a7fc570044a66fbfeeea56f71327e8ab0000029b7cffdaa674beae0f930ebe6085af9093e5fe56b34a5c220ccdcf6efc336fc500c65eaf440000000f9a23e06f74cf86b8827a9108ec2e0f89ad956c9b7cffdaa674beae0f930ebe6085af9093e5fe56b34a5c220ccdcf6efc336fc50092e14b5e00000030aab52ad93f6ce17ca07fa88fc191828c58cb71014140915467ecd359684b2dc358024ca750609591aa731a0b309c7fb3cab5cd0836ad3992aa0a24da431f43b68883ea5651d548feb6bd3c8e16376e6e426f91f84c58232103322f35c7819267e721335948d385fae5be66e7ba8c748ac15467dcca0693692dac"
                 } 
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -1459,7 +1438,7 @@ example::
 
 Response
 --------
-Returns the status::
+Results::
 
     {
     "status": 200,
@@ -1469,10 +1448,9 @@ Returns the status::
 validateaddress
 ========
 
-project will solve your problem of where to start with documentation,
-by providing a basic explanation of how to do it easily.
+Verifies that the address is a correct NEO address.
 
-Api that been use for call rpc::
+Example::
 
     http://integrationhub.okwave.asia:3333/api/v2/neomainnet/validateaddress
 
@@ -1486,16 +1464,16 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Need parameters::
 
-    address         
+    address         Address
                     {
                     "address": "AQVh2pG732YvtNaxEGkQUei3YA4cvo7d2i"
                     } 
 
 Example
 --------
-example::
+Example::
 
     var request = require('request');
     var options = {
@@ -1514,7 +1492,7 @@ example::
 
 Response
 --------
-Returns the status::
+Results::
 
     {
     "status": 200,
