@@ -1,5 +1,5 @@
 ========
-NEO
+Neo
 ========
 
 All RPC included are based on neo-cli. 

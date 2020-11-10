@@ -1,10 +1,10 @@
 ============
-BITCOIN CASH
+Bitcoin Cash
 ============
 
 All RPC included are based on bitcoin-cli. 
 
-.. note::  Make sure to registerToken first before requesting rpc and replace the token in Authoraization headers. http://integrationhub.okwave.asia/api/v2/registerToken
+.. note::  Make sure to registerToken first before requesting rpc and replace the token in Authoraization headers. http://integrationhub.okwave.asia:3333/api/v2/registerToken
 
 getblockcount
 =============
@@ -13,7 +13,7 @@ Returns the number of blocks in the longest blockchain
 
 Example ::
 
-    http://integrationhub.okwave.asia/api/v2/bchmainnet/getblockcount
+    http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/getblockcount
 
 Headers
 --------
@@ -34,7 +34,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/getblockcount',
+        'url': 'http://integrationhub.okwave.asia:3333:3333/api/v2/bchmainnet/getblockcount',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -62,7 +62,7 @@ Returns the hash of the best (tip) block in the longest blockchain
 
 Example ::
 
-    http://integrationhub.okwave.asia/api/v2/bchmainnet/getbestblockhash
+    http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/getbestblockhash
 
 Headers
 -------
@@ -83,7 +83,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/getbestblockhash',
+        'url': 'http://integrationhub.okwave.asia:3333:3333/api/v2/bchmainnet/getbestblockhash',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -111,7 +111,7 @@ Returns a string that is serialized, hex-encoded data for block ‘hash’.
 
 Example ::
 
-    http://integrationhub.okwave.asia/api/v2/bchmainnet/getblock
+    http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/getblock
 
 Headers
 -------
@@ -137,7 +137,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/getblock',
+        'url': 'http://integrationhub.okwave.asia:3333:3333/api/v2/bchmainnet/getblock',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -187,7 +187,7 @@ Returns an object containing various state info regarding blockchain processing.
 
 Example ::
 
-    http://integrationhub.okwave.asia/api/v2/bchmainnet/getblockchaininfo
+    http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/getblockchaininfo
 
 Headers
 -------
@@ -208,7 +208,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/getblockchaininfo',
+        'url': 'http://integrationhub.okwave.asia:3333:3333/api/v2/bchmainnet/getblockchaininfo',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -276,7 +276,7 @@ Returns hash of block in best-block-chain at height provided.
 
 Example ::
 
-    http://integrationhub.okwave.asia/api/v2/bchmainnet/getblockhash
+    http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/getblockhash
 
 Headers
 --------
@@ -302,7 +302,7 @@ Example ::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/getblockhash',
+        'url': 'http://integrationhub.okwave.asia:3333:3333/api/v2/bchmainnet/getblockhash',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -330,7 +330,7 @@ bitcoin rpc for get block header.
 
 Returns the best block hash::
 
-    http://integrationhub.okwave.asia/api/v2/bchmainnet/getblockheader
+    http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/getblockheader
 
 Headers
 --------
@@ -356,7 +356,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/getblockheader',
+        'url': 'http://integrationhub.okwave.asia:3333:3333/api/v2/bchmainnet/getblockheader',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -404,7 +404,7 @@ It won’t work without -txindex for utxo_size_inc, *fee or *feerate stats.
 
 Example ::
 
-    http://integrationhub.okwave.asia/api/v2/bchmainnet/getblockstats
+    http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/getblockstats
 
 Headers
 --------
@@ -430,7 +430,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/getblockstats',
+        'url': 'http://integrationhub.okwave.asia:3333:3333/api/v2/bchmainnet/getblockstats',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -494,7 +494,7 @@ Returns the proof-of-work difficulty as a multiple of the minimum difficulty.
 
 Example ::
 
-    http://integrationhub.okwave.asia/api/v2/bchmainnet/getdifficulty
+    http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/getdifficulty
 
 Headers
 --------
@@ -515,7 +515,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/getdifficulty',
+        'url': 'http://integrationhub.okwave.asia:3333:3333/api/v2/bchmainnet/getdifficulty',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -543,7 +543,7 @@ Returns an object containing information about memory usage.
 
 Example::
 
-    http://integrationhub.okwave.asia/api/v2/bchmainnet/getmemoryinfo
+    http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/getmemoryinfo
 
 Headers
 --------
@@ -564,7 +564,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/getmemoryinfo',
+        'url': 'http://integrationhub.okwave.asia:3333:3333/api/v2/bchmainnet/getmemoryinfo',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -601,7 +601,7 @@ Returns details of the RPC server.
 
 Example ::
 
-    http://integrationhub.okwave.asia/api/v2/bchmainnet/getrpcinfo
+    http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/getrpcinfo
 
 Headers
 --------
@@ -622,7 +622,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/getrpcinfo',
+        'url': 'http://integrationhub.okwave.asia:3333:3333/api/v2/bchmainnet/getrpcinfo',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -658,7 +658,7 @@ List all commands, or get help for a specified command.
 
 Example::
 
-    http://integrationhub.okwave.asia/api/v2/bchmainnet/help
+    http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/help
 
 Headers
 --------
@@ -679,7 +679,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/help',
+        'url': 'http://integrationhub.okwave.asia:3333:3333/api/v2/bchmainnet/help',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -707,7 +707,7 @@ Returns the total uptime of the server.
 
 Example::
 
-    http://integrationhub.okwave.asia/api/v2/bchmainnet/uptime
+    http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/uptime
 
 Headers
 --------
@@ -728,7 +728,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/uptime',
+        'url': 'http://integrationhub.okwave.asia:3333:3333/api/v2/bchmainnet/uptime',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -756,7 +756,7 @@ Returns the number of connections to other nodes.
 
 Example::
 
-    http://integrationhub.okwave.asia/api/v2/bchmainnet/getconnectioncount
+    http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/getconnectioncount
 
 Headers
 --------
@@ -777,7 +777,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/getconnectioncount',
+        'url': 'http://integrationhub.okwave.asia:3333:3333/api/v2/bchmainnet/getconnectioncount',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -805,7 +805,7 @@ Returns information about network traffic, including bytes in, bytes out, and cu
 
 Example::
 
-    http://integrationhub.okwave.asia/api/v2/bchmainnet/getnettotals
+    http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/getnettotals
 
 Headers
 --------
@@ -826,7 +826,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/getnettotals',
+        'url': 'http://integrationhub.okwave.asia:3333:3333/api/v2/bchmainnet/getnettotals',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -866,7 +866,7 @@ Returns an object containing various state info regarding P2P networking.
 
 Example::
 
-    http://integrationhub.okwave.asia/api/v2/bchmainnet/getnetworkinfo
+    http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/getnetworkinfo
 
 Headers
 --------
@@ -887,7 +887,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/getnetworkinfo',
+        'url': 'http://integrationhub.okwave.asia:3333:3333/api/v2/bchmainnet/getnetworkinfo',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -962,7 +962,7 @@ Returns data about each connected network node as a json array of objects.
 
 Example::
 
-    http://integrationhub.okwave.asia/api/v2/bchmainnet/getpeerinfo
+    http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/getpeerinfo
 
 Headers
 --------
@@ -983,7 +983,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/getpeerinfo',
+        'url': 'http://integrationhub.okwave.asia:3333:3333/api/v2/bchmainnet/getpeerinfo',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -1156,7 +1156,7 @@ List all banned IPs/Subnets.
 
 Example::
 
-    http://integrationhub.okwave.asia/api/v2/bchmainnet/listbanned
+    http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/listbanned
 
 Headers
 --------
@@ -1177,7 +1177,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/listbanned',
+        'url': 'http://integrationhub.okwave.asia:3333:3333/api/v2/bchmainnet/listbanned',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -1209,7 +1209,7 @@ Ping command is handled in queue with all other commands, so it measures process
 
 Example::
 
-    http://integrationhub.okwave.asia/api/v2/bchmainnet/ping
+    http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/ping
 
 Headers
 --------
@@ -1230,7 +1230,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/ping',
+        'url': 'http://integrationhub.okwave.asia:3333:3333/api/v2/bchmainnet/ping',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -1258,7 +1258,7 @@ bitcoin rpc for getutxobyaddress.
 
 Returns the best block hash::
 
-    http://integrationhub.okwave.asia/api/v2/bchmainnet/getutxobyaddress
+    http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/getutxobyaddress
 
 Headers
 --------
@@ -1284,7 +1284,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/getutxobyaddress',
+        'url': 'http://integrationhub.okwave.asia:3333:3333/api/v2/bchmainnet/getutxobyaddress',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -1312,7 +1312,7 @@ Returns the total available balance in specific address.
 
 Example::
 
-    http://integrationhub.okwave.asia/api/v2/bchmainnet/getbalancebyaddress
+    http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/getbalancebyaddress
 
 Headers
 --------
@@ -1338,7 +1338,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/getbalancebyaddress',
+        'url': 'http://integrationhub.okwave.asia:3333:3333/api/v2/bchmainnet/getbalancebyaddress',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -1370,7 +1370,7 @@ bitcoin rpc for gettransactionbytxid.
 
 Returns the best block hash::
 
-    http://integrationhub.okwave.asia/api/v2/bchmainnet/gettransactionbytxid
+    http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/gettransactionbytxid
 
 Headers
 --------
@@ -1396,7 +1396,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/gettransactionbytxid',
+        'url': 'http://integrationhub.okwave.asia:3333:3333/api/v2/bchmainnet/gettransactionbytxid',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -1441,7 +1441,7 @@ Get detailed information about in-wallet transaction <txid>.
 
 Example::
 
-    http://integrationhub.okwave.asia/api/v2/bchmainnet/gettransactionbyaddress
+    http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/gettransactionbyaddress
 
 Headers
 --------
@@ -1467,7 +1467,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/gettransactionbyaddress',
+        'url': 'http://integrationhub.okwave.asia:3333:3333/api/v2/bchmainnet/gettransactionbyaddress',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -1525,7 +1525,7 @@ bitcoin rpc for createrawtransaction.
 
 Returns the best block hash::
 
-    http://integrationhub.okwave.asia/api/v2/bchmainnet/createrawtransaction
+    http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/createrawtransaction
 
 Headers
 -------
@@ -1562,7 +1562,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/createrawtransaction',
+        'url': 'http://integrationhub.okwave.asia:3333:3333/api/v2/bchmainnet/createrawtransaction',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -1590,7 +1590,7 @@ bitcoin rpc for signrawtransactionwithkey.
 
 Returns the best block hash::
 
-    http://integrationhub.okwave.asia/api/v2/bchmainnet/signrawtransactionwithkey
+    http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/signrawtransactionwithkey
 
 Headers
 --------
@@ -1617,7 +1617,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/signrawtransactionwithkey',
+        'url': 'http://integrationhub.okwave.asia:3333:3333/api/v2/bchmainnet/signrawtransactionwithkey',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'

@@ -13,7 +13,6 @@ Integration Hub V2 (IHv2) is a platform developed by OK Blockchain Centre to eas
    :caption: User Documentation
 
    getting-started
-   glossary
 
 .. toctree::
    :maxdepth: 2

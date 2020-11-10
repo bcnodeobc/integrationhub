@@ -1,5 +1,5 @@
 ==========
-THORHAMMER
+Thorhammer
 ==========
 
 All RPC included are based on web3.js.
@@ -15,7 +15,7 @@ by providing a basic explanation of how to do it easily.
 
 Returns the current block number::
 
-    http://integrationhub.okwave.asia/api/v2/thorhammer/web3.eth/transactionBlockTimeout
+    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/transactionBlockTimeout
 
 Headers
 --------
