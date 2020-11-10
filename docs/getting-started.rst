@@ -1,1 +1,1 @@
-.. include:: ../getting-started.rst
+.. include:: ../AUTHORS.rst
