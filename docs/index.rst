@@ -31,10 +31,3 @@ Contents:
    neo
    thor
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
