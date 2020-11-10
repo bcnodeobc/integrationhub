@@ -25,15 +25,16 @@ API Reference
 
 .. toctree::
    :maxdepth: 2
-   :glob:
-
    :caption: User Documentation
 
    getting-started
    callbacks-promises-events
    glossary
 
-   *
+.. toctree::
+   :maxdepth: 2
+   :caption: API Reference
+
 
 Indices and tables
 ==================
