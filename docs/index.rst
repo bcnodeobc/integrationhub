@@ -24,9 +24,12 @@ Contents:
 .. toctree::
    :maxdepth: 2
    :caption: API Reference
-   :glob:
-
-   *
+   
+   bch
+   bitcoin
+   ethereum
+   neo
+   thor
 
 Indices and tables
 ==================
