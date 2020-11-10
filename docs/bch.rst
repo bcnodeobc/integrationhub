@@ -1,10 +1,10 @@
-========
-BITCOIN
-========
+============
+BITCOIN CASH
+============
 
 All RPC included are based on bitcoin-cli. 
 
-.. note::  Make sure to registerToken first before requesting rpc and replace the token in Authoraization headers.
+.. note::  Make sure to registerToken first before requesting rpc and replace the token in Authoraization headers. http://integrationhub.okwave.asia/api/v2/registerToken
 
 getblockcount
 =============
@@ -26,10 +26,6 @@ Need to set headers::
 Parameters
 ----------
 No need parameters::
-
-     {
-
-     }
 
 Example
 --------
@@ -79,10 +75,6 @@ Need to set headers::
 Parameters
 ----------
 No need parameters::
-
-    {
-
-    } 
 
 Example
 -------
@@ -208,10 +200,6 @@ Need to set headers::
 Parameters
 ----------
 No need parameters::
-
-    {
-
-    } 
 
 Example
 --------
@@ -520,10 +508,6 @@ Parameters
 --------
 No need parameters::
 
-    {
-        
-    } 
-
 Example
 --------
 Example::
@@ -572,10 +556,6 @@ Need to set headers::
 Parameters
 --------
 No need parameters::
-
-    {
-
-    } 
 
 Example
 --------
@@ -635,10 +615,6 @@ Parameters
 --------
 No need parameters::
 
-    {
-        
-    } 
-
 Example
 --------
 Example::
@@ -696,10 +672,6 @@ Parameters
 --------
 No need parameters::
 
-    {
-        
-    } 
-
 Example
 --------
 Example::
@@ -748,10 +720,6 @@ Need to set headers::
 Parameters
 --------
 No need parameters::
-
-    {
-        
-    } 
 
 Example
 --------
@@ -802,10 +770,6 @@ Parameters
 --------
 No need parameters::
 
-    {
-        
-    } 
-
 Example
 --------
 Example::
@@ -854,10 +818,6 @@ Need to set headers::
 Parameters
 --------
 No need parameters::
-
-    {
-        
-    } 
 
 Example
 --------
@@ -919,10 +879,6 @@ Need to set headers::
 Parameters
 --------
 No need parameters::
-
-    {
-        
-    } 
 
 Example
 --------
@@ -1019,10 +975,6 @@ Need to set headers::
 Parameters
 --------
 No need parameters::
-
-    {
-        
-    } 
 
 Example
 --------
@@ -1218,10 +1170,6 @@ Parameters
 --------
 No need parameters::
 
-    {
-        
-    } 
-
 Example
 --------
 Example::
@@ -1274,10 +1222,6 @@ Need to set headers::
 Parameters
 --------
 No need parameters::
-
-    {
-        
-    }
 
 Example
 --------
@@ -1380,7 +1324,7 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Need parameters::
 
     address     address for account
                 {
@@ -1513,7 +1457,7 @@ Parameters::
 
     address     block address
                 {
-                "address": "1GRB5XVLmigRRYDJva9nXvUF7qXQaCshCv"
+                "address": "qquprtehu3c2e5etfyuevm6zlwt40ldr7y0fptc2av"
                 }
 
 Example
@@ -1539,60 +1483,41 @@ Response
 --------
 Results::
 
-    {
+   {
     "status": 200,
     "values": [
         {
-            "_id": "5fa4ae1e28d40b5fd0f02e4a",
-            "chain": "BTC",
+            "_id": "5faa9db128d40b5fd0b5c8ec",
+            "chain": "BCH",
+            "network": "mainnet",
+            "coinbase": false,
+            "mintIndex": 1,
+            "spentTxid": "",
+            "mintTxid": "00ba99ef835fa114d81ab0430453dd93feab67d76cecb426f7c6885b2caefe32",
+            "mintHeight": -1,
+            "spentHeight": -2,
+            "address": "qquprtehu3c2e5etfyuevm6zlwt40ldr7y0fptc2av",
+            "script": "76a9143811af37e470acd32b4939966f42fb9757fda3f188ac",
+            "value": 164888,
+            "confirmations": -1
+        },
+        {
+            "_id": "5faa964728d40b5fd0a7314d",
+            "chain": "BCH",
             "network": "mainnet",
             "coinbase": false,
             "mintIndex": 2,
-            "spentTxid": "b70dff05c88115938588fb769a986b90574f7d0682b2209b9e26f947ca106220",
-            "mintTxid": "971ec10a9334b299a6d2fcf5464efbf0c7b009c1c1ae4b931127e78933d5c349",
+            "spentTxid": "",
+            "mintTxid": "b2346f9c304d1d40a44f403be88a9fb23c6fbc50aa75c969c448e7f21e32fbb8",
             "mintHeight": -1,
-            "spentHeight": -1,
-            "address": "1HnRsoRMD4EhjryV6Pi91hj9gsSMbgXC3V",
-            "script": "76a914b8197f03ac3f64b99d94ceacb7ef44dd7d08638688ac",
-            "value": 95369,
-            "confirmations": -1,
-            "sequenceNumber": 4294967295
-        },
-        {
-            "_id": "5fa4abc728d40b5fd0ec7073",
-            "chain": "BTC",
-            "network": "mainnet",
-            "coinbase": false,
-            "mintIndex": 0,
-            "spentTxid": "b70dff05c88115938588fb769a986b90574f7d0682b2209b9e26f947ca106220",
-            "mintTxid": "f0cc380a3f0bc2a1d030833bb45f683ac08ed26b07e72a747afbc911a0ca6157",
-            "mintHeight": -1,
-            "spentHeight": -1,
-            "address": "1HnRsoRMD4EhjryV6Pi91hj9gsSMbgXC3V",
-            "script": "76a914b8197f03ac3f64b99d94ceacb7ef44dd7d08638688ac",
-            "value": 94893,
-            "confirmations": -1,
-            "sequenceNumber": 4294967295
-        },
-        {
-            "_id": "5fa4aa9d28d40b5fd0eaf294",
-            "chain": "BTC",
-            "network": "mainnet",
-            "coinbase": false,
-            "mintIndex": 9,
-            "spentTxid": "b70dff05c88115938588fb769a986b90574f7d0682b2209b9e26f947ca106220",
-            "mintTxid": "5ca6008b02119848b3b44370c354108ddf34c0ce90f405cafd5d0e1fd903d35b",
-            "mintHeight": -1,
-            "spentHeight": -1,
-            "address": "1HnRsoRMD4EhjryV6Pi91hj9gsSMbgXC3V",
-            "script": "76a914b8197f03ac3f64b99d94ceacb7ef44dd7d08638688ac",
-            "value": 1524302,
-            "confirmations": -1,
-            "sequenceNumber": 4294967295
-        }
-    ]
+            "spentHeight": -2,
+            "address": "qquprtehu3c2e5etfyuevm6zlwt40ldr7y0fptc2av",
+            "script": "76a9143811af37e470acd32b4939966f42fb9757fda3f188ac",
+            "value": 154554,
+            "confirmations": -1
+        }]
+    }
 }
-
 createrawtransaction
 ========
 
@@ -1677,7 +1602,7 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Need parameters::
 
     hexstring     hexstring and privatekey
     and           {

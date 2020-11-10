@@ -2,9 +2,9 @@
 THORHAMMER
 ==========
 
-ALl RPC included are based on web3.js.
+All RPC included are based on web3.js.
 
-.. note::  Make sure to registerToken first before requesting rpc and replace the token in Authoraization headers.
+.. note::  Make sure to registerToken first before requesting rpc and replace the token in Authoraization headers. http://integrationhub.okwave.asia:3333/api/v2/registerToken
 
 
 transactionBlockTimeout
@@ -28,8 +28,6 @@ Need to set headers::
 Parameters
 ----------
 No need parameters::
-
-    ethereum address for account 
 
 Example
 --------
@@ -79,8 +77,6 @@ Need to set headers::
 Parameters
 --------
 No need parameters::
-
-    ethereum address for account 
 
 Example
 --------
@@ -132,8 +128,6 @@ Parameters
 --------
 No need parameters::
 
-    ethereum address for account 
-
 Example
 --------
 example::
@@ -183,8 +177,6 @@ Need to set headers::
 Parameters
 --------
 No need parameters::
-
-    ethereum address for account 
 
 Example
 --------
@@ -236,8 +228,6 @@ Parameters
 --------
 No need parameters::
 
-    ethereum address for account 
-
 Example
 --------
 example::
@@ -287,8 +277,6 @@ Need to set headers::
 Parameters
 --------
 No need parameters::
-
-    ethereum address for account 
 
 Example
 --------
@@ -340,8 +328,6 @@ Parameters
 --------
 No need parameters::
 
-    ethereum address for account 
-
 Example
 --------
 example::
@@ -391,7 +377,7 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Need parameters::
 
     blockNumber     address for account
                     {

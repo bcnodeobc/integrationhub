@@ -2,9 +2,9 @@
 NEO
 ========
 
-All RPC included are based on web3. 
+All RPC included are based on neo-cli. 
 
-.. note::  Make sure to registerToken first before requesting rpc and replace the token in Authoraization headers.
+.. note::  Make sure to registerToken first before requesting rpc and replace the token in Authoraization headers. http://integrationhub.okwave.asia:3333/api/v2/registerToken
 
 getblockcount
 =============
@@ -26,10 +26,6 @@ Need to set headers::
 Parameters
 ----------
 No need parameters::
-
-    {
-        
-    } 
 
 Example
 --------
@@ -78,7 +74,7 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Need parameters::
 
   address       A 34-characters length string beginning with A
                 {
@@ -138,7 +134,7 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Need parameters::
 
     asset id    Asset ID (asset identifier), which is the transaction ID of the RegistTransaction when the asset is registered.
                 {
@@ -216,10 +212,6 @@ Parameters
 --------
 No need parameters::
 
-    {
-        
-    } 
-
 Example
 --------
 Example::
@@ -267,7 +259,7 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Need parameters::
 
     hash        Block hash value and the value of verbose which is 0 or 1
     verbose     {
@@ -322,7 +314,7 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Need parameters::
 
     index       Block index (block height) and the value of verbose which is 0 or 1
     verbose     {
@@ -377,7 +369,7 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Need parameters::
 
     hash        The block script hash and the value of verbose which is 0 or 1
     verbose     {
@@ -486,7 +478,7 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Need parameters::
 
     index       Block index
                 {
@@ -595,10 +587,6 @@ Need to set headers::
 Parameters
 --------
 No need parameters::
-
-        {
-         
-        } 
 
 Example
 --------
@@ -1172,10 +1160,6 @@ Parameters
 --------
 No need parameters::
 
-    {
-
-    } 
-
 Example
 --------
 Example::
@@ -1240,10 +1224,6 @@ Need to set headers::
 Parameters
 --------
 No need parameters::
-
-    {
-
-    } 
 
 Example
 --------

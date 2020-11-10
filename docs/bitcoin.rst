@@ -4,7 +4,7 @@ BITCOIN
 
 All RPC included are based on bitcoin-cli. 
 
-.. note::  Make sure to registerToken first before requesting rpc and replace the token in Authoraization headers.
+.. note::  Make sure to registerToken first before requesting rpc and replace the token in Authoraization headers. http://integrationhub.okwave.asia:3333/api/v2/registerToken
 
 getblockcount
 =============
@@ -26,10 +26,6 @@ Need to set headers::
 Parameters
 ----------
 No need parameters::
-
-     {
-
-     }
 
 Example
 --------
@@ -79,10 +75,6 @@ Need to set headers::
 Parameters
 ----------
 No need parameters::
-
-    {
-
-    } 
 
 Example
 -------
@@ -208,10 +200,6 @@ Need to set headers::
 Parameters
 ----------
 No need parameters::
-
-    {
-
-    } 
 
 Example
 --------
@@ -520,10 +508,6 @@ Parameters
 --------
 No need parameters::
 
-    {
-        
-    } 
-
 Example
 --------
 Example::
@@ -572,10 +556,6 @@ Need to set headers::
 Parameters
 --------
 No need parameters::
-
-    {
-
-    } 
 
 Example
 --------
@@ -635,10 +615,6 @@ Parameters
 --------
 No need parameters::
 
-    {
-        
-    } 
-
 Example
 --------
 Example::
@@ -696,10 +672,6 @@ Parameters
 --------
 No need parameters::
 
-    {
-        
-    } 
-
 Example
 --------
 Example::
@@ -748,10 +720,6 @@ Need to set headers::
 Parameters
 --------
 No need parameters::
-
-    {
-        
-    } 
 
 Example
 --------
@@ -802,10 +770,6 @@ Parameters
 --------
 No need parameters::
 
-    {
-        
-    } 
-
 Example
 --------
 Example::
@@ -854,10 +818,6 @@ Need to set headers::
 Parameters
 --------
 No need parameters::
-
-    {
-        
-    } 
 
 Example
 --------
@@ -919,10 +879,6 @@ Need to set headers::
 Parameters
 --------
 No need parameters::
-
-    {
-        
-    } 
 
 Example
 --------
@@ -1019,10 +975,6 @@ Need to set headers::
 Parameters
 --------
 No need parameters::
-
-    {
-        
-    } 
 
 Example
 --------
@@ -1218,10 +1170,6 @@ Parameters
 --------
 No need parameters::
 
-    {
-        
-    } 
-
 Example
 --------
 Example::
@@ -1274,10 +1222,6 @@ Need to set headers::
 Parameters
 --------
 No need parameters::
-
-    {
-        
-    }
 
 Example
 --------
@@ -1380,7 +1324,7 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Need parameters::
 
     address     address for account
                 {
@@ -1612,7 +1556,7 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Need parameters::
 
     bitcoin     txid and txout
                 {
@@ -1677,7 +1621,7 @@ Need to set headers::
 
 Parameters
 --------
-No need parameters::
+Need parameters::
 
     hexstring     hexstring and privatekey
     and           {
