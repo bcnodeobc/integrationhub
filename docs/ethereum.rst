@@ -6,60 +6,60 @@ All RPC included are based on web3.
 
 .. note::  Make sure to registerToken first before requesting rpc and replace the token in Authoraization headers.
 
-------------------------------------------------------------------------------
+.. code-block:: javascript
 
-transactionBlockTimeout
-=======================
+    transactionBlockTimeout
+    =======================
 
-The amount of new blocks it should wait until the first confirmation happens.
+    The amount of new blocks it should wait until the first confirmation happens.
 
-Example::
+    Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/transactionBlockTimeout
+        http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/transactionBlockTimeout
 
-Headers
---------
-Need to set headers::
+    Headers
+    --------
+    Need to set headers::
 
-    Content-Type    application/json
+        Content-Type    application/json
 
-    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+        Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
 
-Parameters
---------
-No need parameters::
+    Parameters
+    --------
+    No need parameters::
 
-    {
-        
-    }
+        {
+            
+        }
 
-Example
---------
-Example::
+    Example
+    --------
+    Example::
 
-    var request = require('request');
-    var options = {
-        'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/transactionBlockTimeout',
-        'headers': {
-            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
-            'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
-    };
-    request(options, function (error, response) {
-        if (error) throw new Error(error);
-        console.log(response.body);
-    });
+        var request = require('request');
+        var options = {
+            'method': 'POST',
+            'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/transactionBlockTimeout',
+            'headers': {
+                'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+                'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({})
+        };
+        request(options, function (error, response) {
+            if (error) throw new Error(error);
+            console.log(response.body);
+        });
 
-Response
---------
-Results::
+    Response
+    --------
+    Results::
 
-    {
-    "status": 200,
-    "values": 50
-    }
+        {
+        "status": 200,
+        "values": 50
+        }
 
 ------------------------------------------------------------------------------
 
