@@ -1,10 +1,31 @@
 Getting Started
--------
+---------------
 
-Introduction
-============
+Usage
+=====
 
-Integration Hub (IH) is a platform developed by OK Blockchain Centre to ease and fasten the Decentralized App development process. The platform provides an easy and secured integration using JSON API from the client to the blockchain. As of now, clients can access Bitcoin, Bitcoin Cash, Ethereum, and Neo blockchain from the Integration Hub without having any difficulties to deploy the nodes at their side.
+1. User should registerToken before start to request function. 
+
+    http://integrationhub.okwave.asia:3333/api/v2/registerToken
+
+Results::
+
+    {
+    "status": 200,
+    "values": {
+        "success": true,
+        "message": "Authentication successful!",
+        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA1MDY4NDcyLCJleHAiOjE2MDU2NzMyNzJ9.nIZ-ItuWK_9zsXPyZ8yblhFFMNjB3Vku9GKABTFFRvs"
+    }
+
+
+2. Change header value under Authorization's key with token value from previous step.
+
+3. Enjoy !
+
+
+Authors
+=======
 
 * Aizu Zuyyin
 * Mohamad Fazuan
