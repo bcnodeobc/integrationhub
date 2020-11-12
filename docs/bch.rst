@@ -6,6 +6,8 @@ All RPC included are based on bitcoin-cli.
 
 .. note::  Make sure to registerToken first before requesting rpc and replace the token in Authoraization headers. http://integrationhub.okwave.asia:3333/api/v2/registerToken
 
+------------------------------------------------------------------------------
+
 getblockcount
 =============
 
@@ -57,6 +59,8 @@ Returns the current block number::
     "values": 653506
     }
 
+------------------------------------------------------------------------------
+
 getbestblockhash
 ================
 
@@ -107,6 +111,8 @@ Results::
     "status": 200,
     "values": "0000000000000000000192e1fe636f862d3416bbc13a3a2a084fd1e9775aa903"
     }
+
+------------------------------------------------------------------------------
 
 getblock
 ========
@@ -185,6 +191,8 @@ Results::
         "nextblockhash": "00000000a2887344f8db859e372e7e4bc26b23b9de340f725afbf2edb265b4c6"
     }
 }
+
+------------------------------------------------------------------------------
 
 getblockchaininfo
 =================
@@ -277,6 +285,8 @@ Results::
         }
     }
 
+------------------------------------------------------------------------------
+
 getblockhash
 ============
 
@@ -332,6 +342,8 @@ Results::
     "status": 200,
     "values": "00000000c1b653c16878482f16d9d25f59214468f79ceceb6b0b58020d83aab5"
     }
+
+------------------------------------------------------------------------------
 
 getblockheader
 ========
@@ -404,6 +416,8 @@ Results::
         "nextblockhash": "00000000a2887344f8db859e372e7e4bc26b23b9de340f725afbf2edb265b4c6"
     }
 }
+
+------------------------------------------------------------------------------
 
 getblockstats
 ========
@@ -501,6 +515,8 @@ Returns the blockstats result::
     }
 }
 
+------------------------------------------------------------------------------
+
 getdifficulty
 ========
 
@@ -551,6 +567,8 @@ Returns the current difficulty ::
     "status": 200,
     "values": 19997335994446.11
     }   
+
+------------------------------------------------------------------------------
 
 getmemoryinfo
 ========
@@ -612,6 +630,8 @@ Results::
         }
     }   
 
+------------------------------------------------------------------------------
+
 getrpcinfo
 ========
 
@@ -671,6 +691,8 @@ Results::
         }
     }   
 
+------------------------------------------------------------------------------
+
 help
 ========
 
@@ -721,6 +743,8 @@ Results::
     "status": 200,
     "values": "== Blockchain ==\ngetbestblockhash\ngetblock \"blockhash\" ( verbosity )\ngetblockchaininfo\ngetblockcount\ngetblockfilter \"blockhash\" ( \"filtertype\" )\ngetblockhash height\ngetblockheader \"blockhash\" ( verbose )\ngetblockstats hash_or_height ( stats )\ngetchaintips\ngetchaintxstats ( nblocks \"blockhash\" )\ngetdifficulty\ngetmempoolancestors \"txid\" ( verbose )\ngetmempooldescendants \"txid\" ( verbose )\ngetmempoolentry \"txid\"\ngetmempoolinfo\ngetrawmempool ( verbose )\ngettxout \"txid\" n ( include_mempool )\ngettxoutproof [\"txid\",...] ( \"blockhash\" )\ngettxoutsetinfo\npreciousblock \"blockhash\"\npruneblockchain height\nsavemempool\nscantxoutset \"action\" [scanobjects,...]\nverifychain ( checklevel nblocks )\nverifytxoutproof \"proof\"\n\n== Control ==\ngetmemoryinfo ( \"mode\" )\ngetrpcinfo\nhelp ( \"command\" )\nlogging ( [\"include_category\",...] [\"exclude_category\",...] )\nstop\nuptime\n\n== Generating ==\ngeneratetoaddress nblocks \"address\" ( maxtries )\n\n== Mining ==\ngetblocktemplate ( \"template_request\" )\ngetmininginfo\ngetnetworkhashps ( nblocks height )\nprioritisetransaction \"txid\" ( dummy ) fee_delta\nsubmitblock \"hexdata\" ( \"dummy\" )\nsubmitheader \"hexdata\"\n\n== Network ==\naddnode \"node\" \"command\"\nclearbanned\ndisconnectnode ( \"address\" nodeid )\ngetaddednodeinfo ( \"node\" )\ngetconnectioncount\ngetnettotals\ngetnetworkinfo\ngetnodeaddresses ( count )\ngetpeerinfo\nlistbanned\nping\nsetban \"subnet\" \"command\" ( bantime absolute )\nsetnetworkactive state\n\n== Rawtransactions ==\nanalyzepsbt \"psbt\"\ncombinepsbt [\"psbt\",...]\ncombinerawtransaction [\"hexstring\",...]\nconverttopsbt \"hexstring\" ( permitsigdata iswitness )\ncreatepsbt [{\"txid\":\"hex\",\"vout\":n,\"sequence\":n},...] [{\"address\":amount},{\"data\":\"hex\"},...] ( locktime replaceable )\ncreaterawtransaction [{\"txid\":\"hex\",\"vout\":n,\"sequence\":n},...] [{\"address\":amount},{\"data\":\"hex\"},...] ( locktime replaceable )\ndecodepsbt \"psbt\"\ndecoderawtransaction \"hexstring\" ( iswitness )\ndecodescript \"hexstring\"\nfinalizepsbt \"psbt\" ( extract )\nfundrawtransaction \"hexstring\" ( options iswitness )\ngetrawtransaction \"txid\" ( verbose \"blockhash\" )\njoinpsbts [\"psbt\",...]\nsendrawtransaction \"hexstring\" ( maxfeerate )\nsignrawtransactionwithkey \"hexstring\" [\"privatekey\",...] ( [{\"txid\":\"hex\",\"vout\":n,\"scriptPubKey\":\"hex\",\"redeemScript\":\"hex\",\"witnessScript\":\"hex\",\"amount\":amount},...] \"sighashtype\" )\ntestmempoolaccept [\"rawtx\",...] ( maxfeerate )\nutxoupdatepsbt \"psbt\" ( [\"\",{\"desc\":\"str\",\"range\":n or [n,n]},...] )\n\n== Util ==\ncreatemultisig nrequired [\"key\",...] ( \"address_type\" )\nderiveaddresses \"descriptor\" ( range )\nestimatesmartfee conf_target ( \"estimate_mode\" )\ngetdescriptorinfo \"descriptor\"\nsignmessagewithprivkey \"privkey\" \"message\"\nvalidateaddress \"address\"\nverifymessage \"address\" \"signature\" \"message\"\n\n== Wallet ==\nabandontransaction \"txid\"\nabortrescan\naddmultisigaddress nrequired [\"key\",...] ( \"label\" \"address_type\" )\nbackupwallet \"destination\"\nbumpfee \"txid\" ( options )\ncreatewallet \"wallet_name\" ( disable_private_keys blank \"passphrase\" avoid_reuse )\ndumpprivkey \"address\"\ndumpwallet \"filename\"\nencryptwallet \"passphrase\"\ngetaddressesbylabel \"label\"\ngetaddressinfo \"address\"\ngetbalance ( \"dummy\" minconf include_watchonly avoid_reuse )\ngetbalances\ngetnewaddress ( \"label\" \"address_type\" )\ngetrawchangeaddress ( \"address_type\" )\ngetreceivedbyaddress \"address\" ( minconf )\ngetreceivedbylabel \"label\" ( minconf )\ngettransaction \"txid\" ( include_watchonly verbose )\ngetunconfirmedbalance\ngetwalletinfo\nimportaddress \"address\" ( \"label\" rescan p2sh )\nimportmulti \"requests\" ( \"options\" )\nimportprivkey \"privkey\" ( \"label\" rescan )\nimportprunedfunds \"rawtransaction\" \"txoutproof\"\nimportpubkey \"pubkey\" ( \"label\" rescan )\nimportwallet \"filename\"\nkeypoolrefill ( newsize )\nlistaddressgroupings\nlistlabels ( \"purpose\" )\nlistlockunspent\nlistreceivedbyaddress ( minconf include_empty include_watchonly \"address_filter\" )\nlistreceivedbylabel ( minconf include_empty include_watchonly )\nlistsinceblock ( \"blockhash\" target_confirmations include_watchonly include_removed )\nlisttransactions ( \"label\" count skip include_watchonly )\nlistunspent ( minconf maxconf [\"address\",...] include_unsafe query_options )\nlistwalletdir\nlistwallets\nloadwallet \"filename\"\nlockunspent unlock ( [{\"txid\":\"hex\",\"vout\":n},...] )\nremoveprunedfunds \"txid\"\nrescanblockchain ( start_height stop_height )\nsendmany \"\" {\"address\":amount} ( minconf \"comment\" [\"address\",...] replaceable conf_target \"estimate_mode\" )\nsendtoaddress \"address\" amount ( \"comment\" \"comment_to\" subtractfeefromamount replaceable conf_target \"estimate_mode\" avoid_reuse )\nsethdseed ( newkeypool \"seed\" )\nsetlabel \"address\" \"label\"\nsettxfee amount\nsetwalletflag \"flag\" ( value )\nsignmessage \"address\" \"message\"\nsignrawtransactionwithwallet \"hexstring\" ( [{\"txid\":\"hex\",\"vout\":n,\"scriptPubKey\":\"hex\",\"redeemScript\":\"hex\",\"witnessScript\":\"hex\",\"amount\":amount},...] \"sighashtype\" )\nunloadwallet ( \"wallet_name\" )\nwalletcreatefundedpsbt [{\"txid\":\"hex\",\"vout\":n,\"sequence\":n},...] [{\"address\":amount},{\"data\":\"hex\"},...] ( locktime options bip32derivs )\nwalletlock\nwalletpassphrase \"passphrase\" timeout\nwalletpassphrasechange \"oldpassphrase\" \"newpassphrase\"\nwalletprocesspsbt \"psbt\" ( sign \"sighashtype\" bip32derivs )\n\n== Zmq ==\ngetzmqnotifications"
     }  
+
+------------------------------------------------------------------------------
 
 uptime
 ========
@@ -773,6 +797,8 @@ Results::
     "values": 423824
     }  
 
+------------------------------------------------------------------------------
+
 getconnectioncount
 ========
 
@@ -823,6 +849,8 @@ Results::
     "status": 200,
     "values": 10
     }  
+
+------------------------------------------------------------------------------
 
 getnettotals
 ========
@@ -886,6 +914,8 @@ Results::
             }
         }
     } 
+
+------------------------------------------------------------------------------
 
 getnetworkinfo
 ========
@@ -984,6 +1014,8 @@ Results::
         "warnings": ""
         }
     }  
+
+------------------------------------------------------------------------------
 
 getpeerinfo
 ========
@@ -1181,6 +1213,8 @@ Results::
         ]
     } 
 
+------------------------------------------------------------------------------
+
 listbanned
 ========
 
@@ -1231,6 +1265,8 @@ Results::
     "status": 200,
     "values": []
     }
+
+------------------------------------------------------------------------------
 
 ping
 ========
@@ -1287,6 +1323,8 @@ Returns ping result::
     "values": "Operation completed succcessfully"
     }
 
+------------------------------------------------------------------------------
+
 getutxobyaddress
 ========
 
@@ -1342,6 +1380,8 @@ Returns the utxo address::
     "status": 200,
     "values": []
     }
+
+------------------------------------------------------------------------------
 
 getbalancebyaddress
 ========
@@ -1402,6 +1442,8 @@ Results::
         "balance": 0
         }
     }
+
+------------------------------------------------------------------------------
 
 gettransactionbytxid
 ========
@@ -1475,6 +1517,8 @@ Results::
         "confirmations": 0
     }
 }
+
+------------------------------------------------------------------------------
 
 gettransactionbyaddress
 ========
@@ -1563,6 +1607,8 @@ Results::
         }
     }
 
+------------------------------------------------------------------------------
+
 createrawtransaction
 ========
 
@@ -1629,6 +1675,8 @@ Returns the transaction hash::
     "status": ,
     "values": 
     }
+
+------------------------------------------------------------------------------
 
 signrawtransactionwithkey
 ========

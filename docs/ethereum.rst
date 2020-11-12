@@ -6,6 +6,8 @@ All RPC included are based on web3.
 
 .. note::  Make sure to registerToken first before requesting rpc and replace the token in Authoraization headers. http://integrationhub.okwave.asia:3333/api/v2/registerToken
 
+------------------------------------------------------------------------------
+
 transactionBlockTimeout
 =======================
 

@@ -19,9 +19,9 @@ Results::
     }
 
 
-2. Change header value under Authorization's key with token value from previous step.
+2. Change header value under Authorization's key with token value from previous step and add OBC in front of the token.
 
-3. Enjoy !
+3. Enjoy !.
 
 
 Authors
