@@ -302,7 +302,7 @@ sendTransaction
 
 ------------------------------------------------------------------------------
 getBalance
-========
+==========
 
 Get the balance of an address at a given block.
 
@@ -994,7 +994,7 @@ Results::
 ------------------------------------------------------------------------------
 
 transactionConfirmationBlocks
-=========================
+=============================
 
 This rpc is used over HTTP connections. It defines the number of blocks it requires until a transaction is considered confirmed.
 
@@ -1153,7 +1153,7 @@ Results::
 ------------------------------------------------------------------------------
 
 getId
-========
+======
 
 The current network ID.
 
@@ -1518,7 +1518,7 @@ Results::
 ------------------------------------------------------------------------------
 
 isMining
-============
+=========
 
 Checks whether the node is mining or not.
 
@@ -1622,8 +1622,9 @@ Results::
     }
 
 ------------------------------------------------------------------------------
+
 deploySC
-============
+=========
 
 Checks whether the node is mining or not.
 
@@ -1661,6 +1662,7 @@ Results::
     }
 
 ------------------------------------------------------------------------------
+
 deploySCHex
 ============
 
@@ -1700,8 +1702,9 @@ Results::
     }
 
 ------------------------------------------------------------------------------
+
 callSC
-============
+=======
 
 Checks whether the node is mining or not.
 
@@ -1739,8 +1742,9 @@ Results::
     }
 
 ------------------------------------------------------------------------------
+
 sendSC
-============
+=======
 
 Checks whether the node is mining or not.
 
