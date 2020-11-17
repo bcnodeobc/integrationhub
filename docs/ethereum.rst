@@ -6,646 +6,7 @@ All RPC included are based on web3.
 
 .. note::  Make sure to registerToken first before requesting rpc and replace the token in Authoraization headers. http://integrationhub.okwave.asia:3333/api/v2/registerToken
 
-------------------------------------------------------------------------------
-
-transactionBlockTimeout
-=======================
-
-The amount of new blocks it should wait until the first confirmation happens.
-
-Example::
-
-    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/transactionBlockTimeout
-
-Headers
---------
-Need to set headers::
-
-    Key             Value
-
-    Content-Type    application/json
-
-    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
-
-Parameters
---------
-No need parameters::
-
-Example
---------
-Example::
-
-    var request = require('request');
-    var options = {
-        'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/transactionBlockTimeout',
-        'headers': {
-            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
-            'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
-    };
-    request(options, function (error, response) {
-        if (error) throw new Error(error);
-        console.log(response.body);
-    });
-
-Response
---------
-Results::
-
-    {
-    "status": 200,
-    "values": 50
-    }
-
-------------------------------------------------------------------------------
-
-transactionPollingTimeout
-=========================
-
-This rpc is used over HTTP connections. It defines the number of seconds Web3 will wait for a receipt which confirms that a transaction was mined by the network.
-
-Example::
-
-    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/transactionPollingTimeout
-
-Headers
---------
-Need to set headers::
-
-    Key             Value
-
-    Content-Type    application/json
-
-    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
-
-Parameters
---------
-No need parameters::
-
-Example
---------
-Example::
-
-    var request = require('request');
-    var options = {
-        'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/transactionPollingTimeout',
-        'headers': {
-            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
-            'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
-    };
-    request(options, function (error, response) {
-        if (error) throw new Error(error);
-        console.log(response.body);
-    });
-
-Response
---------
-Results::
-
-    {
-    "status": 200,
-    "values": 750
-    }
-
-------------------------------------------------------------------------------
-
-getHashrate
-===========
-
-The number of hashes per second that the node is mining with.
-
-Example::
-
-    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getHashrate
-
-Headers
---------
-Need to set headers::
-
-    Key             Value
-
-    Content-Type    application/json
-
-    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
-
-Parameters
---------
-No need parameters::
-
-Example
---------
-Example::
-
-    var request = require('request');
-    var options = {
-        'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getHashrate',
-        'headers': {
-            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
-            'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
-    };
-    request(options, function (error, response) {
-        if (error) throw new Error(error);
-        console.log(response.body);
-    });
-
-Response
---------
-Results::
-
-    {
-    "status": 200,
-    "values": 0
-    }
-
-------------------------------------------------------------------------------
-
-getGasPrice
-===========
-
-The current gas price oracle. The gas price is determined by the last few blocks median gas price.
-
-Example::
-
-    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getGasPrice
-
-Headers
---------
-Need to set headers::
-
-    Key             Value
-
-    Content-Type    application/json
-
-    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
-
-Parameters
---------
-No need parameters::
-
-Example
---------
-Example::
-
-    var request = require('request');
-    var options = {
-        'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getGasPrice',
-        'headers': {
-            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
-            'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
-    };
-    request(options, function (error, response) {
-        if (error) throw new Error(error);
-        console.log(response.body);
-    });
-
-Response
---------
-Results::
-
-    {
-    "status": 200,
-    "values": "20000001459"
-    }
-
-------------------------------------------------------------------------------
-
-getBlockNumber
-==============
-
-The number of the most recent block.
-
-Example::
-
-    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getBlockNumber
-
-Headers
---------
-Need to set headers::
-
-    Key             Value
-
-    Content-Type    application/json
-
-    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
-
-Parameters
---------
-No need parameters::
-
-Example
---------
-Example::
-
-    var request = require('request');
-    var options = {
-        'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getBlockNumber',
-        'headers': {
-            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
-            'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
-    };
-    request(options, function (error, response) {
-        if (error) throw new Error(error);
-        console.log(response.body);
-    });
-
-Response
---------
-Results::
-
-    {
-    "status": 200,
-    "values": 11090988
-    }
-
-------------------------------------------------------------------------------
-
-getStorageAt
-============
-
-Get the storage at a specific position of an address.
-
-Example::
-
-    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getStorageAt
-
-Headers
---------
-Need to set headers::
-
-    Key             Value
-
-    Content-Type    application/json
-
-    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
-
-Parameters
---------
-Need parameters::
-
-    address         The address to get storage and the index position of the storage
-    position        {
-                    "address": "0x407d73d8a49eeb85d32cf465507dd71d507100c1",
-                    "position": 0
-                    } 
-
-Example
---------
-Example::
-
-    var request = require('request');
-    var options = {
-        'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getStorageAt',
-        'headers': {
-            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA0ODkyMjE5LCJleHAiOjE2MDU0OTcwMTl9.fcLs3o7UlljwCh6NnHI-7mW3gVdGPR2X2WACW3iUxKo',
-            'Content-Type': 'application/json'
-        },
-    body: JSON.stringify({"address":"0x407d73d8a49eeb85d32cf465507dd71d507100c1","position":0})
-    };
-    request(options, function (error, response) {
-        if (error) throw new Error(error);
-        console.log(response.body);
-    });
-
-Response
---------
-Results::
-
-    {
-    "status": 200,
-    "values": "0x0000000000000000000000000000000000000000000000000000000000000000"
-    }
-
-------------------------------------------------------------------------------
-
-getCode
-========
-
-Get the code at a specific address.
-
-Example::
-
-    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getCode
-
-Headers
---------
-Need to set headers::
-
-    Key             Value
-
-    Content-Type    application/json
-
-    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
-
-Parameters
---------
-Need parameters::
-
-    address     The address to get the code from
-                {
-                "address": "0x407d73d8a49eeb85d32cf465507dd71d507100c1"
-                }
-
-Example
---------
-Example::
-
-    var request = require('request');
-    var options = {
-        'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getCode',
-        'headers': {
-            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA0ODkyMjE5LCJleHAiOjE2MDU0OTcwMTl9.fcLs3o7UlljwCh6NnHI-7mW3gVdGPR2X2WACW3iUxKo',
-            'Content-Type': 'application/json'
-        },
-    body: JSON.stringify({"address":"0x407d73d8a49eeb85d32cf465507dd71d507100c1"})
-    };
-    request(options, function (error, response) {
-        if (error) throw new Error(error);
-        console.log(response.body);
-    });
-
-Response
---------
-Results::
-
-    {
-    "status": 200,
-    "values": "0x"
-    }
-
-------------------------------------------------------------------------------
-
-getBlock
-========
-
-The block matching the block number or block hash.
-
-Example::
-
-    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getBlock
-
-Headers
---------
-Need to set headers::
-
-    Key             Value
-
-    Content-Type    application/json
-
-    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
-
-Parameters
---------
-Need parameters::
-
-    blockNumber     The block number or block hash
-                    {
-                    "blockNumber":"latest" 
-                    }
-
-Example
---------
-Example::
-
-    var request = require('request');
-    var options = {
-        'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getBlock',
-        'headers': {
-            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
-            'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({"blockNumber":"latest"})
-    };
-    request(options, function (error, response) {
-        if (error) throw new Error(error);
-        console.log(response.body);
-    });
-
-Response
---------
-Results::
-
-    {
-    "status": 200,
-    "values": {
-        "difficulty": "3283105782578062",
-        "extraData": "0x6574682d70726f2d687a6f2d74303035",
-        "gasLimit": 12474811,
-        "gasUsed": 12458310,
-        "hash": "0x304ae091240c163d6bba3c185a231561e652b288323fe025c423a4b689355e03",
-        "logsBloom": "0x4460218c55406620444026c1904510208071a2a4d41ac610580917820088034500d4010310c04b82f125eaa8522201d8927b441e0b48000b2c4dcf8435282c005b8860c09b405930cc043a2a540119b090c229165363349423e28321820470101c603f8456688400d060e7d400645a93a22920022c082e262028033c60ae854228ca95212acd2cd086c909c40a98081201b49b57b5a0902b0159c043e4196f880afe45ad1e646e448ce0088048149c4902030690e48202896c5b10ae02c04228b7298c9a080a18480a9fc5005042814d30413603530f819fc52a5112c180a208523260c321183044000b24c4112162278530aac4463c935ad030fb838aa09224",
-        "miner": "0x5A0b54D5dc17e0AadC383d2db43B0a0D3E029c4c",
-        "mixHash": "0xb1033124f5b12a340850ff39994c02fc7d9f35155610db382ea7983e8dc77423",
-        "nonce": "0xf6085d174470b114",
-        "number": 11106835,
-        "parentHash": "0xfd5141b7f3468de3ffa050d4521de95f79a79dbf988e47fc4800a29a1165590e",
-        "receiptsRoot": "0xa8f0069588af87ae5b42e121b5baa91cf2df4d60791309e83f9db277bfd2da7b",
-        "sha3Uncles": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
-        "size": 25928,
-        "stateRoot": "0x2867691f276a6bf750d6eb336170b28efb9f412c85fbcf08e342623f0ebecda7",
-        "timestamp": 1603380975,
-        "totalDifficulty": "18201459894245119072846",
-        "transactions": [
-            "0x4e9f3ec2efc14d4641cbde5dd60a8df18a9cf27c6ce96bd446a907f5dbff8038",
-            "0x501822209a669595531ae18044b95fdcd9809aaff87e163a53f726978cf3052b",
-            "0x9ba57c78effeed2246148bba42394f6206df2bfba3d151c7ba1fa3b4226f1efa"
-        ],
-        "transactionsRoot": "0xf07a0da121dc485459eb59b3818bcb607ca2c909ea12062d767090687645d3dd",
-        "uncles": []
-    }
-}
-
-------------------------------------------------------------------------------
-
-getBlockTransactionCount
-========================
-
-The number of transaction in a given block.
-
-Example::
-
-    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getBlockTransactionCount
-
-Headers
---------
-Need to set headers::
-
-    Key             Value
-
-    Content-Type    application/json
-
-    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
-
-Parameters
---------
-Need parameters::
-
-    blockNumber     Get the latest block
-                    {
-                    "blockNumber":"latest"
-                    }
-
-Example
---------
-Example::
-    
-    var request = require('request');
-    var options = {
-    'method': 'POST',
-    'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getBlockTransactionCount',
-    'headers': {
-        'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({"blockNumber":"latest"})
-    };
-    request(options, function (error, response) {
-        if (error) throw new Error(error);
-        console.log(response.body);
-    });
-
-Response
---------
-Results::
-
-    {
-    "status": 200,
-    "values": 248
-    }
-
-------------------------------------------------------------------------------
-
-getBlockUncleCount
-==================
-
-The number of uncles in a block from a block matching the given block hash.
-
-Example::
-
-    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getBlockUncleCount
-
-Headers
---------
-Need to set headers::
-
-    Key             Value
-
-    Content-Type    application/json
-
-    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
-
-Parameters
---------
-Need parameters::
-
-    blockNumber     The block number or hash
-                    {
-                    "blockNumber":"latest"
-                    }
-
-Example
---------
-Example::
-    
-    var request = require('request');
-    var options = {
-    'method': 'POST',
-    'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getBlockUncleCount',
-    'headers': {
-        'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({"blockNumber":"latest"})
-    };
-    request(options, function (error, response) {
-        if (error) throw new Error(error);
-        console.log(response.body);
-    });
-
-Response
---------
-Results::
-
-    {
-    "status": 200,
-    "values": 1
-    }
-
-------------------------------------------------------------------------------
-
-getUncle
-========
-
-The blocks uncle by a given uncle index position.
-
-Example::
-
-    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getUncle
-
-Headers
---------
-Need to set headers::
-
-    Key             Value
-
-    Content-Type    application/json
-
-    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
-
-Parameters
---------
-Need parameters::
-
-    blockNumber     The block number or hash and the index position of the uncle
-    uncleIndex      {
-                    "blockNumber": "latest",
-                    "uncleIndex": "0"
-                    }
-
-Example
---------
-Example::
-    
-    var request = require('request');
-    var options = {
-    'method': 'POST',
-    'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getUncle',
-    'headers': {
-        'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({"blockNumber":"latest","uncleIndex":"0"})
-    };
-    request(options, function (error, response) {
-        if (error) throw new Error(error);
-        console.log(response.body);
-    });
-
-Response
---------
-Results::
-
-    {
-    "status": 200,
-    "values": null
-    }
-
+getTransaction
 ------------------------------------------------------------------------------
 
 getTransaction
@@ -702,6 +63,64 @@ Results::
     {
     "status": 200,
     "values": null
+    }
+
+------------------------------------------------------------------------------
+
+getTransactionCount
+===================
+
+The number of transactions sent from this address.
+
+Example::
+
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getTransactionCount
+
+Headers
+--------
+Need to set headers::
+
+    Key             Value
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+Need parameters::
+
+    address     The address to get the numbers of transactions from
+                {
+                "address": "0xceb21b8ce14e287a106bd01f5c92dac970c1efd3"
+                }
+
+Example
+--------
+Example::
+    
+    var request = require('request');
+    var options = {
+    'method': 'POST',
+    'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getTransactionCount',
+    'headers': {
+        'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({"address":"0xceb21b8ce14e287a106bd01f5c92dac970c1efd3"})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Results::
+
+    {
+    "status": 200,
+    "values": 0
     }
 
 ------------------------------------------------------------------------------
@@ -823,64 +242,6 @@ Results::
 
 ------------------------------------------------------------------------------
 
-getTransactionCount
-===================
-
-The number of transactions sent from this address.
-
-Example::
-
-    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getTransactionCount
-
-Headers
---------
-Need to set headers::
-
-    Key             Value
-
-    Content-Type    application/json
-
-    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
-
-Parameters
---------
-Need parameters::
-
-    address     The address to get the numbers of transactions from
-                {
-                "address": "0xceb21b8ce14e287a106bd01f5c92dac970c1efd3"
-                }
-
-Example
---------
-Example::
-    
-    var request = require('request');
-    var options = {
-    'method': 'POST',
-    'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getTransactionCount',
-    'headers': {
-        'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({"address":"0xceb21b8ce14e287a106bd01f5c92dac970c1efd3"})
-    };
-    request(options, function (error, response) {
-        if (error) throw new Error(error);
-        console.log(response.body);
-    });
-
-Response
---------
-Results::
-
-    {
-    "status": 200,
-    "values": 0
-    }
-
-------------------------------------------------------------------------------
-
 sendSignedTransaction
 =====================
 
@@ -938,174 +299,17 @@ Results::
     }
 
 ------------------------------------------------------------------------------
-
-getNodeInfo
-===========
-
-The current client version.
-
-Example::
-
-    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getNodeInfo
-
-Headers
---------
-Need to set headers::
-
-    Key             Value
-
-    Content-Type    application/json
-
-    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
-
-Parameters
---------
-No need parameters::
-
-Example
---------
-Example::
-    
-    var request = require('request');
-    var options = {
-    'method': 'POST',
-    'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getNodeInfo',
-    'headers': {
-        'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
-    };
-    request(options, function (error, response) {
-    if (error) throw new Error(error);
-    console.log(response.body);
-    });
-
-Response
---------
-Results::
-
-    {
-    "status": 200,
-    "values": "Geth/v1.9.10-stable-58cf5686/linux-amd64/go1.13.6"
-    }
+sendTransaction
 
 ------------------------------------------------------------------------------
+getBalance
+========
 
-getProtocolVersion
-==================
-
-The ethereum protocol version of the node.
-
-Example::
-
-    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getProtocolVersion
-
-Headers
---------
-Need to set headers::
-
-    Key             Value
-
-    Content-Type    application/json
-
-    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
-
-Parameters
---------
-No need parameters::
-
-Example
---------
-Example::
-    
-    var request = require('request');
-    var options = {
-    'method': 'POST',
-    'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getProtocolVersion',
-    'headers': {
-        'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
-    };
-    request(options, function (error, response) {
-        if (error) throw new Error(error);
-        console.log(response.body);
-    });
-
-Response
---------
-Results::
-
-    {
-    "status": 200,
-    "values": "0x40"
-    }
-
-------------------------------------------------------------------------------
-
-isSyncing
-=========
-
-Checks if the node is currently syncing and returns either a syncing object.
+Get the balance of an address at a given block.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/isSyncing
-
-Headers
---------
-Need to set headers::
-
-    Key             Value
-
-    Content-Type    application/json
-
-    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
-
-Parameters
---------
-No need parameters::
-
-Example
---------
-Example::
-    
-    var request = require('request');
-    var options = {
-    'method': 'POST',
-    'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/isSyncing',
-    'headers': {
-        'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
-    };
-    request(options, function (error, response) {
-        if (error) throw new Error(error);
-        console.log(response.body);
-    });
-
-Response
---------
-Results::
-
-    {
-    "status": 200,
-    "values": false
-    }
-
-------------------------------------------------------------------------------
-
-getPastLogs
-===========
-
-The past logs, matching the given options.
-
-Example::
-
-    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getPastLogs
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getBalance
 
 Headers
 --------
@@ -1121,27 +325,24 @@ Parameters
 --------
 Need parameters::
 
-    address         An address or a list of addresses to only get logs from particular account(s) and an array of values which must each appear in the log entries
-    topics          {
-                    "address": "0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe",
-                    "topics": [
-                        "0x033456732123ffff2342342dd12342434324234234fd234fd23fd4f23d4234"
-                        ]
+    address         The address to get the balance of
+                    {
+                    "address": "0xceb21b8ce14e287a106bd01f5c92dac970c1efd3"
                     }
 
 Example
 --------
 Example::
-    
+
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getPastLogs',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getBalance',
         'headers': {
-            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA0ODkyMjE5LCJleHAiOjE2MDU0OTcwMTl9.fcLs3o7UlljwCh6NnHI-7mW3gVdGPR2X2WACW3iUxKo',
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA1NTgyOTA4LCJleHAiOjE2MDYxODc3MDh9.fTPqa9_dJR34PBheFpse5tYFOnEGA2_Fgkhf-JitmYk',
             'Content-Type': 'application/json'
-        },
-    body: JSON.stringify({"address":"0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe","topics":["0x033456732123ffff2342342dd12342434324234234fd234fd23fd4f23d4234"]})
+    },
+    body: JSON.stringify({"address":"0xceb21b8ce14e287a106bd01f5c92dac970c1efd3"})
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -1154,42 +355,424 @@ Results::
 
     {
     "status": 200,
-    "values": [
-        {
-            "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
-            "topics": [
-                "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
-                "0x0000000000000000000000005bcbdfb6cc624b959c39a2d16110d1f2d9204f72",
-                "0x000000000000000000000000c604e69082c6c0a4c705691141ec37f0ef094d27"
-            ],
-            "data": "0x000000000000000000000000000000000000000000000000000000001dcd6500",
-            "blockNumber": 11221072,
-            "transactionHash": "0x6c65db22f3ec848476cfc13bf5af650a4e7fb35c27c8f7e0bbbed19b18d7d30d",
-            "transactionIndex": 12,
-            "blockHash": "0x31348861b687857328d24bafcf6b3a1371d783fe9997c424c6a85415fa970cf2",
-            "logIndex": 0,
-            "removed": false,
-            "id": "log_d41609af"
-        },
-        .....
-        {
-            "address": "0x2F8fF07E607c6E489cdEa3D107AbeCC9b8024531",
-            "topics": [
-                "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
-                "0x000000000000000000000000a2b26fdcf2f328d01bf4cc29c7c16b039dc6f772",
-                "0x0000000000000000000000007a250d5630b4cf539739df2c5dacb4c659f2488d"
-            ],
-            "data": "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
-            "blockNumber": 11221072,
-            "transactionHash": "0x96237a7bd08d93fc0100a3731381ebd450007215586bb0c6129c504fe5201c84",
-            "transactionIndex": 245,
-            "blockHash": "0x31348861b687857328d24bafcf6b3a1371d783fe9997c424c6a85415fa970cf2",
-            "logIndex": 309,
-            "removed": false,
-            "id": "log_d51187a6"
-        }
-    ]
+    "values": "0"
+    }
+
+------------------------------------------------------------------------------
+
+getBlock
+========
+
+The block matching the block number or block hash.
+
+Example::
+
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getBlock
+
+Headers
+--------
+Need to set headers::
+
+    Key             Value
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+Need parameters::
+
+    blockNumber     The block number or block hash
+                    {
+                    "blockNumber":"latest" 
+                    }
+
+Example
+--------
+Example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getBlock',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({"blockNumber":"latest"})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Results::
+
+    {
+    "status": 200,
+    "values": {
+        "difficulty": "3283105782578062",
+        "extraData": "0x6574682d70726f2d687a6f2d74303035",
+        "gasLimit": 12474811,
+        "gasUsed": 12458310,
+        "hash": "0x304ae091240c163d6bba3c185a231561e652b288323fe025c423a4b689355e03",
+        "logsBloom": "0x4460218c55406620444026c1904510208071a2a4d41ac610580917820088034500d4010310c04b82f125eaa8522201d8927b441e0b48000b2c4dcf8435282c005b8860c09b405930cc043a2a540119b090c229165363349423e28321820470101c603f8456688400d060e7d400645a93a22920022c082e262028033c60ae854228ca95212acd2cd086c909c40a98081201b49b57b5a0902b0159c043e4196f880afe45ad1e646e448ce0088048149c4902030690e48202896c5b10ae02c04228b7298c9a080a18480a9fc5005042814d30413603530f819fc52a5112c180a208523260c321183044000b24c4112162278530aac4463c935ad030fb838aa09224",
+        "miner": "0x5A0b54D5dc17e0AadC383d2db43B0a0D3E029c4c",
+        "mixHash": "0xb1033124f5b12a340850ff39994c02fc7d9f35155610db382ea7983e8dc77423",
+        "nonce": "0xf6085d174470b114",
+        "number": 11106835,
+        "parentHash": "0xfd5141b7f3468de3ffa050d4521de95f79a79dbf988e47fc4800a29a1165590e",
+        "receiptsRoot": "0xa8f0069588af87ae5b42e121b5baa91cf2df4d60791309e83f9db277bfd2da7b",
+        "sha3Uncles": "0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347",
+        "size": 25928,
+        "stateRoot": "0x2867691f276a6bf750d6eb336170b28efb9f412c85fbcf08e342623f0ebecda7",
+        "timestamp": 1603380975,
+        "totalDifficulty": "18201459894245119072846",
+        "transactions": [
+            "0x4e9f3ec2efc14d4641cbde5dd60a8df18a9cf27c6ce96bd446a907f5dbff8038",
+            "0x501822209a669595531ae18044b95fdcd9809aaff87e163a53f726978cf3052b",
+            "0x9ba57c78effeed2246148bba42394f6206df2bfba3d151c7ba1fa3b4226f1efa"
+        ],
+        "transactionsRoot": "0xf07a0da121dc485459eb59b3818bcb607ca2c909ea12062d767090687645d3dd",
+        "uncles": []
+    }
 }
+
+------------------------------------------------------------------------------
+
+getBlockNumber
+==============
+
+The number of the most recent block.
+
+Example::
+
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getBlockNumber
+
+Headers
+--------
+Need to set headers::
+
+    Key             Value
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+Example
+--------
+Example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getBlockNumber',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Results::
+
+    {
+    "status": 200,
+    "values": 11090988
+    }
+
+------------------------------------------------------------------------------
+
+getBlockTransactionCount
+========================
+
+The number of transaction in a given block.
+
+Example::
+
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getBlockTransactionCount
+
+Headers
+--------
+Need to set headers::
+
+    Key             Value
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+Need parameters::
+
+    blockNumber     Get the latest block
+                    {
+                    "blockNumber":"latest"
+                    }
+
+Example
+--------
+Example::
+    
+    var request = require('request');
+    var options = {
+    'method': 'POST',
+    'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getBlockTransactionCount',
+    'headers': {
+        'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({"blockNumber":"latest"})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Results::
+
+    {
+    "status": 200,
+    "values": 248
+    }
+
+------------------------------------------------------------------------------
+
+getBlockUncleCount
+==================
+
+The number of uncles in a block from a block matching the given block hash.
+
+Example::
+
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getBlockUncleCount
+
+Headers
+--------
+Need to set headers::
+
+    Key             Value
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+Need parameters::
+
+    blockNumber     The block number or hash
+                    {
+                    "blockNumber":"latest"
+                    }
+
+Example
+--------
+Example::
+    
+    var request = require('request');
+    var options = {
+    'method': 'POST',
+    'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getBlockUncleCount',
+    'headers': {
+        'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({"blockNumber":"latest"})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Results::
+
+    {
+    "status": 200,
+    "values": 1
+    }
+
+------------------------------------------------------------------------------
+
+getCode
+========
+
+Get the code at a specific address.
+
+Example::
+
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getCode
+
+Headers
+--------
+Need to set headers::
+
+    Key             Value
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+Need parameters::
+
+    address     The address to get the code from
+                {
+                "address": "0x407d73d8a49eeb85d32cf465507dd71d507100c1"
+                }
+
+Example
+--------
+Example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getCode',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA0ODkyMjE5LCJleHAiOjE2MDU0OTcwMTl9.fcLs3o7UlljwCh6NnHI-7mW3gVdGPR2X2WACW3iUxKo',
+            'Content-Type': 'application/json'
+        },
+    body: JSON.stringify({"address":"0x407d73d8a49eeb85d32cf465507dd71d507100c1"})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Results::
+
+    {
+    "status": 200,
+    "values": "0x"
+    }
+
+------------------------------------------------------------------------------
+
+getGasPrice
+===========
+
+The current gas price oracle. The gas price is determined by the last few blocks median gas price.
+
+Example::
+
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getGasPrice
+
+Headers
+--------
+Need to set headers::
+
+    Key             Value
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+Example
+--------
+Example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getGasPrice',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Results::
+
+    {
+    "status": 200,
+    "values": "20000001459"
+    }
+
+------------------------------------------------------------------------------
+
+getHashrate
+===========
+
+The number of hashes per second that the node is mining with.
+
+Example::
+
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getHashrate
+
+Headers
+--------
+Need to set headers::
+
+    Key             Value
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+Example
+--------
+Example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getHashrate',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Results::
+
+    {
+    "status": 200,
+    "values": 0
+    }
 
 ------------------------------------------------------------------------------
 
@@ -1242,6 +825,330 @@ Results::
     {
     "status": 200,
     "values": 14
+    }
+
+------------------------------------------------------------------------------
+
+getUncle
+========
+
+The blocks uncle by a given uncle index position.
+
+Example::
+
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getUncle
+
+Headers
+--------
+Need to set headers::
+
+    Key             Value
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+Need parameters::
+
+    blockNumber     The block number or hash and the index position of the uncle
+    uncleIndex      {
+                    "blockNumber": "latest",
+                    "uncleIndex": "0"
+                    }
+
+Example
+--------
+Example::
+    
+    var request = require('request');
+    var options = {
+    'method': 'POST',
+    'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getUncle',
+    'headers': {
+        'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({"blockNumber":"latest","uncleIndex":"0"})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Results::
+
+    {
+    "status": 200,
+    "values": null
+    }
+
+------------------------------------------------------------------------------
+
+transactionBlockTimeout
+=======================
+
+The amount of new blocks it should wait until the first confirmation happens.
+
+Example::
+
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/transactionBlockTimeout
+
+Headers
+--------
+Need to set headers::
+
+    Key             Value
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+Example
+--------
+Example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/transactionBlockTimeout',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Results::
+
+    {
+    "status": 200,
+    "values": 50
+    }
+
+------------------------------------------------------------------------------
+
+transactionPollingTimeout
+=========================
+
+This rpc is used over HTTP connections. It defines the number of seconds Web3 will wait for a receipt which confirms that a transaction was mined by the network.
+
+Example::
+
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/transactionPollingTimeout
+
+Headers
+--------
+Need to set headers::
+
+    Key             Value
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+Example
+--------
+Example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/transactionPollingTimeout',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Results::
+
+    {
+    "status": 200,
+    "values": 750
+    }
+
+------------------------------------------------------------------------------
+
+transactionConfirmationBlocks
+=========================
+
+This rpc is used over HTTP connections. It defines the number of blocks it requires until a transaction is considered confirmed.
+
+Example::
+
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/transactionConfirmationBlocks
+
+Headers
+--------
+Need to set headers::
+
+    Key             Value
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+Example
+--------
+Example::
+
+    var request = require('request');
+    var options = {
+    'method': 'POST',
+    'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/transactionConfirmationBlocks',
+    'headers': {
+        'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA1NTgyOTA4LCJleHAiOjE2MDYxODc3MDh9.fTPqa9_dJR34PBheFpse5tYFOnEGA2_Fgkhf-JitmYk',
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Results::
+
+    {
+    "status": 200,
+    "values": 50
+    }
+
+------------------------------------------------------------------------------
+
+getAccounts
+===========
+
+This rpc is used over HTTP connections. It returns a list of accounts the node controls.
+
+Example::
+
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getAccounts
+
+Headers
+--------
+Need to set headers::
+
+    Key             Value
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+Example
+--------
+Example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getAccounts',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA1NTgyOTA4LCJleHAiOjE2MDYxODc3MDh9.fTPqa9_dJR34PBheFpse5tYFOnEGA2_Fgkhf-JitmYk',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Results::
+
+    {
+    "status": 200,
+    "values": false
+    }
+
+------------------------------------------------------------------------------
+
+getChainId
+==========
+
+This rpc is used over HTTP connections. It return the chain ID of the current connected node as described in the EIP-695.
+
+Example::
+
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getChainId
+
+Headers
+--------
+Need to set headers::
+
+    Key             Value
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+Example
+--------
+Example::
+
+    var request = require('request');
+    var options = {
+    'method': 'POST',
+    'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getChainId',
+    'headers': {
+        'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA1NTgyOTA4LCJleHAiOjE2MDYxODc3MDh9.fTPqa9_dJR34PBheFpse5tYFOnEGA2_Fgkhf-JitmYk',
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Results::
+
+    {
+    "status": 200,
+    "values": 1
     }
 
 ------------------------------------------------------------------------------
@@ -1299,6 +1206,265 @@ Results::
 
 ------------------------------------------------------------------------------
 
+getNodeInfo
+===========
+
+The current client version.
+
+Example::
+
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getNodeInfo
+
+Headers
+--------
+Need to set headers::
+
+    Key             Value
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+Example
+--------
+Example::
+    
+    var request = require('request');
+    var options = {
+    'method': 'POST',
+    'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getNodeInfo',
+    'headers': {
+        'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+    if (error) throw new Error(error);
+    console.log(response.body);
+    });
+
+Response
+--------
+Results::
+
+    {
+    "status": 200,
+    "values": "Geth/v1.9.10-stable-58cf5686/linux-amd64/go1.13.6"
+    }
+
+------------------------------------------------------------------------------
+
+getPastLogs
+===========
+
+Gets past logs, matching the given options.
+
+Example::
+
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getPastLogs
+
+Headers
+--------
+Need to set headers::
+
+    Key             Value
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+Need parameters::
+
+    address         An address or a list of addresses to only get logs from particular account(s) and an array of values which must each appear in the log entries
+    topic           {
+                    "address": "0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe",
+                        "topics": [
+                            "0x033456732123ffff2342342dd12342434324234234fd234fd23fd4f23d4234"
+                        ]
+                    }
+
+Example
+--------
+Example::
+    
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getPastLogs',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA1NTgyOTA4LCJleHAiOjE2MDYxODc3MDh9.fTPqa9_dJR34PBheFpse5tYFOnEGA2_Fgkhf-JitmYk',
+            'Content-Type': 'application/json'
+        },
+    body: JSON.stringify({"address":"0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe","topics":["0x033456732123ffff2342342dd12342434324234234fd234fd23fd4f23d4234"]})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Results::
+
+    {
+    "status": 200,
+    "values": [
+            {
+                "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+                "topics": [
+                    "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+                    "0x000000000000000000000000d3661f906ea1cdc3a3689ed9ecf10544aada79f0",
+                    "0x00000000000000000000000091a5db96b660811fe38761b4bd7887efd16820cb"
+                ],
+                "data": "0x00000000000000000000000000000000000000000000000018ee7d3c7614f000",
+                "blockNumber": 11273048,
+                "transactionHash": "0xcdda2314f89eb5e0c33cf9459b3257ea0bc91a48e4b7d70444d8db9d5554387b",
+                "transactionIndex": 0,
+                "blockHash": "0xd1cc61264f1c46621713f0afccc3225c2d8cf35f873f02d60abed1682a632121",
+                "logIndex": 0,
+                "removed": false,
+                "id": "log_e3fe376f"
+            },
+            {
+                "address": "0x5ac13261c181a9c3938BfE1b649E65D10F98566B",
+                "topics": [
+                    "0xd78ad95fa46c994b6551d0da85fc275fe613ce37657fb8d5e3d130840159d822",
+                    "0x0000000000000000000000007a250d5630b4cf539739df2c5dacb4c659f2488d",
+                    "0x000000000000000000000000ca372920485da699a42006b6b4abc166b226ba16"
+                ],
+                "data": "0x000000000000000000000000000000000000000000000002179a18af9318952b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000089ee67d",
+                "blockNumber": 11273048,
+                "transactionHash": "0x509a254b254971c443fc0006f09aed2d7ee985e85af0e34fdea96f20fa464983",
+                "transactionIndex": 224,
+                "blockHash": "0xd1cc61264f1c46621713f0afccc3225c2d8cf35f873f02d60abed1682a632121",
+                "logIndex": 299,
+                "removed": false,
+                "id": "log_97aeea7d"
+            }
+        ]
+    }
+
+------------------------------------------------------------------------------
+
+getProtocolVersion
+==================
+
+The ethereum protocol version of the node.
+
+Example::
+
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getProtocolVersion
+
+Headers
+--------
+Need to set headers::
+
+    Key             Value
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+Example
+--------
+Example::
+    
+    var request = require('request');
+    var options = {
+    'method': 'POST',
+    'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getProtocolVersion',
+    'headers': {
+        'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Results::
+
+    {
+    "status": 200,
+    "values": "0x40"
+    }
+
+------------------------------------------------------------------------------
+
+getStorageAt
+============
+
+Get the storage at a specific position of an address.
+
+Example::
+
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getStorageAt
+
+Headers
+--------
+Need to set headers::
+
+    Key             Value
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+Need parameters::
+
+    address         The address to get storage and the index position of the storage
+    position        {
+                    "address": "0x407d73d8a49eeb85d32cf465507dd71d507100c1",
+                    "position": 0
+                    } 
+
+Example
+--------
+Example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getStorageAt',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA0ODkyMjE5LCJleHAiOjE2MDU0OTcwMTl9.fcLs3o7UlljwCh6NnHI-7mW3gVdGPR2X2WACW3iUxKo',
+            'Content-Type': 'application/json'
+        },
+    body: JSON.stringify({"address":"0x407d73d8a49eeb85d32cf465507dd71d507100c1","position":0})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Results::
+
+    {
+    "status": 200,
+    "values": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    }
+
+------------------------------------------------------------------------------
+
 isListening
 ===========
 
@@ -1349,3 +1515,266 @@ Results::
     "status": 200,
     "values": true
     }
+
+------------------------------------------------------------------------------
+
+isMining
+============
+
+Checks whether the node is mining or not.
+
+Example::
+
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/isMining
+
+Headers
+--------
+Need to set headers::
+
+    Key             Value
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+Example
+--------
+Example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/isMining',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA1NTgyOTA4LCJleHAiOjE2MDYxODc3MDh9.fTPqa9_dJR34PBheFpse5tYFOnEGA2_Fgkhf-JitmYk',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Results::
+
+    {
+    "status": 200,
+    "values": false
+    }
+
+------------------------------------------------------------------------------
+
+isSyncing
+=========
+
+Checks if the node is currently syncing and returns either a syncing object.
+
+Example::
+
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/isSyncing
+
+Headers
+--------
+Need to set headers::
+
+    Key             Value
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+Example
+--------
+Example::
+    
+    var request = require('request');
+    var options = {
+    'method': 'POST',
+    'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/isSyncing',
+    'headers': {
+        'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Results::
+
+    {
+    "status": 200,
+    "values": false
+    }
+
+------------------------------------------------------------------------------
+deploySC
+============
+
+Checks whether the node is mining or not.
+
+Example::
+
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/
+
+Headers
+--------
+Need to set headers::
+
+    Key             Value
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+Example
+--------
+Example::
+
+    
+
+Response
+--------
+Results::
+
+    {
+    "status": 200,
+    "values": false
+    }
+
+------------------------------------------------------------------------------
+deploySCHex
+============
+
+Checks whether the node is mining or not.
+
+Example::
+
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/
+
+Headers
+--------
+Need to set headers::
+
+    Key             Value
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+Example
+--------
+Example::
+
+    
+
+Response
+--------
+Results::
+
+    {
+    "status": 200,
+    "values": false
+    }
+
+------------------------------------------------------------------------------
+callSC
+============
+
+Checks whether the node is mining or not.
+
+Example::
+
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/
+
+Headers
+--------
+Need to set headers::
+
+    Key             Value
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+Example
+--------
+Example::
+
+    
+
+Response
+--------
+Results::
+
+    {
+    "status": 200,
+    "values": false
+    }
+
+------------------------------------------------------------------------------
+sendSC
+============
+
+Checks whether the node is mining or not.
+
+Example::
+
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/
+
+Headers
+--------
+Need to set headers::
+
+    Key             Value
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+Example
+--------
+Example::
+
+    
+
+Response
+--------
+Results::
+
+    {
+    "status": 200,
+    "values": false
+    }
+
