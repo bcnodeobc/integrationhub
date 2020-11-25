@@ -1734,3 +1734,62 @@ Returns the signrawtransactionwithkey result::
     "status": ,
     "values": 
     }
+
+---------------------------------------------------------------------------------------------------------
+
+sendrawtransaction
+========
+
+bitcoin rpc for sendrawtransaction.
+
+Returns the best block hash::
+
+    http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/sendrawtransaction
+
+Headers
+--------
+Need to set headers::
+
+    Key             Value
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+Need parameters::
+
+    hexstring     hexstring and privatekey
+    and           {
+    privatekey      "hexstring": "0200000001669576892eb617435059fb6c5976e8bf526149c0f09ce7dcdc4af0ed995b10390000000000ffffffff0150c300000000000017a914f0a454d03ca355e47b13fbdd497d258a0b365b0a8700000000",
+                    "allowhighfees": true
+                    } 
+
+Example
+--------
+Example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/bchmainnet/sendrawtransaction',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({"hexstring":"0200000001669576892eb617435059fb6c5976e8bf526149c0f09ce7dcdc4af0ed995b10390000000000ffffffff0150c300000000000017a914f0a454d03ca355e47b13fbdd497d258a0b365b0a8700000000","privkeys":[""]})
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Returns the result for signrawtransactionwithkey::
+
+    {
+    "status": 200,
+    "values": ""
+    }
