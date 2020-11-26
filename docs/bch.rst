@@ -1738,7 +1738,7 @@ Returns the signrawtransactionwithkey result::
 ---------------------------------------------------------------------------------------------------------
 
 sendrawtransaction
-========
+==================
 
 bitcoin rpc for sendrawtransaction.
 
