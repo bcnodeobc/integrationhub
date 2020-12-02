@@ -18,7 +18,6 @@ Integration Hub V2 (IHv2) is a platform developed by OK Blockchain Centre to eas
    :maxdepth: 2
    :caption: API Reference
    
-   bch
    bitcoin
    ethereum
    neo
