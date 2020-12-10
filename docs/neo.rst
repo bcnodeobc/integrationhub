@@ -239,13 +239,12 @@ Example::
 
     var request = require('request');
     var options = {
-        'method': 'POST',
+        'method': 'GET',
         'url': 'http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getbestblockhash',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -410,13 +409,12 @@ Example::
 
     var request = require('request');
     var options = {
-        'method': 'POST',
+        'method': 'GET',
         'url': 'http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getblockcount',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
-    },
-     body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -874,13 +872,12 @@ Example::
 
     var request = require('request');
     var options = {
-        'method': 'POST',
+        'method': 'GET',
         'url': 'http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getconnectioncount',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -986,13 +983,12 @@ Example::
 
     var request = require('request');
     var options = {
-        'method': 'POST',
+        'method': 'GET',
         'url': 'http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getpeers',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -1248,13 +1244,12 @@ Example::
 
     var request = require('request');
     var options = {
-        'method': 'POST',
+        'method': 'GET',
         'url': 'http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getvalidators',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -1317,13 +1312,12 @@ Example::
 
     var request = require('request');
     var options = {
-        'method': 'POST',
+        'method': 'GET',
         'url': 'http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getversion',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);

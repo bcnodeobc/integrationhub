@@ -37,13 +37,12 @@ Example::
 
     var request = require('request');
     var options = {
-        'method': 'POST',
+        'method': 'GET',
         'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/getblockcount',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -90,13 +89,12 @@ Example::
 
     var request = require('request');
     var options = {
-        'method': 'POST',
+        'method': 'GET',
         'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/getbestblockhash',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -223,13 +221,12 @@ Example::
 
     var request = require('request');
     var options = {
-        'method': 'POST',
+        'method': 'GET',
         'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/getblockchaininfo',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -546,13 +543,12 @@ Example::
 
     var request = require('request');
     var options = {
-        'method': 'POST',
+        'method': 'GET',
         'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/getdifficulty',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -599,13 +595,12 @@ Example::
 
     var request = require('request');
     var options = {
-        'method': 'POST',
+        'method': 'GET',
         'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/getmemoryinfo',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -661,13 +656,12 @@ Example::
 
     var request = require('request');
     var options = {
-        'method': 'POST',
+        'method': 'GET',
         'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/getrpcinfo',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -722,13 +716,12 @@ Example::
 
     var request = require('request');
     var options = {
-        'method': 'POST',
+        'method': 'GET',
         'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/help',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -775,13 +768,12 @@ Example::
 
     var request = require('request');
     var options = {
-        'method': 'POST',
+        'method': 'GET',
         'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/uptime',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -828,13 +820,12 @@ Example::
 
     var request = require('request');
     var options = {
-        'method': 'POST',
+        'method': 'GET',
         'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/getconnectioncount',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -881,13 +872,12 @@ Example::
 
     var request = require('request');
     var options = {
-        'method': 'POST',
+        'method': 'GET',
         'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/getnettotals',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -946,13 +936,12 @@ Example::
 
     var request = require('request');
     var options = {
-        'method': 'POST',
+        'method': 'GET',
         'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/getnetworkinfo',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -1046,13 +1035,12 @@ Example::
 
     var request = require('request');
     var options = {
-        'method': 'POST',
+        'method': 'GET',
         'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/getpeerinfo',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -1244,13 +1232,12 @@ Example::
 
     var request = require('request');
     var options = {
-        'method': 'POST',
+        'method': 'GET',
         'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/listbanned',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -1301,13 +1288,12 @@ Example::
 
     var request = require('request');
     var options = {
-        'method': 'POST',
+        'method': 'GET',
         'url': 'http://integrationhub.okwave.asia:3333/api/v2/btcmainnet/ping',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);

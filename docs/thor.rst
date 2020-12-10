@@ -525,13 +525,12 @@ Example::
 
     var request = require('request');
     var options = {
-        'method': 'POST',
+        'method': 'GET',
         'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getBlockNumber',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -752,13 +751,12 @@ Example::
 
     var request = require('request');
     var options = {
-        'method': 'POST',
+        'method': 'GET',
         'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getGasPrice',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -805,13 +803,12 @@ Example::
 
     var request = require('request');
     var options = {
-        'method': 'POST',
+        'method': 'GET',
         'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getHashrate',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -858,13 +855,12 @@ Example::
     
     var request = require('request');
     var options = {
-    'method': 'POST',
+    'method': 'GET',
     'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.*.net/getPeerCount',
     'headers': {
         'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
         'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -970,13 +966,12 @@ Example::
 
     var request = require('request');
     var options = {
-        'method': 'POST',
+        'method': 'GET',
         'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/transactionBlockTimeout',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -1023,13 +1018,12 @@ Example::
 
     var request = require('request');
     var options = {
-        'method': 'POST',
+        'method': 'GET',
         'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/transactionPollingTimeout',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -1076,13 +1070,12 @@ Example::
 
     var request = require('request');
     var options = {
-    'method': 'POST',
+    'method': 'GET',
     'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/transactionConfirmationBlocks',
     'headers': {
         'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA1NTgyOTA4LCJleHAiOjE2MDYxODc3MDh9.fTPqa9_dJR34PBheFpse5tYFOnEGA2_Fgkhf-JitmYk',
         'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -1129,13 +1122,12 @@ Example::
 
     var request = require('request');
     var options = {
-        'method': 'POST',
+        'method': 'GET',
         'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getAccounts',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA1NTgyOTA4LCJleHAiOjE2MDYxODc3MDh9.fTPqa9_dJR34PBheFpse5tYFOnEGA2_Fgkhf-JitmYk',
             'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -1182,13 +1174,12 @@ Example::
 
     var request = require('request');
     var options = {
-    'method': 'POST',
+    'method': 'GET',
     'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getChainId',
     'headers': {
         'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA1NTgyOTA4LCJleHAiOjE2MDYxODc3MDh9.fTPqa9_dJR34PBheFpse5tYFOnEGA2_Fgkhf-JitmYk',
         'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -1235,13 +1226,12 @@ Example::
     
     var request = require('request');
     var options = {
-    'method': 'POST',
+    'method': 'GET',
     'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.*.net/getId',
     'headers': {
         'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
         'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -1288,13 +1278,12 @@ Example::
     
     var request = require('request');
     var options = {
-    'method': 'POST',
+    'method': 'GET',
     'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getNodeInfo',
     'headers': {
         'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
         'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
     if (error) throw new Error(error);
@@ -1435,13 +1424,12 @@ Example::
     
     var request = require('request');
     var options = {
-    'method': 'POST',
+    'method': 'GET',
     'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getProtocolVersion',
     'headers': {
         'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
         'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -1547,13 +1535,12 @@ Example::
     
     var request = require('request');
     var options = {
-    'method': 'POST',
+    'method': 'GET',
     'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.*.net/isListening',
     'headers': {
         'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
         'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -1600,13 +1587,12 @@ Example::
 
     var request = require('request');
     var options = {
-        'method': 'POST',
+        'method': 'GET',
         'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/isMining',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA1NTgyOTA4LCJleHAiOjE2MDYxODc3MDh9.fTPqa9_dJR34PBheFpse5tYFOnEGA2_Fgkhf-JitmYk',
             'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -1653,13 +1639,12 @@ Example::
     
     var request = require('request');
     var options = {
-    'method': 'POST',
+    'method': 'GET',
     'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/isSyncing',
     'headers': {
         'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
         'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({})
+    }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
