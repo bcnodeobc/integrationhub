@@ -2529,3 +2529,59 @@ Results::
     "status": 200,
     "values": "0x0fb3750900000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000a41686d616420323232200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000449859a071f6b654fde713074728c4fc22f04fe"
     }
+
+---------------------------------------------------------------------------------------------------------------------------
+
+getGasRate
+============
+
+Get fast, standard and low gas price which obtain from a few previous transactions.
+
+Example::
+
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getGasRate
+
+Headers
+--------
+Need to set headers::
+
+    Key             Value
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+No need parameters::
+
+Example
+--------
+Example::
+
+    var request = require('request');
+    var options = {
+        'method': 'GET',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/getGasRate',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA0ODkyMjE5LCJleHAiOjE2MDU0OTcwMTl9.fcLs3o7UlljwCh6NnHI-7mW3gVdGPR2X2WACW3iUxKo',
+            'Content-Type': 'application/json'
+        }
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Results::
+
+    {
+    "status": 200,
+    "values": {
+        "fast": "6000000000",
+        "standard": "47107548330.16529",
+        "slow": "120000000000"
+    }
+    }
