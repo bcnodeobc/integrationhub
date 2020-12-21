@@ -2598,7 +2598,7 @@ Parameters
 --------
 Need parameters::
 
-Mixed string     String need to be convert
+    Mixed string     String need to be convert
                     {
                     "mixed":"asdfaskhfuunds"
                     }
@@ -2658,7 +2658,7 @@ Parameters
 --------
 Need parameters::
 
-Ascii      Ascii character need to be convert
+    Ascii       Ascii character need to be convert
                     {
                     "string": "I am clever"
                     }
@@ -2718,7 +2718,7 @@ Parameters
 --------
 Need parameters::
 
-blockNumber     The block number or hash
+    Address     The ethereum's address
                     {
                     "address":"0xc1912fee45d61c87cc5ea59dae31190fffff232d"
                     }
@@ -2778,7 +2778,7 @@ Parameters
 --------
 Need parameters::
 
-blockNumber     The block number or hash
+    blockNumber     The block number or hash
                     {
                     "number":"1",
                     "unit":"ether"
@@ -2839,13 +2839,14 @@ Need to set headers::
 Parameters
 --------
 Need parameters::
-Address and data object    The address and data object needed to be estimate
-                            {
-                            "txObject":{
-                                "to": "0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe",
-                                "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000003"
-                                        }
-                            }
+
+    Address and data object    The address and data object needed to be estimate
+                                {
+                                "txObject":{
+                                    "to": "0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe",
+                                    "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000003"
+                                            }
+                                }
 
 Example
 --------
