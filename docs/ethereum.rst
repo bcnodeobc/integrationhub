@@ -2142,7 +2142,7 @@ Encodes the ABI for this method. This can be used to send a transaction, call a 
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/contract/encodeABISC
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/contract/encodeABISC
 
 Headers
 --------
@@ -2237,7 +2237,7 @@ Example::
     var request = require('request');
     var options = {
     'method': 'POST',
-    'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/contract/encodeABISC',
+    'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/contract/encodeABISC',
     'headers': {
         'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
         'Content-Type': 'application/json'
@@ -2338,7 +2338,7 @@ Encodes the ABI for this method. This can be used to send a transaction, call a 
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/contract/encodeABIFunctionSC
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/contract/encodeABIFunctionSC
 
 Headers
 --------
@@ -2424,8 +2424,7 @@ Need parameters::
 		"stateMutability": "nonpayable",
 		"type": "constructor"
 	}
-]
-}
+    }
 
 Example
 --------
@@ -2434,7 +2433,7 @@ Example::
     var request = require('request');
     var options = {
     'method': 'POST',
-    'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/contract/encodeABIFunctionSC',
+    'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/contract/encodeABIFunctionSC',
     'headers': {
         'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
         'Content-Type': 'application/json'
@@ -2513,8 +2512,8 @@ Example::
 		"stateMutability": "nonpayable",
 		"type": "constructor"
 	}
-]
-})
+    ]
+    })
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -2584,4 +2583,246 @@ Results::
         "standard": "47107548330.16529",
         "slow": "120000000000"
     }
+    }
+
+---------------------------------------------------------------------------------------------------------------------------
+
+toHex
+============
+
+Will auto convert any given value to HEX. Number strings will interpreted as numbers. Text strings will be interpreted as UTF-8 strings.
+
+Example::
+
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.utils/toHex
+
+Headers
+--------
+Need to set headers::
+
+    Key             Value
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+Need parameters::
+
+    Mixed       String need to be convert
+                    {
+                    "mixed":"asdfaskhfuunds"
+                    }
+
+Example
+--------
+Example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.utils/toHex',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA0ODkyMjE5LCJleHAiOjE2MDU0OTcwMTl9.fcLs3o7UlljwCh6NnHI-7mW3gVdGPR2X2WACW3iUxKo',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            "mixed":"asdfaskhfuunds"
+        })
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Results::
+
+    {
+    "status": 200,
+    "values": "0x6173646661736b686675756e6473"
+    }
+
+---------------------------------------------------------------------------------------------------------------------------
+
+asciiToHex
+============
+
+Returns the HEX representation of a given ASCII string.
+
+Example::
+
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.utils/asciiToHex
+
+Headers
+--------
+Need to set headers::
+
+    Key             Value
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+Need parameters::
+
+    Ascii      Ascii character need to be convert
+                    {
+                    "string": "I am clever"
+                    }
+
+Example
+--------
+Example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.utils/asciiToHex',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA0ODkyMjE5LCJleHAiOjE2MDU0OTcwMTl9.fcLs3o7UlljwCh6NnHI-7mW3gVdGPR2X2WACW3iUxKo',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            "string": "saya bijak"
+        })
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Results::
+
+    {
+    "status": 200,
+    "values": "0x736179612062696a616b"
+    }
+
+---------------------------------------------------------------------------------------------------------------------------
+
+isAddress
+============
+
+Checks if a given string is a valid Ethereum address. It will also check the checksum, if the address has upper and lowercase letters.
+
+Example::
+
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.utils/isAddress
+
+Headers
+--------
+Need to set headers::
+
+    Key             Value
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+Need parameters::
+
+    blockNumber     The block number or hash
+                    {
+                    "address":"0xc1912fee45d61c87cc5ea59dae31190fffff232d"
+                    }
+
+Example
+--------
+Example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.utils/getHex',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA0ODkyMjE5LCJleHAiOjE2MDU0OTcwMTl9.fcLs3o7UlljwCh6NnHI-7mW3gVdGPR2X2WACW3iUxKo',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            "address":"0xc1912fee45d61c87cc5ea59dae31190fffff232d"
+        })
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Results::
+
+    {
+    "status": 200,
+    "values": "true"
+    }
+
+---------------------------------------------------------------------------------------------------------------------------
+
+fromWei
+============
+
+Converts any wei value into a ether value.
+
+Example::
+
+    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.utils/fromWei
+
+Headers
+--------
+Need to set headers::
+
+    Key             Value
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+Need parameters::
+
+    number      unit to be convert
+                    {
+                    "number":"1",
+                    "unit":"ether"
+                    }
+
+Example
+--------
+Example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.utils/fromWei',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA0ODkyMjE5LCJleHAiOjE2MDU0OTcwMTl9.fcLs3o7UlljwCh6NnHI-7mW3gVdGPR2X2WACW3iUxKo',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            "number":"1",
+            "unit":"ether"
+        })
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Results::
+
+    {
+    "status": 200,
+    "values": "0.000000000000000001"
     }
