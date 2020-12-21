@@ -1,0 +1,2 @@
+# ignore rst build repository
+./docs/_build/*
