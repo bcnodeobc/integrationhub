@@ -2860,9 +2860,11 @@ Example::
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
+        "txObject": {
             to: "0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe",
             data: "0xc6888fa10000000000000000000000000000000000000000000000000000000000000003"
-        })
+            })
+        }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
@@ -2875,5 +2877,5 @@ Results::
 
     {
     "status": 200,
-    "values": "0.000000000000000001"
+    "values": 21204
     }
