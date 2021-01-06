@@ -2426,11 +2426,7 @@ Example::
         'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
         'Content-Type': 'application/json'
     },
-    body: JSON.stringify(
-            {
-    "argument": ["test", "test 1", "1601520317", "1701520317", ["hmmm"], ["hm22"],["0x0449859A071F6b654FDe713074728C4FC22F04Fe"]],
-    "abi" : [
-	 {
+    body: JSON.stringify({
     "contractAddress": "0xFF3821A29c484c42DFa245b842C05154E4baAB8a",
     "method": "castVote",
     "param": ["Ahmad 222 ",["0x0449859A071F6b654FDe713074728C4FC22F04Fe"]],
