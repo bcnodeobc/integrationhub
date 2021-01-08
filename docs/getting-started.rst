@@ -4,22 +4,13 @@ Getting Started
 Usage
 =====
 
-1. User should registerToken before start to request function. 
+1. Sign in into https://thankslogin.okbc.my/auth to receive token.
 
-    http://integrationhub.okwave.asia:3333/api/v2/registerToken
+Example::
 
-Results::
+    eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImRpcUZ3QnVVVVFRWlZsNW96SUgtSmNIZTBiMkN6aDRUOGswNHNxTUlHekkifQ.eyJzdWIiOiJoaXNlbWFraXNlMzUxNEBnbWFpbC5jb20iLCJhdF9oYXNoIjoiSW5neVRGVW9nUHlFVWhnTGdta1BDZyIsImF1ZCI6IjRNcjViYTIyWnV5TjVWVlBMd0ZoZCIsImV4cCI6MTYwOTkwMTgwOCwiaWF0IjoxNjA5ODk4MjA4LCJpc3MiOiJodHRwczovL3RoYW5rc2F1dGgub2tiYy5teSJ9.PeIqWbM_HB40YirABFao-VFXBcSCebhcrB-zXI2qA4SvEl_aRWSOdKAfn-5Z0H_QSIevKyiu8-_i2kBSS7-4wVNTFYAE1PRse3d4XY91zWEi53qr7o2WdBVag1ZqKutkOIJmyOxMmT8Jbb2YNH5l9Fil05E7d030HPV-YTtKtRswsdDIGM3r2-9drLDYYLjBoUccYTJsyB2EAFtAICNikmlXXgUQhwESm__keXVl8tkdGLrUvvyy_bUGSHMofYuL7jTXauiMB3F37L2p1gTDiUNPSX3zJeUgKpqUgS6jIVTK2vsv9WBfb1BO1bXCo_08vQElLOBM46SIaMFklcJlxQ
 
-    {
-    "status": 200,
-    "values": {
-        "success": true,
-        "message": "Authentication successful!",
-        "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA1MDY4NDcyLCJleHAiOjE2MDU2NzMyNzJ9.nIZ-ItuWK_9zsXPyZ8yblhFFMNjB3Vku9GKABTFFRvs"
-    }
-
-
-2. Change header value under Authorization's key with token value from previous step and add OBC in front of the token.
+2. Change header value under Authorization's key with token value from previous step.
 
 3. Enjoy !.
 

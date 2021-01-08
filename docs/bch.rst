@@ -4,7 +4,7 @@ Bitcoin Cash
 
 All RPC included are based on bitcoin-cli. 
 
-.. note::  Make sure to registerToken first before requesting rpc and replace the token in Authoraization headers. http://integrationhub.okwave.asia:3333/api/v2/registerToken
+.. note::  Make sure to enter received token in headers using key 'Authorization' .
 
 ------------------------------------------------------------------------------
 
