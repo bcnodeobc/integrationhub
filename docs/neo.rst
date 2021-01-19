@@ -1460,3 +1460,141 @@ Results::
         }
     }  
 
+------------------------------------------------------------------------------
+
+sendNEP5
+==============
+
+Send NEP5 token.
+
+Example::
+
+    http://integrationhub.okwave.asia:3333/api/v2/neomainnet/sendNEP5
+
+Headers
+--------
+Need to set headers::
+
+    Key             Value
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+Need parameters::
+
+    Address         JSON body
+                    {    
+                    "contractAddress": "40bb36a54bf28872b6ffdfa7fbc6480900e58448",    
+                    "toAddr": "AaVWP6CvxqRjz6Ws491HdV3yzAjLP36nms",    
+                    "amount": 1.2,    
+                    "privateKey": "L44cUYmqhFSvsUaen8nQBnVnVNWeQxR8k5edtKXgvrYRzEZvZGa2",        
+                    "fee": 0
+                    }
+
+Example
+--------
+Example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/neomainnet/sendNEP5',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+    "contractAddress": "40bb36a54bf28872b6ffdfa7fbc6480900e58448",
+    "toAddr": "AaVWP6CvxqRjz6Ws491HdV3yzAjLP36nms",    
+    "amount": 1.2,    
+    "privateKey": "L44cUYmqhFSvsUaen8nQBnVnVNWeQxR8k5edtKXgvrYRzEZvZGa2",        
+    "fee": 0
+    })
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Results::
+
+    {
+    "status": 200,
+    "values": {
+        "flag": true,
+        "data": {
+            "jsonrpc": "2.0",
+            "id": 1234,
+            "result": true,
+            "txid": "c3cf688484b4dba6833ca69db0682210e25bf31d91139a072eba31a5bf93965c"
+        }
+    }
+    }
+
+------------------------------------------------------------------------------
+
+getNEP5Balance
+========
+
+Get NEP5 balances using high level library.
+
+Example::
+
+    http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getNEP5Balance
+
+Headers
+--------
+Need to set headers::
+
+    Key             Value
+
+    Content-Type    application/json
+
+    Authorization   OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA
+
+Parameters
+--------
+Need parameters::
+
+    Address         JSON Body
+                    { 
+                    "address": AcyBxBPokv4Vu7eQXoeKLMaonZK9vzX8g5, 
+                    "contractAddress": 883ec9d1950b21f340cc195562c27b2ac0c94dd3
+                    }
+
+Example
+--------
+Example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getNEP5Balance',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
+            'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ 
+    "address": AcyBxBPokv4Vu7eQXoeKLMaonZK9vzX8g5, 
+    "contractAddress": 883ec9d1950b21f340cc195562c27b2ac0c94dd3
+    })
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
+
+Response
+--------
+Results::
+
+    {
+    "status": 200,
+    "values": "1"
+    }   
+
