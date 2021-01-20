@@ -1786,7 +1786,7 @@ Results::
 deploySCHex
 ============
 
-Checks whether the node is mining or not.
+Deplot smart contract using hex string.
 
 Example::
 
@@ -1849,7 +1849,7 @@ Results::
 callSC
 =======
 
-Checks whether the node is mining or not.
+Call smart contract function.
 
 Example::
 
@@ -1996,7 +1996,7 @@ Results::
 sendSC
 =======
 
-Checks whether the node is mining or not.
+send signed transactions.
 
 Example::
 
@@ -2021,35 +2021,37 @@ Need parameters::
     "privateKey": "0x0a6b69c36770b0e3778f554b3b6e011ecc6645c04d47509d595edb8c79e1cc47",
     "contractAddress": "0x71D8FBFBD8511560dC10c681F7Aa241C32D4119a",
     "method": "castVote",
-    "txHashOnly": "true",
-    "param": ["Ahmad Albab",["0x0449859A071F6b654FDe713074728C4FC22F04Fe"]],
+    "txHashOnly": "false",
+    "param": ["Test3",["0x0449859A071F6b654FDe713074728C4FC22F04Fe"]],
+    "gasPrice": 15,
+    "gasLimit": 500000,
     "abi": [
-	{
-		"inputs": [
-			{
-				"internalType": "string",
-				"name": "_voter",
-				"type": "string"
-			},
-			{
-				"internalType": "address[]",
-				"name": "_optionAddress",
-				"type": "address[]"
-			}
-		],
-		"name": "castVote",
-		"outputs": [
-			{
-				"internalType": "bool",
-				"name": "success",
-				"type": "bool"
-			}
-		],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	}
-	]
-	}
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "_voter",
+                "type": "string"
+            },
+            {
+                "internalType": "address[]",
+                "name": "_optionAddress",
+                "type": "address[]"
+            }
+        ],
+        "name": "castVote",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "success",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    ]
+    }
 
 Example
 --------
@@ -2064,48 +2066,42 @@ Example::
         'Content-Type': 'application/json'
     },
     body: JSON.stringify(
+    {
+    "address": "0xcE9bfD1C0C1Ba565F9f380342aB1114AD6C40F63",
+    "privateKey": "0x0a6b69c36770b0e3778f554b3b6e011ecc6645c04d47509d595edb8c79e1cc47",
+    "contractAddress": "0x71D8FBFBD8511560dC10c681F7Aa241C32D4119a",
+    "method": "castVote",
+    "txHashOnly": "false",
+    "param": ["Test3",["0x0449859A071F6b654FDe713074728C4FC22F04Fe"]],
+    "gasPrice": 15,
+    "gasLimit": 500000,
+    "abi": [
+    {
+        "inputs": [
             {
-    "address": "0xcE9bfD1C0C1Ba565F9f380342aB1114AD6C40F63",
-    "privateKey": "0x0a6b69c36770b0e3778f554b3b6e011ecc6645c04d47509d595edb8c79e1cc47",
-    "contractAddress": "0x71D8FBFBD8511560dC10c681F7Aa241C32D4119a",
-    "method": "castVote",
-    "txHashOnly": "true",
-    "param": ["Ahmad Albab",["0x0449859A071F6b654FDe713074728C4FC22F04Fe"]],
-    "abi": [
-	{
-    "address": "0xcE9bfD1C0C1Ba565F9f380342aB1114AD6C40F63",
-    "privateKey": "0x0a6b69c36770b0e3778f554b3b6e011ecc6645c04d47509d595edb8c79e1cc47",
-    "contractAddress": "0x71D8FBFBD8511560dC10c681F7Aa241C32D4119a",
-    "method": "castVote",
-    "txHashOnly": "true",
-    "param": ["Ahmad Albab",["0x0449859A071F6b654FDe713074728C4FC22F04Fe"]],
-    "abi": [
-	{
-		"inputs": [
-			{
-				"internalType": "string",
-				"name": "_voter",
-				"type": "string"
-			},
-			{
-				"internalType": "address[]",
-				"name": "_optionAddress",
-				"type": "address[]"
-			}
-		],
-		"name": "castVote",
-		"outputs": [
-			{
-				"internalType": "bool",
-				"name": "success",
-				"type": "bool"
-			}
-		],
-		"stateMutability": "nonpayable",
-		"type": "function"
-	}
-	]
-	})
+                "internalType": "string",
+                "name": "_voter",
+                "type": "string"
+            },
+            {
+                "internalType": "address[]",
+                "name": "_optionAddress",
+                "type": "address[]"
+            }
+        ],
+        "name": "castVote",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "success",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    ]
+    })
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
