@@ -1490,7 +1490,7 @@ Need parameters::
                     "contractAddress": "40bb36a54bf28872b6ffdfa7fbc6480900e58448",    
                     "toAddr": "AaVWP6CvxqRjz6Ws491HdV3yzAjLP36nms",    
                     "amount": 1.2,    
-                    "privateKey": "L44cUYmqhFSvsUaen8nQBnVnVNWeQxR8k5edtKXgvrYRzEZvZGa2",        
+                    "privateKey": "<<Private Key Wallet>>",        
                     "fee": 0
                     }
 
@@ -1510,7 +1510,7 @@ Example::
     "contractAddress": "40bb36a54bf28872b6ffdfa7fbc6480900e58448",
     "toAddr": "AaVWP6CvxqRjz6Ws491HdV3yzAjLP36nms",    
     "amount": 1.2,    
-    "privateKey": "L44cUYmqhFSvsUaen8nQBnVnVNWeQxR8k5edtKXgvrYRzEZvZGa2",        
+    "privateKey": "<<Private Key Wallet>>",        
     "fee": 0
     })
     };

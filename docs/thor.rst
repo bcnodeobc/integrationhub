@@ -1687,7 +1687,7 @@ Need parameters::
 
 	{		
 	"address": "0xcE9bfD1C0C1Ba565F9f380342aB1114AD6C40F63",
-	"privateKey": "0x0a6b69c36770b0e3778f554b3b6e011ecc6645c04d47509d595edb8c79e1cc47",
+	"privateKey": "<<Private Key Wallet>>",
 	"argument": ["test", "test 1", "1601520317", "1701520317", ["hmmm"], ["hm22"],["0x0449859A071F6b654FDe713074728C4FC22F04Fe"]],
 	"txHashOnly": "true",
 	"abi" : [
@@ -1734,7 +1734,7 @@ Example::
     body: JSON.stringify(
             {		
 	"address": "0xcE9bfD1C0C1Ba565F9f380342aB1114AD6C40F63",
-	"privateKey": "0x0a6b69c36770b0e3778f554b3b6e011ecc6645c04d47509d595edb8c79e1cc47",
+	"privateKey": "<<Private Key Wallet>>",
 	"argument": ["test", "test 1", "1601520317", "1701520317", ["hmmm"], ["hm22"],["0x0449859A071F6b654FDe713074728C4FC22F04Fe"]],
 	"txHashOnly": "true",
 	"abi" : [
@@ -2018,7 +2018,7 @@ Need parameters::
 
     {
     "address": "0xcE9bfD1C0C1Ba565F9f380342aB1114AD6C40F63",
-    "privateKey": "0x0a6b69c36770b0e3778f554b3b6e011ecc6645c04d47509d595edb8c79e1cc47",
+    "privateKey": "<<Private Key Wallet>>",
     "contractAddress": "0x71D8FBFBD8511560dC10c681F7Aa241C32D4119a",
     "method": "castVote",
     "txHashOnly": "false",
@@ -2068,7 +2068,7 @@ Example::
     body: JSON.stringify(
     {
     "address": "0xcE9bfD1C0C1Ba565F9f380342aB1114AD6C40F63",
-    "privateKey": "0x0a6b69c36770b0e3778f554b3b6e011ecc6645c04d47509d595edb8c79e1cc47",
+    "privateKey": "<<Private Key Wallet>>",
     "contractAddress": "0x71D8FBFBD8511560dC10c681F7Aa241C32D4119a",
     "method": "castVote",
     "txHashOnly": "false",
