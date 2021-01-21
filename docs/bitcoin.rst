@@ -1614,7 +1614,7 @@ Results::
 ------------------------------------------------------------------------------
 
 createrawtransaction
-========
+====================
 
 bitcoin rpc for createrawtransaction.
 
@@ -1636,21 +1636,21 @@ Parameters
 --------
 Need parameters::
 
-    bitcoin     txid and txout
-                {
-                "txin": [
-                                {
-                                    "txid": "",
+    JSON Object     txid and txout
+                    {
+                        "txin": [
+                                    {
+                                    "txid": "39105b99edf04adcdce79cf0c0496152bfe876596cfb59504317b62e89769566",
                                     "vout": 0
-                                }
-                            ],
-                "txout": [
-                                {
-                                    "address": "",
-                                    "amount": 0
-                                }
-                            ]
-                } 
+                                    }
+                                ],
+                        "txout": [
+                            {
+                                "address": "2NFBd2GAgnPuyK6BPcDDgodiDchxKbDgWGh",
+                                "amount": 0.0005
+                            }
+                        ]
+                    }
 
 Example
 --------
@@ -1677,7 +1677,7 @@ Returns the transaction hash::
 
     {
     "status": ,
-    "values": 
+    "values": "0100000001e34ac1e2baac09c366fce1c2245536bda8f7db0f6685862aecf53ebd69f9a89c0000000000ffffffff02a0252600000000001976a914d90d36e98f62968d2bc9bbd68107564a156a9bcf88ac50622500000000001976a91407bdb518fa2e6089fd810235cf1100c9c13d1fd288ac00000000"
     }
 
 ------------------------------------------------------------------------------
