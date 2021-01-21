@@ -14,6 +14,8 @@ Example::
 
 3. Enjoy !.
 
+.. note::  Use 'OBC <token>' for internal token
+
 
 Authors
 =======
