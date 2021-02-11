@@ -2630,10 +2630,9 @@ Need parameters::
 
     Address and data object    The address and data object needed to be estimate
                                 {
-                                "txObject":{
                                     "from": <<Wallet Address>> ,
                                     "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000003" //data hex object
-                                            }
+                                            
                                 }
 
 Example
@@ -2649,11 +2648,9 @@ Example::
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-        "txObject": {
             "from":<<Wallet Address>>,
             "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000003" 
             })
-        }
     };
     request(options, function (error, response) {
         if (error) throw new Error(error);
