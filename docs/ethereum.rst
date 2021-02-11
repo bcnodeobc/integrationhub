@@ -2631,8 +2631,8 @@ Need parameters::
     Address and data object    The address and data object needed to be estimate
                                 {
                                 "txObject":{
-                                    "to": "0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe", //The destination address of the message
-                                    "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000003"
+                                    "from": <<Wallet Address>> ,
+                                    "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000003" //data hex object
                                             }
                                 }
 
@@ -2650,8 +2650,8 @@ Example::
         },
         body: JSON.stringify({
         "txObject": {
-            "to": "0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe",
-            "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000003" //data hex object
+            "from":<<Wallet Address>>,
+            "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000003" 
             })
         }
     };
