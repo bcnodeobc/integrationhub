@@ -2374,21 +2374,19 @@ Need parameters::
 
     Address and data object     Body example for send smart contract
                                 {
-                                    "from": <<Wallet Address>> ,
-                                    "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000003" //data hex object              
+                                    "to": contract address | string ,
+                                    "data": encodedABIHex | string              
                                 }
 
                                 Body example for deploying smart contract
-                                {
-                                    "from": <<Wallet Address>> ,
-                                    "to": "0xc2583408d7aeeE9df288768a4A51D7a340C43403"
-                                    "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000003" //data hex object                                            
+                                {                                    
+                                    "data": encodedABIHex | string                                            
                                 }
 
                                 Body example for sending ether
                                 {
-                                    "from": <<Wallet Address>> ,
-                                    "value": <<Wei Value>>                                   
+                                    "to": address receiver | string ,
+                                    "value": wei value in hex | string                                   
                                 }                                
 
 Example
