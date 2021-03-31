@@ -2379,8 +2379,10 @@ Need parameters::
                                 }
 
                                 Body example for deploying smart contract
-                                {                                    
-                                    "data": encodedABIHex | string                                            
+                                {                              
+                                    "to": contract address | string ,
+                                    "from": wallet address | string , //optional
+                                    "data": encodedABIHex | string                                           
                                 }
 
                                 Body example for sending ether
@@ -2402,7 +2404,7 @@ Example::
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            "from":<<Wallet Address>>,
+            "to":<<Contract Address>>,
             "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000003" 
             })
     };
