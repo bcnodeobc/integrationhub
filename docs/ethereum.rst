@@ -1663,7 +1663,7 @@ Results::
 encodeABISC
 =================
 
-Encodes the ABI for this method. This can be used to send a transaction, call a method, or pass it into another smart contracts method as arguments.
+Encodes the ABI for deploying smart contract. This can be used to encode smart contract bytecode, ABI and arguments for deploying new smart contract.
 
 Example::
 
@@ -1859,7 +1859,7 @@ Results::
 encodeABIFunctionSC
 =======
 
-Encodes the ABI for this method. This can be used to send a transaction, call a method, or pass it into another smart contracts method as arguments.
+Encodes the ABI for smart contract method/functions. This can be used to send a transaction of a method inside a smart contract and accept method's arguments if any.
 
 Example::
 
@@ -2324,7 +2324,6 @@ Need parameters::
 
                                 Body example for deploying smart contract
                                 {                              
-                                    "to": contract address | string ,
                                     "from": wallet address | string , //optional
                                     "data": encodedABIHex | string                                           
                                 }
