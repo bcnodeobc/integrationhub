@@ -15,7 +15,7 @@ Broadcasts a transaction over the NEO network.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/neomainnet/sendrawtransaction
+    https://integrationhub.okwave.global/api/v2/neomainnet/sendrawtransaction
 
 Headers
 --------
@@ -43,7 +43,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/neomainnet/sendrawtransaction',
+        'url': 'https://integrationhub.okwave.global/api/v2/neomainnet/sendrawtransaction',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -73,7 +73,7 @@ Queries global assets (NEO, GAS, and etc.) of the account, according to the acco
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getaccountstate
+    https://integrationhub.okwave.global/api/v2/neomainnet/getaccountstate
 
 Headers
 --------
@@ -101,7 +101,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getaccountstate',
+        'url': 'https://integrationhub.okwave.global/api/v2/neomainnet/getaccountstate',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -137,7 +137,7 @@ Queries the asset information, based on the specified asset number.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getassetstate
+    https://integrationhub.okwave.global/api/v2/neomainnet/getassetstate
 
 Headers
 --------
@@ -165,7 +165,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getassetstate',
+        'url': 'https://integrationhub.okwave.global/api/v2/neomainnet/getassetstate',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -217,7 +217,7 @@ Returns the hash of the tallest block in the main chain.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getbestblockhash
+    https://integrationhub.okwave.global/api/v2/neomainnet/getbestblockhash
 
 Headers
 --------
@@ -240,7 +240,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'GET',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getbestblockhash',
+        'url': 'https://integrationhub.okwave.global/api/v2/neomainnet/getbestblockhash',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -269,7 +269,7 @@ The corresponding block information is returned according to the specified hash 
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getblockbyhash
+    https://integrationhub.okwave.global/api/v2/neomainnet/getblockbyhash
 
 Headers
 --------
@@ -298,7 +298,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getblockbyhash',
+        'url': 'https://integrationhub.okwave.global/api/v2/neomainnet/getblockbyhash',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -328,7 +328,7 @@ Returns the corresponding block information according to the specified index.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getblockbyindex
+    https://integrationhub.okwave.global/api/v2/neomainnet/getblockbyindex
 
 Headers
 --------
@@ -357,7 +357,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getblockbyindex',
+        'url': 'https://integrationhub.okwave.global/api/v2/neomainnet/getblockbyindex',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -387,7 +387,7 @@ Gets the number of blocks in the main chain.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getblockcount
+    https://integrationhub.okwave.global/api/v2/neomainnet/getblockcount
 
 Headers
 --------
@@ -410,7 +410,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'GET',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getblockcount',
+        'url': 'https://integrationhub.okwave.global/api/v2/neomainnet/getblockcount',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -439,7 +439,7 @@ Returns the hash value of the corresponding block, based on the specified index.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getblockhash
+    https://integrationhub.okwave.global/api/v2/neomainnet/getblockhash
 
 Headers
 --------
@@ -467,7 +467,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getblockhash',
+        'url': 'https://integrationhub.okwave.global/api/v2/neomainnet/getblockhash',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -497,7 +497,7 @@ Returns the corresponding block header information according to the specified sc
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getblockheader
+    https://integrationhub.okwave.global/api/v2/neomainnet/getblockheader
 
 Headers
 --------
@@ -526,7 +526,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getblockheader',
+        'url': 'https://integrationhub.okwave.global/api/v2/neomainnet/getblockheader',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -556,7 +556,7 @@ Returns the system fees of the block, based on the specified index.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getblocksysfee
+    https://integrationhub.okwave.global/api/v2/neomainnet/getblocksysfee
 
 Headers
 --------
@@ -584,7 +584,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getblocksysfee',
+        'url': 'https://integrationhub.okwave.global/api/v2/neomainnet/getblocksysfee',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -614,7 +614,7 @@ Returns the balance of all NEP-5 assets in the specified address.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getnep5balances
+    https://integrationhub.okwave.global/api/v2/neomainnet/getnep5balances
 
 Headers
 --------
@@ -642,7 +642,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getnep5balances',
+        'url': 'https://integrationhub.okwave.global/api/v2/neomainnet/getnep5balances',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -675,7 +675,7 @@ Returns all the NEP-5 transaction information occurred in the specified address.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getnep5transfers
+    https://integrationhub.okwave.global/api/v2/neomainnet/getnep5transfers
 
 Headers
 --------
@@ -705,7 +705,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getnep5transfers',
+        'url': 'https://integrationhub.okwave.global/api/v2/neomainnet/getnep5transfers',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -739,7 +739,7 @@ Queries contract information, according to the contract script hash.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getcontractstate
+    https://integrationhub.okwave.global/api/v2/neomainnet/getcontractstate
 
 Headers
 --------
@@ -767,7 +767,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getcontractstate',
+        'url': 'https://integrationhub.okwave.global/api/v2/neomainnet/getcontractstate',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -814,7 +814,7 @@ Returns the result after calling a smart contract at scripthash with the given o
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/neomainnet/invokefunction
+    https://integrationhub.okwave.global/api/v2/neomainnet/invokefunction
 
 Headers
 --------
@@ -844,7 +844,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/neomainnet/invokefunction',
+        'url': 'https://integrationhub.okwave.global/api/v2/neomainnet/invokefunction',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -885,7 +885,7 @@ Gets the current number of connections for the node.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getconnectioncount
+    https://integrationhub.okwave.global/api/v2/neomainnet/getconnectioncount
 
 Headers
 --------
@@ -908,7 +908,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'GET',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getconnectioncount',
+        'url': 'https://integrationhub.okwave.global/api/v2/neomainnet/getconnectioncount',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -937,7 +937,7 @@ Returns timestamps of the specified block and its previous n blocks.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getmetricblocktimestamp
+    https://integrationhub.okwave.global/api/v2/neomainnet/getmetricblocktimestamp
 
 Headers
 --------
@@ -966,7 +966,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getmetricblocktimestamp',
+        'url': 'https://integrationhub.okwave.global/api/v2/neomainnet/getmetricblocktimestamp',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -1041,7 +1041,7 @@ Gets the list of nodes that the node is currently connected/disconnected from.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getpeers
+    https://integrationhub.okwave.global/api/v2/neomainnet/getpeers
 
 Headers
 --------
@@ -1064,7 +1064,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'GET',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getpeers',
+        'url': 'https://integrationhub.okwave.global/api/v2/neomainnet/getpeers',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -1127,7 +1127,7 @@ Returns the stored value, according to the contract script hash and the stored k
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getstorage
+    https://integrationhub.okwave.global/api/v2/neomainnet/getstorage
 
 Headers
 --------
@@ -1156,7 +1156,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getstorage',
+        'url': 'https://integrationhub.okwave.global/api/v2/neomainnet/getstorage',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -1186,7 +1186,7 @@ Returns the block index in which the transaction is found.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/neomainnet/gettransactionheight
+    https://integrationhub.okwave.global/api/v2/neomainnet/gettransactionheight
 
 Headers
 --------
@@ -1214,7 +1214,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/neomainnet/gettransactionheight',
+        'url': 'https://integrationhub.okwave.global/api/v2/neomainnet/gettransactionheight',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -1244,7 +1244,7 @@ Returns the corresponding unspent transaction output information (returned chang
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/neomainnet/gettxout
+    https://integrationhub.okwave.global/api/v2/neomainnet/gettxout
 
 Headers
 --------
@@ -1272,7 +1272,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/neomainnet/gettxout',
+        'url': 'https://integrationhub.okwave.global/api/v2/neomainnet/gettxout',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -1307,7 +1307,7 @@ Returns the current NEO consensus nodes information and voting status.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getvalidators
+    https://integrationhub.okwave.global/api/v2/neomainnet/getvalidators
 
 Headers
 --------
@@ -1330,7 +1330,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'GET',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getvalidators',
+        'url': 'https://integrationhub.okwave.global/api/v2/neomainnet/getvalidators',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -1375,7 +1375,7 @@ Returns the version information about the queried node.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getversion
+    https://integrationhub.okwave.global/api/v2/neomainnet/getversion
 
 Headers
 --------
@@ -1398,7 +1398,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'GET',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getversion',
+        'url': 'https://integrationhub.okwave.global/api/v2/neomainnet/getversion',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -1431,7 +1431,7 @@ Returns the result after passing a script through the VM.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/neomainnet/invokescript
+    https://integrationhub.okwave.global/api/v2/neomainnet/invokescript
 
 Headers
 --------
@@ -1459,7 +1459,7 @@ example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/neomainnet/invokescript',
+        'url': 'https://integrationhub.okwave.global/api/v2/neomainnet/invokescript',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -1500,7 +1500,7 @@ Verifies that the address is a correct NEO address.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/neomainnet/validateaddress
+    https://integrationhub.okwave.global/api/v2/neomainnet/validateaddress
 
 Headers
 --------
@@ -1528,7 +1528,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/neomainnet/validateaddress',
+        'url': 'https://integrationhub.okwave.global/api/v2/neomainnet/validateaddress',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -1561,7 +1561,7 @@ Send NEP5 token.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/neomainnet/sendNEP5
+    https://integrationhub.okwave.global/api/v2/neomainnet/sendNEP5
 
 Headers
 --------
@@ -1593,7 +1593,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/neomainnet/sendNEP5',
+        'url': 'https://integrationhub.okwave.global/api/v2/neomainnet/sendNEP5',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -1637,7 +1637,7 @@ Get NEP5 balances using high level library.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getNEP5Balance
+    https://integrationhub.okwave.global/api/v2/neomainnet/getNEP5Balance
 
 Headers
 --------
@@ -1666,7 +1666,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/neomainnet/getNEP5Balance',
+        'url': 'https://integrationhub.okwave.global/api/v2/neomainnet/getNEP5Balance',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'

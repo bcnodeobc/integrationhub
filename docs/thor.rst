@@ -15,7 +15,7 @@ The transaction matching that given transaction hash.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getTransaction
+    https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getTransaction
 
 Headers
 --------
@@ -43,7 +43,7 @@ Example::
     var request = require('request');
     var options = {
     'method': 'POST',
-    'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getTransaction',
+    'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getTransaction',
     'headers': {
         'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
         'Content-Type': 'application/json'
@@ -85,7 +85,7 @@ The number of transactions sent from this address.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getTransactionCount
+    https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getTransactionCount
 
 Headers
 --------
@@ -113,7 +113,7 @@ Example::
     var request = require('request');
     var options = {
     'method': 'POST',
-    'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getTransactionCount',
+    'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getTransactionCount',
     'headers': {
         'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
         'Content-Type': 'application/json'
@@ -143,7 +143,7 @@ The transaction based on a block hash or number and the transaction’s index po
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getTransactionFromBlock
+    https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getTransactionFromBlock
 
 Headers
 --------
@@ -172,7 +172,7 @@ Example::
     var request = require('request');
     var options = {
     'method': 'POST',
-    'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getTransactionFromBlock',
+    'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getTransactionFromBlock',
     'headers': {
         'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
         'Content-Type': 'application/json'
@@ -214,7 +214,7 @@ The receipt of a transaction by transaction hash.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getTransactionReceipt
+    https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getTransactionReceipt
 
 Headers
 --------
@@ -242,7 +242,7 @@ Example::
     var request = require('request');
     var options = {
     'method': 'POST',
-    'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getTransactionReceipt',
+    'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getTransactionReceipt',
     'headers': {
         'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
         'Content-Type': 'application/json'
@@ -286,7 +286,7 @@ Sends an already signed transaction.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/sendSignedTransaction
+    https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/sendSignedTransaction
 
 Headers
 --------
@@ -314,7 +314,7 @@ Example::
     var request = require('request');
     var options = {
     'method': 'POST',
-    'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/sendSignedTransaction',
+    'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/sendSignedTransaction',
     'headers': {
         'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
         'Content-Type': 'application/json'
@@ -344,7 +344,7 @@ Sends a transaction to the network.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/sendTransaction
+    https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/sendTransaction
 
 Headers
 --------
@@ -377,7 +377,7 @@ Example::
     var request = require('request');
     var options = {
     'method': 'POST',
-    'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/sendTransaction',
+    'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/sendTransaction',
     'headers': {
         'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
         'Content-Type': 'application/json'
@@ -412,7 +412,7 @@ Get the balance of an address at a given block.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getBalance
+    https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getBalance
 
 Headers
 --------
@@ -440,7 +440,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getBalance',
+        'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getBalance',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA1NTgyOTA4LCJleHAiOjE2MDYxODc3MDh9.fTPqa9_dJR34PBheFpse5tYFOnEGA2_Fgkhf-JitmYk',
             'Content-Type': 'application/json'
@@ -470,7 +470,7 @@ The block matching the block number or block hash.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getBlock
+    https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getBlock
 
 Headers
 --------
@@ -498,7 +498,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getBlock',
+        'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getBlock',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -553,7 +553,7 @@ The number of the most recent block.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getBlockNumber
+    https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getBlockNumber
 
 Headers
 --------
@@ -576,7 +576,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'GET',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getBlockNumber',
+        'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getBlockNumber',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -605,7 +605,7 @@ The number of transaction in a given block.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getBlockTransactionCount
+    https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getBlockTransactionCount
 
 Headers
 --------
@@ -633,7 +633,7 @@ Example::
     var request = require('request');
     var options = {
     'method': 'POST',
-    'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getBlockTransactionCount',
+    'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getBlockTransactionCount',
     'headers': {
         'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
         'Content-Type': 'application/json'
@@ -663,7 +663,7 @@ The number of uncles in a block from a block matching the given block hash.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getBlockUncleCount
+    https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getBlockUncleCount
 
 Headers
 --------
@@ -691,7 +691,7 @@ Example::
     var request = require('request');
     var options = {
     'method': 'POST',
-    'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getBlockUncleCount',
+    'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getBlockUncleCount',
     'headers': {
         'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
         'Content-Type': 'application/json'
@@ -721,7 +721,7 @@ Get the code at a specific address.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getCode
+    https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getCode
 
 Headers
 --------
@@ -749,7 +749,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getCode',
+        'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getCode',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA0ODkyMjE5LCJleHAiOjE2MDU0OTcwMTl9.fcLs3o7UlljwCh6NnHI-7mW3gVdGPR2X2WACW3iUxKo',
             'Content-Type': 'application/json'
@@ -779,7 +779,7 @@ The current gas price oracle. The gas price is determined by the last few blocks
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getGasPrice
+    https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getGasPrice
 
 Headers
 --------
@@ -802,7 +802,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'GET',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getGasPrice',
+        'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getGasPrice',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -831,7 +831,7 @@ The number of hashes per second that the node is mining with.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getHashrate
+    https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getHashrate
 
 Headers
 --------
@@ -854,7 +854,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'GET',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getHashrate',
+        'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getHashrate',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -883,7 +883,7 @@ The number of peers connected to.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.*.net/getPeerCount
+    https://integrationhub.okwave.global/api/v2/thorhammer/web3.*.net/getPeerCount
 
 Headers
 --------
@@ -906,7 +906,7 @@ Example::
     var request = require('request');
     var options = {
     'method': 'GET',
-    'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.*.net/getPeerCount',
+    'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/web3.*.net/getPeerCount',
     'headers': {
         'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
         'Content-Type': 'application/json'
@@ -935,7 +935,7 @@ The blocks uncle by a given uncle index position.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getUncle
+    https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getUncle
 
 Headers
 --------
@@ -964,7 +964,7 @@ Example::
     var request = require('request');
     var options = {
     'method': 'POST',
-    'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getUncle',
+    'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getUncle',
     'headers': {
         'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
         'Content-Type': 'application/json'
@@ -994,7 +994,7 @@ The amount of new blocks it should wait until the first confirmation happens.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/transactionBlockTimeout
+    https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/transactionBlockTimeout
 
 Headers
 --------
@@ -1017,7 +1017,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'GET',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/transactionBlockTimeout',
+        'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/transactionBlockTimeout',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -1046,7 +1046,7 @@ This rpc is used over HTTP connections. It defines the number of seconds Web3 wi
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/transactionPollingTimeout
+    https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/transactionPollingTimeout
 
 Headers
 --------
@@ -1069,7 +1069,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'GET',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/transactionPollingTimeout',
+        'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/transactionPollingTimeout',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
             'Content-Type': 'application/json'
@@ -1098,7 +1098,7 @@ This rpc is used over HTTP connections. It defines the number of blocks it requi
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/transactionConfirmationBlocks
+    https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/transactionConfirmationBlocks
 
 Headers
 --------
@@ -1121,7 +1121,7 @@ Example::
     var request = require('request');
     var options = {
     'method': 'GET',
-    'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/transactionConfirmationBlocks',
+    'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/transactionConfirmationBlocks',
     'headers': {
         'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA1NTgyOTA4LCJleHAiOjE2MDYxODc3MDh9.fTPqa9_dJR34PBheFpse5tYFOnEGA2_Fgkhf-JitmYk',
         'Content-Type': 'application/json'
@@ -1150,7 +1150,7 @@ This rpc is used over HTTP connections. It returns a list of accounts the node c
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getAccounts
+    https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getAccounts
 
 Headers
 --------
@@ -1173,7 +1173,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'GET',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getAccounts',
+        'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getAccounts',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA1NTgyOTA4LCJleHAiOjE2MDYxODc3MDh9.fTPqa9_dJR34PBheFpse5tYFOnEGA2_Fgkhf-JitmYk',
             'Content-Type': 'application/json'
@@ -1202,7 +1202,7 @@ This rpc is used over HTTP connections. It return the chain ID of the current co
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getChainId
+    https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getChainId
 
 Headers
 --------
@@ -1225,7 +1225,7 @@ Example::
     var request = require('request');
     var options = {
     'method': 'GET',
-    'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getChainId',
+    'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getChainId',
     'headers': {
         'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA1NTgyOTA4LCJleHAiOjE2MDYxODc3MDh9.fTPqa9_dJR34PBheFpse5tYFOnEGA2_Fgkhf-JitmYk',
         'Content-Type': 'application/json'
@@ -1254,7 +1254,7 @@ The current network ID.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.*.net/getId
+    https://integrationhub.okwave.global/api/v2/thorhammer/web3.*.net/getId
 
 Headers
 --------
@@ -1277,7 +1277,7 @@ Example::
     var request = require('request');
     var options = {
     'method': 'GET',
-    'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.*.net/getId',
+    'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/web3.*.net/getId',
     'headers': {
         'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
         'Content-Type': 'application/json'
@@ -1306,7 +1306,7 @@ The current client version.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getNodeInfo
+    https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getNodeInfo
 
 Headers
 --------
@@ -1329,7 +1329,7 @@ Example::
     var request = require('request');
     var options = {
     'method': 'GET',
-    'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getNodeInfo',
+    'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getNodeInfo',
     'headers': {
         'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
         'Content-Type': 'application/json'
@@ -1358,7 +1358,7 @@ Gets past logs, matching the given options.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getPastLogs
+    https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getPastLogs
 
 Headers
 --------
@@ -1389,7 +1389,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getPastLogs',
+        'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getPastLogs',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA1NTgyOTA4LCJleHAiOjE2MDYxODc3MDh9.fTPqa9_dJR34PBheFpse5tYFOnEGA2_Fgkhf-JitmYk',
             'Content-Type': 'application/json'
@@ -1452,7 +1452,7 @@ The ethereum protocol version of the node.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getProtocolVersion
+    https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getProtocolVersion
 
 Headers
 --------
@@ -1475,7 +1475,7 @@ Example::
     var request = require('request');
     var options = {
     'method': 'GET',
-    'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getProtocolVersion',
+    'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getProtocolVersion',
     'headers': {
         'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
         'Content-Type': 'application/json'
@@ -1504,7 +1504,7 @@ Get the storage at a specific position of an address.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getStorageAt
+    https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getStorageAt
 
 Headers
 --------
@@ -1533,7 +1533,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getStorageAt',
+        'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getStorageAt',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA0ODkyMjE5LCJleHAiOjE2MDU0OTcwMTl9.fcLs3o7UlljwCh6NnHI-7mW3gVdGPR2X2WACW3iUxKo',
             'Content-Type': 'application/json'
@@ -1563,7 +1563,7 @@ Checks if the node is listening for peers.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.*.net/isListening
+    https://integrationhub.okwave.global/api/v2/thorhammer/web3.*.net/isListening
 
 Headers
 --------
@@ -1586,7 +1586,7 @@ Example::
     var request = require('request');
     var options = {
     'method': 'GET',
-    'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.*.net/isListening',
+    'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/web3.*.net/isListening',
     'headers': {
         'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
         'Content-Type': 'application/json'
@@ -1615,7 +1615,7 @@ Checks whether the node is mining or not.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/isMining
+    https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/isMining
 
 Headers
 --------
@@ -1638,7 +1638,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'GET',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/isMining',
+        'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/isMining',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA1NTgyOTA4LCJleHAiOjE2MDYxODc3MDh9.fTPqa9_dJR34PBheFpse5tYFOnEGA2_Fgkhf-JitmYk',
             'Content-Type': 'application/json'
@@ -1667,7 +1667,7 @@ Checks if the node is currently syncing and returns either a syncing object.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/isSyncing
+    https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/isSyncing
 
 Headers
 --------
@@ -1690,7 +1690,7 @@ Example::
     var request = require('request');
     var options = {
     'method': 'GET',
-    'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/isSyncing',
+    'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/isSyncing',
     'headers': {
         'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
         'Content-Type': 'application/json'
@@ -1719,7 +1719,7 @@ Deplot smart contract using hex string.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/contract/deploySCHex
+    https://integrationhub.okwave.global/api/v2/thorhammer/contract/deploySCHex
 
 Headers
 --------
@@ -1747,7 +1747,7 @@ Example::
     var request = require('request');
     var options = {
     'method': 'POST',
-    'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/contract/deploySCHex',
+    'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/contract/deploySCHex',
     'headers': {
         'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
         'Content-Type': 'application/json'
@@ -1802,7 +1802,7 @@ Call smart contract function.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/contract/callSC/
+    https://integrationhub.okwave.global/api/v2/thorhammer/contract/callSC/
 
 Headers
 --------
@@ -1858,7 +1858,7 @@ Example::
     var request = require('request');
     var options = {
     'method': 'POST',
-    'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/contract/callSC',
+    'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/contract/callSC',
     'headers': {
         'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
         'Content-Type': 'application/json'
@@ -1947,7 +1947,7 @@ Encodes the ABI for this method. This can be used to send a transaction, call a 
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/contract/encodeABISC
+    https://integrationhub.okwave.global/api/v2/thorhammer/contract/encodeABISC
 
 Headers
 --------
@@ -2042,7 +2042,7 @@ Example::
     var request = require('request');
     var options = {
     'method': 'POST',
-    'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/contract/encodeABISC',
+    'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/contract/encodeABISC',
     'headers': {
         'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
         'Content-Type': 'application/json'
@@ -2143,7 +2143,7 @@ Encodes the ABI for this method. This can be used to send a transaction, call a 
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/contract/encodeABIFunctionSC
+    https://integrationhub.okwave.global/api/v2/thorhammer/contract/encodeABIFunctionSC
 
 Headers
 --------
@@ -2238,7 +2238,7 @@ Example::
     var request = require('request');
     var options = {
     'method': 'POST',
-    'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/contract/encodeABIFunctionSC',
+    'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/contract/encodeABIFunctionSC',
     'headers': {
         'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjAzMTU3NjMzLCJleHAiOjE2MDM3NjI0MzN9.71my1T-2IxQNJhNNu-aRX7N3TLo9BqAczyGWX1ph2vA',
         'Content-Type': 'application/json'
@@ -2338,7 +2338,7 @@ Get fast, standard and low gas price which obtain from a few previous transactio
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getGasRate
+    https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getGasRate
 
 Headers
 --------
@@ -2361,7 +2361,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'GET',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.eth/getGasRate',
+        'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/web3.eth/getGasRate',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA0ODkyMjE5LCJleHAiOjE2MDU0OTcwMTl9.fcLs3o7UlljwCh6NnHI-7mW3gVdGPR2X2WACW3iUxKo',
             'Content-Type': 'application/json'
@@ -2394,7 +2394,7 @@ Will auto convert any given value to HEX. Number strings will interpreted as num
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.utils/toHex
+    https://integrationhub.okwave.global/api/v2/thorhammer/web3.utils/toHex
 
 Headers
 --------
@@ -2422,7 +2422,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.utils/toHex',
+        'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/web3.utils/toHex',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA0ODkyMjE5LCJleHAiOjE2MDU0OTcwMTl9.fcLs3o7UlljwCh6NnHI-7mW3gVdGPR2X2WACW3iUxKo',
             'Content-Type': 'application/json'
@@ -2454,7 +2454,7 @@ Returns the HEX representation of a given ASCII string.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.utils/asciiToHex
+    https://integrationhub.okwave.global/api/v2/thorhammer/web3.utils/asciiToHex
 
 Headers
 --------
@@ -2482,7 +2482,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.utils/asciiToHex',
+        'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/web3.utils/asciiToHex',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA0ODkyMjE5LCJleHAiOjE2MDU0OTcwMTl9.fcLs3o7UlljwCh6NnHI-7mW3gVdGPR2X2WACW3iUxKo',
             'Content-Type': 'application/json'
@@ -2514,7 +2514,7 @@ Checks if a given string is a valid Ethereum address. It will also check the che
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.utils/isAddress
+    https://integrationhub.okwave.global/api/v2/thorhammer/web3.utils/isAddress
 
 Headers
 --------
@@ -2542,7 +2542,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.utils/getHex',
+        'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/web3.utils/getHex',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA0ODkyMjE5LCJleHAiOjE2MDU0OTcwMTl9.fcLs3o7UlljwCh6NnHI-7mW3gVdGPR2X2WACW3iUxKo',
             'Content-Type': 'application/json'
@@ -2574,7 +2574,7 @@ Converts any wei value into a ether value.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.utils/fromWei
+    https://integrationhub.okwave.global/api/v2/thorhammer/web3.utils/fromWei
 
 Headers
 --------
@@ -2603,7 +2603,7 @@ Example::
     var request = require('request');
     var options = {
         'method': 'POST',
-        'url': 'http://integrationhub.okwave.asia:3333/api/v2/thorhammer/web3.utils/fromWei',
+        'url': 'https://integrationhub.okwave.global/api/v2/thorhammer/web3.utils/fromWei',
         'headers': {
             'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA0ODkyMjE5LCJleHAiOjE2MDU0OTcwMTl9.fcLs3o7UlljwCh6NnHI-7mW3gVdGPR2X2WACW3iUxKo',
             'Content-Type': 'application/json'
@@ -2636,7 +2636,7 @@ Executes a message call or transaction and returns the amount of the gas used.
 
 Example::
 
-    http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/estimateGas
+    https://integrationhub.okwave.global/api/v2/ethmainnet/web3.eth/estimateGas
 
 Headers
 --------
@@ -2678,7 +2678,7 @@ Need to set headers::
         var request = require('request');
         var options = {
             'method': 'POST',
-            'url': 'http://integrationhub.okwave.asia:3333/api/v2/ethmainnet/web3.eth/estimateGas',
+            'url': 'https://integrationhub.okwave.global/api/v2/ethmainnet/web3.eth/estimateGas',
             'headers': {
                 'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA0ODkyMjE5LCJleHAiOjE2MDU0OTcwMTl9.fcLs3o7UlljwCh6NnHI-7mW3gVdGPR2X2WACW3iUxKo',
                 'Content-Type': 'application/json'

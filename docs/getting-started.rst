@@ -4,7 +4,7 @@ Getting Started
 Usage
 =====
 
-1. Sign in into https://thankslogin.okbc.my/auth to receive token from Thanks Economy and http://integrationhub.okwave.asia:3333/api/v2/registerToken to receive token for internal.
+1. Sign in into https://thankslogin.okbc.my/auth to receive token from Thanks Economy and https://integrationhub.okwave.global/api/v2/registerToken to receive token for internal.
 
 Example::
 
