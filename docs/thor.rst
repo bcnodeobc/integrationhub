@@ -2652,50 +2652,52 @@ Need to set headers::
     --------
     Need parameters::
     
-        Address and data object     Body example for send smart contract
-                                    {
-                                        "nonce": transaction count | string,
-                                        "from": wallet address | string ,
-                                        "to": contract address | string ,
-                                        "data": encodedABIHex | string              
-                                    }
+            Body example for send smart contract
+            {
+                "nonce": transaction count in hex | string,
+                "from": wallet address | string ,
+                "to": contract address | string ,
+                "data": encodedABIHex | string              
+            }
+
+            Body example for deploying smart contract
+            {                              
+                "nonce": transaction count in hex | string,
+                "from": wallet address | string ,
+                "data": encodedABIHex | string                                           
+            }
+
+            Body example for sending ether
+            {
+                "nonce": transaction count in hex | string,
+                "from": wallet address | string ,
+                "to": address receiver | string ,
+                "value": wei value in hex | string                                   
+            }                                
     
-                                    Body example for deploying smart contract
-                                    {                              
-                                        "nonce": transaction count | string,
-                                        "from": wallet address | string ,
-                                        "data": encodedABIHex | string                                           
-                                    }
-    
-                                    Body example for sending ether
-                                    {
-                                        "nonce": transaction count | string,
-                                        "from": wallet address | string ,
-                                        "to": address receiver | string ,
-                                        "value": wei value in hex | string                                   
-                                    }                                
-    
-    Example
-    --------
-    Example::
-    
-        var request = require('request');
-        var options = {
-            'method': 'POST',
-            'url': 'https://integrationhub.okwave.global/api/v2/ethmainnet/web3.eth/estimateGas',
-            'headers': {
-                'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA0ODkyMjE5LCJleHAiOjE2MDU0OTcwMTl9.fcLs3o7UlljwCh6NnHI-7mW3gVdGPR2X2WACW3iUxKo',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                "to":<<Contract Address>>,
-                "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000003" 
-                })
-        };
-        request(options, function (error, response) {
-            if (error) throw new Error(error);
-            console.log(response.body);
-        });
+Example
+--------
+Example::
+
+    var request = require('request');
+    var options = {
+        'method': 'POST',
+        'url': 'https://integrationhub.okwave.global/api/v2/ethmainnet/web3.eth/estimateGas',
+        'headers': {
+            'Authorization': 'OBC eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2JjIiwiaWF0IjoxNjA0ODkyMjE5LCJleHAiOjE2MDU0OTcwMTl9.fcLs3o7UlljwCh6NnHI-7mW3gVdGPR2X2WACW3iUxKo',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            "nonce": "0x1"
+            "from":<Wallet Address>, 
+            "to":<Contract Address>,
+            "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000003",
+            })
+    };
+    request(options, function (error, response) {
+        if (error) throw new Error(error);
+        console.log(response.body);
+    });
 
 Response
 --------

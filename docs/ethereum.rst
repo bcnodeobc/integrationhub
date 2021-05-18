@@ -2372,28 +2372,28 @@ Parameters
 --------
 Need parameters::
 
-    Address and data object     Body example for send smart contract
-                                    {
-                                        "nonce": transaction count | string,
-                                        "from": wallet address | string ,
-                                        "to": contract address | string ,
-                                        "data": encodedABIHex | string              
-                                    }
-    
-                                    Body example for deploying smart contract
-                                    {                              
-                                        "nonce": transaction count | string,
-                                        "from": wallet address | string ,
-                                        "data": encodedABIHex | string                                           
-                                    }
-    
-                                    Body example for sending ether
-                                    {
-                                        "nonce": transaction count | string,
-                                        "from": wallet address | string ,
-                                        "to": address receiver | string ,
-                                        "value": wei value in hex | string                                   
-                                    }                                
+            Body example for send smart contract
+            {
+                "nonce": transaction count in hex | string,
+                "from": wallet address | string ,
+                "to": contract address | string ,
+                "data": encodedABIHex | string              
+            }
+
+            Body example for deploying smart contract
+            {                              
+                "nonce": transaction count in hex | string,
+                "from": wallet address | string ,
+                "data": encodedABIHex | string                                           
+            }
+
+            Body example for sending ether
+            {
+                "nonce": transaction count in hex | string,
+                "from": wallet address | string ,
+                "to": address receiver | string ,
+                "value": wei value in hex | string                                   
+            }                                
 
 Example
 --------
@@ -2408,8 +2408,10 @@ Example::
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            "to":<<Contract Address>>,
-            "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000003" 
+            "nonce": "0x1"
+            "from":<Wallet Address>, 
+            "to":<Contract Address>,
+            "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000003",
             })
     };
     request(options, function (error, response) {
