@@ -2408,7 +2408,7 @@ Example::
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            "nonce": "0x1"
+            "nonce": "0x1",
             "from":<Wallet Address>, 
             "to":<Contract Address>,
             "data": "0xc6888fa10000000000000000000000000000000000000000000000000000000000000003",
