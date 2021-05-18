@@ -2374,21 +2374,26 @@ Need parameters::
 
     Address and data object     Body example for send smart contract
                                 {
-                                    "to": contract address | string ,
-                                    "data": encodedABIHex | string              
-                                }
-
-                                Body example for deploying smart contract
-                                {                              
-                                    "from": wallet address | string , //optional
-                                    "data": encodedABIHex | string                                           
-                                }
-
-                                Body example for sending ether
-                                {
-                                    "to": address receiver | string ,
-                                    "value": wei value in hex | string                                   
-                                }                                
+                                        "nonce": transaction count | string,
+                                        "from": wallet address | string ,
+                                        "to": contract address | string ,
+                                        "data": encodedABIHex | string              
+                                    }
+    
+                                    Body example for deploying smart contract
+                                    {                              
+                                        "nonce": transaction count | string,
+                                        "from": wallet address | string ,
+                                        "data": encodedABIHex | string                                           
+                                    }
+    
+                                    Body example for sending ether
+                                    {
+                                        "nonce": transaction count | string,
+                                        "from": wallet address | string ,
+                                        "to": address receiver | string ,
+                                        "value": wei value in hex | string                                   
+                                    }                                
 
 Example
 --------

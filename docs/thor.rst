@@ -2654,19 +2654,23 @@ Need to set headers::
     
         Address and data object     Body example for send smart contract
                                     {
+                                        "nonce": transaction count | string,
+                                        "from": wallet address | string ,
                                         "to": contract address | string ,
                                         "data": encodedABIHex | string              
                                     }
     
                                     Body example for deploying smart contract
                                     {                              
-                                        "to": contract address | string ,
-                                        "from": wallet address | string , //optional
+                                        "nonce": transaction count | string,
+                                        "from": wallet address | string ,
                                         "data": encodedABIHex | string                                           
                                     }
     
                                     Body example for sending ether
                                     {
+                                        "nonce": transaction count | string,
+                                        "from": wallet address | string ,
                                         "to": address receiver | string ,
                                         "value": wei value in hex | string                                   
                                     }                                
