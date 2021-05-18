@@ -2661,7 +2661,7 @@ Need to set headers::
                                     Body example for deploying smart contract
                                     {                              
                                         "to": contract address | string ,
-                                        "from": wallet address | string , //optional
+                                        "from": wallet address | string ,
                                         "data": encodedABIHex | string                                           
                                     }
     
