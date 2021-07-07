@@ -4,10 +4,9 @@ Integration Hub V2 (IHv2) is a platform developed by OK Blockchain Centre to eas
 
 As for now, below are the nodes that includes : 
 1. Bitcoin
-4. Ethereum
-3. Neo
-4. ThorHammer
+2. Ethereum
+3. ThorHammer
 
 ## Documentation
 
-https://integrationhub.readthedocs.io/en/latest/
+https://integrationhub.readthedocs.io
