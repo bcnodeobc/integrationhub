@@ -20,6 +20,5 @@ Integration Hub V2 (IHv2) is a platform developed by OK Blockchain Centre to eas
    
    bitcoin
    ethereum
-   neo
    thor
 
